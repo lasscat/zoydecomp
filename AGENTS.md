@@ -15,9 +15,10 @@ The complete function universe and original compiler remain unknown.
 - A local exact comparison is only a prefilter. Full output-ROM verification
   after formatting is mandatory. Never mask strict differences, patch generated
   instructions, adjust global flags, or credit retained original binary data.
-- The reviewed narrow backend links complete standalone ARM9 leaf C blocks with
-  opaque retained sections through LLD. Unreviewed modules/modes/relocations and
-  extra code/data are rejected. Never bypass these scope limits.
+- The reviewed narrow backend links complete ARM C blocks with opaque retained
+  sections through LLD. Only ARM9, uncompressed ov000 and explicitly configured
+  same-module BL edges are supported; see docs/link-scope.md. Unreviewed modules,
+  modes, relocations and extra code/data remain rejected. Never bypass these limits.
 - Natural ASCII C/C++ only. No asm, instruction arrays, machine-code stubs or
   embedded target bytes to manufacture a reconstructed function. Platform
   instruction exceptions require review and remain outside reconstructed credit.

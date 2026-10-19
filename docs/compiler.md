@@ -30,6 +30,13 @@ other (mostly trivial) leaves match Clang; the sets overlap. MWCC's default retu
 required for exact matches. Clang, GCC 15 and MWCC each fail a different subset, which
 is why per-function profiles are the honest approach.
 
+The call-link prototype has a narrower compiler boundary than relocation-free leaves:
+a measured MWCC nonleaf fixture emits SHT_RELA R_ARM_PC24 and allocated `.exceptix`
+metadata, which are still rejected. Its existing accepted leaves remain supported.
+The working synthetic call cluster uses Clang SHT_REL R_ARM_CALL; see
+[call/overlay scope](link-scope.md). Do not infer MWCC call support from mixed-toolchain
+leaf success or discard its exception data without a separate review.
+
 ## Optional MWCC installation
 
 Supply legal local copies under ignored `tools/bin/mwccarm/`, with a compatible

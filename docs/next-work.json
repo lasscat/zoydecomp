@@ -6,7 +6,7 @@
       "priority": 1,
       "system": "MT19937 RNG state lifecycle",
       "question": "How do seed, zero-seed rejection, reseeding, next-index and refill transitions interact on DS?",
-      "next_action": "Extend independent DS evidence for mt_next at ARM9 0x02034fc0 and map seed-to-next state ownership before drafting it. Keep seed boundary/transition checks reproducible.",
+      "next_action": "Replay the banked four-entry seed/default/raw/masked-next/reseed oracle (1263 sampled calls; separately tested bounded BL model). Strict completion still needs new compiler/ABI and tail-call evidence. Do not repeat cached seed/next probes or claim the linker prototype gates this lifecycle.",
       "deliverables": [
         "system dossier with DS callers/offsets and donor distinctions",
         "readable connected draft when justified",
@@ -24,7 +24,7 @@
     {
       "priority": 3,
       "system": "discovery and toolchain",
-      "next_action": "Repair shared-tail/jump-table ownership near 0x02044684 -> 0x020445a0; identify original compiler with distinctive family evidence, not global flag sweeps."
+      "next_action": "Use the narrow call/ov000 linker prototype (docs/link-scope.md), then select an actual DS call cluster with supported relocations. MWCC nonleaf RELA/exception metadata still needs separate review. Do not repeat the exhausted ARM9 branch-target leaf sweep or change global flags. Shared-tail ownership and the original compiler remain unresolved."
     }
   ],
   "agent_usage": "Parallel agents require maintainer authorization and disjoint scratch assignments."

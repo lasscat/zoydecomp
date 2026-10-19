@@ -19,8 +19,15 @@ prepare extracts only. build explicitly repacks. verify always builds, then chec
 the actual output. finish/integrate requires explicit regular file paths, formats
 C with pinned clang-format and other text whitespace/newlines, stops for review if formatting changes a file,
 runs gate tests, rebuilds/verifies, then stages just those files. It never commits
-or pushes. The narrow reviewed C backend accepts complete standalone ARM9 ARM-mode leaf
-functions without text relocations, extra executable sections or allocated data.
+or pushes. The narrow reviewed C backend accepts complete ARM functions in ARM9 and
+the stored, uncompressed ov000 image. Only explicitly declared same-module BL edges
+between configured complete functions may carry text relocations; see
+[the call/overlay scope](link-scope.md). Extra executable sections or allocated data
+remain unsupported.
+Call/overlay support is a narrow prototype: its regression fixtures are synthetic,
+and no ov000 function or actual DS call cluster has yet been accepted. The current
+accepted set remains the 249 ARM9 functions; see the handoff for the failed/blocked
+system candidates and separate behavior evidence.
 config/BWBE-r0/build.json binds each individual source/profile hash, symbol and
 reviewed inventory identity. Each entry names its own compiler profile, so functions
 reconstructed with different reviewed tools (for example the pinned Clang profile and
@@ -28,7 +35,7 @@ the optional local MWCC profile) coexist in one module. It compiles immutable sn
 through the shared actual driver and links whole modules with original opaque retained
 ELF sections using hash-pinned LLD at exact VMAs. No generated instruction is patched. The
 compiler's non-runtime .ARM.exidx metadata is discarded only under the reviewed
-R_ARM_PREL31 metadata rule; text relocations remain rejected. All allocated output
+R_ARM_PREL31 metadata rule; all other text relocation forms remain rejected. All allocated output
 sections must match the declared contiguous original/C section plan. The actual
 complete output ROM must then equal the immutable original.
 
@@ -65,9 +72,10 @@ python3 -B tools/probe_compiler.py /absolute/draft.c arm9:02034f40:arm \
 ```
 
 Exit 0: local unmasked S evidence. Exit 1: N/X discrepancy. Exit 2: tool/target error.
-All text relocations are rejected except resolved R_ARM_ABS32 against explicitly
+The single-function probe still rejects all text relocations except resolved R_ARM_ABS32 against explicitly
 provided symbols. Calls/Thumb relocations, RELA and missing symbols block comparison;
-they are never masked. Code/pool boundaries are target evidence, not inferred from
+they are never masked. Call clusters use the strict module linker, not this single-function
+probe. Code/pool boundaries are target evidence, not inferred from
 arbitrary bytes. Instructions remain in order with register fields intact.
 
 Fresh checkouts use their own legally supplied ROM via --rom. Copy only a legally available compiler
