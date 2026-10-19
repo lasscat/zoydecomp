@@ -1,0 +1,68 @@
+{
+  "blocker": "dsd 0.12.1 init treats ARM9 shared-suffix branch at 0x02044684 -> 0x020445a0 as missing function; full discovery unknown",
+  "complete": false,
+  "denominator_revision_policy": "new reviewed version plus old/new mapping; never silently alter v1",
+  "functions": [
+    {
+      "address": 33556480,
+      "aliases": [],
+      "boundary_evidence": "ROM header entry point; end unknown",
+      "code_size": null,
+      "id": "arm9:02000800:arm",
+      "mode": "arm",
+      "module": "arm9",
+      "rom_offset": 18432,
+      "size": null
+    },
+    {
+      "address": 37224448,
+      "aliases": [],
+      "boundary_evidence": "ROM header entry point; end unknown",
+      "code_size": null,
+      "id": "arm7:02380000:arm",
+      "mode": "arm",
+      "module": "arm7",
+      "rom_offset": 1619968,
+      "size": null
+    },
+    {
+      "address": 33771328,
+      "aliases": [],
+      "boundary_evidence": "manually inspected entry, all branch targets/returns, following literal pool; docs/donors.md",
+      "code_size": 80,
+      "hypothesis_name": "mt_seed",
+      "id": "arm9:02034f40:arm",
+      "mode": "arm",
+      "module": "arm9",
+      "rom_offset": 233280,
+      "size": 84,
+      "target_sha256": "9b82473ae704e9556865f78ecf79a08f0ea884ba25dbb348f95138564e4c89b0"
+    },
+    {
+      "address": 33771456,
+      "aliases": [],
+      "boundary_evidence": "manually inspected entry, all branch targets/returns, following literal pool; docs/donors.md",
+      "code_size": 280,
+      "hypothesis_name": "mt_next",
+      "id": "arm9:02034fc0:arm",
+      "mode": "arm",
+      "module": "arm9",
+      "rom_offset": 233408,
+      "size": 296,
+      "target_sha256": "fa39a820206bde15e838dbd6be9c5f6af120e46d6150b746c25b7afb28ba6063"
+    }
+  ],
+  "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
+  "schema": 1,
+  "unknown_modules": [
+    "arm9 remainder",
+    "arm7 remainder",
+    "itcm",
+    "dtcm code/data",
+    "arm9/ov000",
+    "arm9/ov001",
+    "arm9/ov002",
+    "embedded childrom/main.srl"
+  ],
+  "version": 1
+}

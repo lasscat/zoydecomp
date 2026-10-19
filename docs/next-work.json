@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "priority": "connected, readable, evidence-backed systems for understanding, mods and future ports",
+  "queue": [
+    {
+      "priority": 1,
+      "system": "MT19937 RNG state lifecycle",
+      "question": "How do seed, zero-seed rejection, reseeding, next-index and refill transitions interact on DS?",
+      "next_action": "Extend independent DS evidence for mt_next at ARM9 0x02034fc0 and map seed-to-next state ownership before drafting it. Keep seed boundary/transition checks reproducible.",
+      "deliverables": [
+        "system dossier with DS callers/offsets and donor distinctions",
+        "readable connected draft when justified",
+        "saved differential outputs, memory/guards, boundary/refill/reseed transitions with assumptions"
+      ],
+      "gate": "no new strict credit without individual formatted full-ROM gate"
+    },
+    {
+      "priority": 2,
+      "system": "unknown predicate cluster",
+      "question": "What owns the shared +0x5c field in ARM9 0x02068fd8..0x0206901c?",
+      "next_action": "Four predicates now pass 313 sampled calls each. Review the common DS caller CFG and field writes to infer owner and real state transitions; controlled field inputs do not establish gameplay transitions.",
+      "evidence": "14 saved wave3 drafts include four adjacent near-miss predicates"
+    },
+    {
+      "priority": 3,
+      "system": "discovery and toolchain",
+      "next_action": "Repair shared-tail/jump-table ownership near 0x02044684 -> 0x020445a0; identify original compiler with distinctive family evidence, not global flag sweeps."
+    }
+  ],
+  "agent_usage": "Parallel agents require maintainer authorization and disjoint scratch assignments."
+}

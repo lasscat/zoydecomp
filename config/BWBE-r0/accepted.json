@@ -1,0 +1,17 @@
+{
+  "full_byte_compare": true,
+  "functions": [
+    "arm9:02039914:arm",
+    "arm9:02040280:arm",
+    "arm9:020435bc:arm",
+    "arm9:020479e0:arm",
+    "arm9:02052e58:arm",
+    "arm9:0205a254:arm",
+    "arm9:020662e8:arm",
+    "arm9:0206ee84:arm"
+  ],
+  "inputs_digest": "0655c588c0568821c3e088b9eaeac97f1402fb1841d354731b1964928bddb758",
+  "original_sha1": "fcc5ec4cfd4fabcbb26dee847d9ed6803e9ad93b",
+  "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
+  "schema": 1
+}

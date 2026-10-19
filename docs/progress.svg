@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="170" viewBox="0 0 760 170" role="img" aria-label="Reconstruction evidence; whole-game coverage unknown">
+<rect width="760" height="170" rx="14" fill="#101c19"/>
+<g font-family="Arial, sans-serif">
+<text x="24" y="31" fill="#d6eee1" font-size="16" font-weight="bold">PROJECT PROGRESS</text>
+<text x="24" y="57" fill="#a6bdb1" font-size="13">Whole-game coverage: unknown &#183; function inventory incomplete</text>
+<rect x="24" y="72" width="712" height="8" rx="4" fill="#33483e"/>
+<text x="24" y="111" fill="#8de5ac" font-size="20" font-weight="bold">8 verified functions</text>
+<text x="270" y="111" fill="#a9d9ff" font-size="20" font-weight="bold">5 behavior tested</text>
+<text x="530" y="111" fill="#e3d69a" font-size="15" font-weight="bold">1 exact &#183; 7 near &#183; 7 different</text>
+<text x="24" y="140" fill="#a6bdb1" font-size="12">84 accepted code bytes</text>
+<text x="270" y="140" fill="#a6bdb1" font-size="12">1293 sampled calls; no equivalence proof</text>
+<text x="530" y="140" fill="#a6bdb1" font-size="12">Isolated draft comparisons</text>
+</g></svg>

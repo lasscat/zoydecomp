@@ -1,0 +1,621 @@
+{
+  "chunks": [
+    {
+      "end": 16384,
+      "file": "00000000-header-and-secure-gap.bin",
+      "name": "header-and-secure-gap",
+      "sha256": "a9a5cd8e6fc963d1a340659ec86d665327ff8f60ccc932d3c9924ea2f53987ca",
+      "start": 0
+    },
+    {
+      "end": 1071160,
+      "file": "00004000-arm9.bin",
+      "name": "arm9",
+      "sha256": "0d6a36aed79796e55d3882419166acc632a9f8bc2a667df42066505e0f589aa1",
+      "start": 16384
+    },
+    {
+      "end": 1071616,
+      "file": "00105838-gap-00105838.bin",
+      "name": "gap-00105838",
+      "sha256": "bbf2185debeb7b143402018de06bada33b404006d63b9135b75608f16350692d",
+      "start": 1071160
+    },
+    {
+      "end": 1071712,
+      "file": "00105a00-arm9-overlay-table.bin",
+      "name": "arm9-overlay-table",
+      "sha256": "4c9e8242e5a95e0a1e33722c5d2f868b68a23bc60dfdb65a3a8112ef96f40cff",
+      "start": 1071616
+    },
+    {
+      "end": 1072128,
+      "file": "00105a60-gap-00105a60.bin",
+      "name": "gap-00105a60",
+      "sha256": "9021f9b42681058b179c190ba727a5422fc558feb2d33a9c9c5874682738a824",
+      "start": 1071712
+    },
+    {
+      "end": 1205344,
+      "file": "00105c00-file-0000.bin",
+      "name": "file-0000",
+      "sha256": "5d628a41a1c2ca1bbd6a996bc25d671597bbc2c1258c441c8af71137cb17195e",
+      "start": 1072128
+    },
+    {
+      "end": 1205760,
+      "file": "00126460-gap-00126460.bin",
+      "name": "gap-00126460",
+      "sha256": "9021f9b42681058b179c190ba727a5422fc558feb2d33a9c9c5874682738a824",
+      "start": 1205344
+    },
+    {
+      "end": 1459680,
+      "file": "00126600-file-0001.bin",
+      "name": "file-0001",
+      "sha256": "7b05208af6b5a8c9226a59f85ec022bb8e495106b8c04a283ec8eb9b590c51d3",
+      "start": 1205760
+    },
+    {
+      "end": 1459712,
+      "file": "001645e0-gap-001645e0.bin",
+      "name": "gap-001645e0",
+      "sha256": "af9613760f72635fbdb44a5a0a63c39f12af30f950a6ee5c971be188e89c4051",
+      "start": 1459680
+    },
+    {
+      "end": 1619488,
+      "file": "00164600-file-0002.bin",
+      "name": "file-0002",
+      "sha256": "06317faa622b8d3b56801eb06b470e1f8b6af05f77afd590ef8eaca00f4268d6",
+      "start": 1459712
+    },
+    {
+      "end": 1619968,
+      "file": "0018b620-gap-0018b620.bin",
+      "name": "gap-0018b620",
+      "sha256": "bf9b62d4418d862aa0826a28a846948151da66b8042967382ca6bfd6d7d1cdb2",
+      "start": 1619488
+    },
+    {
+      "end": 1776684,
+      "file": "0018b800-arm7.bin",
+      "name": "arm7",
+      "sha256": "67cb7dbc851451acf2533d52826eeca44c49213a11a3ac9300b576a5485f90f5",
+      "start": 1619968
+    },
+    {
+      "end": 1777152,
+      "file": "001b1c2c-gap-001b1c2c.bin",
+      "name": "gap-001b1c2c",
+      "sha256": "72ea1f236b489fb91b63f41859d566d5f05c463fff88b1ddfe13ca5a585e353a",
+      "start": 1776684
+    },
+    {
+      "end": 1777561,
+      "file": "001b1e00-fnt.bin",
+      "name": "fnt",
+      "sha256": "9d47d44ef03c30dacfc575061033e5a73f3b019e43668c244fd6487686c5620b",
+      "start": 1777152
+    },
+    {
+      "end": 1777664,
+      "file": "001b1f99-gap-001b1f99.bin",
+      "name": "gap-001b1f99",
+      "sha256": "6f9d6f532a215b74cbd654d7c9bdfbb595d7405df78e6d62ea06b4bcf75b5de4",
+      "start": 1777561
+    },
+    {
+      "end": 1777840,
+      "file": "001b2000-fat.bin",
+      "name": "fat",
+      "sha256": "d9d10a688cd280650df71d6177cb80234f17dc9fc62073c949c83e6e66291354",
+      "start": 1777664
+    },
+    {
+      "end": 1778176,
+      "file": "001b20b0-gap-001b20b0.bin",
+      "name": "gap-001b20b0",
+      "sha256": "77071fc978963dce5058c795643c95c195d0d2506c5f02ff38c09e4c8d6ec517",
+      "start": 1777840
+    },
+    {
+      "end": 1780288,
+      "file": "001b2200-banner.bin",
+      "name": "banner",
+      "sha256": "2ea500260f981aa41a6b1a7a4817059d28acba51c8cc6903c544a58df2b36348",
+      "start": 1778176
+    },
+    {
+      "end": 1780736,
+      "file": "001b2a40-gap-001b2a40.bin",
+      "name": "gap-001b2a40",
+      "sha256": "ad948f3d279d42aeebf35cfdca0a9692de056c8286104fc0c96fc728f61a9c07",
+      "start": 1780288
+    },
+    {
+      "end": 12967240,
+      "file": "001b2c00-file-0003.bin",
+      "name": "file-0003",
+      "sha256": "79d6b99ff5e95644cc8f8333937c6813aeffaffd946749a72964f8574f928430",
+      "start": 1780736
+    },
+    {
+      "end": 12967424,
+      "file": "00c5dd48-gap-00c5dd48.bin",
+      "name": "gap-00c5dd48",
+      "sha256": "ba151f705f188cd9fcab95d6d24c0da135a4f334778b139684f38b8b4fbe728f",
+      "start": 12967240
+    },
+    {
+      "end": 13146196,
+      "file": "00c5de00-file-0004.bin",
+      "name": "file-0004",
+      "sha256": "587795499c2caabe8ab207b3407fef17039dd2077e90f0e9fc3baaa711aff109",
+      "start": 12967424
+    },
+    {
+      "end": 13146624,
+      "file": "00c89854-gap-00c89854.bin",
+      "name": "gap-00c89854",
+      "sha256": "b9a44177b391a391a2e8a6fdd6dd2e8d58a765925f5e13d586d5914e1b812ec9",
+      "start": 13146196
+    },
+    {
+      "end": 14121100,
+      "file": "00c89a00-file-0005.bin",
+      "name": "file-0005",
+      "sha256": "7bbcbf4448ae82fb364ce3141cd689274dad4a1f8c1553285cb2093f3fa6d38a",
+      "start": 13146624
+    },
+    {
+      "end": 14121472,
+      "file": "00d7788c-gap-00d7788c.bin",
+      "name": "gap-00d7788c",
+      "sha256": "60f51c3aabf0d52047e4c17a90dff09ba184e7184c8cdcca650f9e33def5c5d2",
+      "start": 14121100
+    },
+    {
+      "end": 14892704,
+      "file": "00d77a00-file-0020.bin",
+      "name": "file-0020",
+      "sha256": "bfce5fee7023d160d9d188a13c0b12442bbe8681c38ad7a15ac5f6f94b365de7",
+      "start": 14121472
+    },
+    {
+      "end": 14893056,
+      "file": "00e33ea0-gap-00e33ea0.bin",
+      "name": "gap-00e33ea0",
+      "sha256": "a8aa961e3bbac0826d6d3fabce5dee4889e5c218e4b1216908e66bc53264d89a",
+      "start": 14892704
+    },
+    {
+      "end": 16584320,
+      "file": "00e34000-file-0021.bin",
+      "name": "file-0021",
+      "sha256": "3a46b51a24a58b7f5fb7493f2c5362baf18d53b519e43071ecc0afdfc1bbc4f2",
+      "start": 14893056
+    },
+    {
+      "end": 16584704,
+      "file": "00fd0e80-gap-00fd0e80.bin",
+      "name": "gap-00fd0e80",
+      "sha256": "a292bc4a1d8d3caa7dd32d1858f7d642a27373526b84cde7df8634faad708d2a",
+      "start": 16584320
+    },
+    {
+      "end": 16586864,
+      "file": "00fd1000-file-0009.bin",
+      "name": "file-0009",
+      "sha256": "03503930a44d0a7d6987b5ae1c136bac48841409c878cd63e2d86018fe71aba8",
+      "start": 16584704
+    },
+    {
+      "end": 16587264,
+      "file": "00fd1870-gap-00fd1870.bin",
+      "name": "gap-00fd1870",
+      "sha256": "c323c96b39b5155a4788a606c6fc05571befd551e693af4ec6b7f369cc42a834",
+      "start": 16586864
+    },
+    {
+      "end": 16711320,
+      "file": "00fd1a00-file-0010.bin",
+      "name": "file-0010",
+      "sha256": "b834c5aee3e6da5b10c666063dd8d2f923714883c3c63a8a21b80cfa89e29e74",
+      "start": 16587264
+    },
+    {
+      "end": 16711680,
+      "file": "00fefe98-gap-00fefe98.bin",
+      "name": "gap-00fefe98",
+      "sha256": "107d83b356cec4dfa3f441e7906af332fd9a75704750b5ca2ab98c4a1b3aab44",
+      "start": 16711320
+    },
+    {
+      "end": 16718881,
+      "file": "00ff0000-file-0011.bin",
+      "name": "file-0011",
+      "sha256": "a28a4164f1c90501f14b5d4be8dd1a5b58377e808dba249114ee8d52c8a52249",
+      "start": 16711680
+    },
+    {
+      "end": 16719360,
+      "file": "00ff1c21-gap-00ff1c21.bin",
+      "name": "gap-00ff1c21",
+      "sha256": "03438d4702250e383f64b00e041f8d59f7490a9bf5a30b1d13552c14c8ed9c24",
+      "start": 16718881
+    },
+    {
+      "end": 16719872,
+      "file": "00ff1e00-file-0006.bin",
+      "name": "file-0006",
+      "sha256": "5f7aeb538290651da2ede4e1f99c8b77e4b6b482c975177c30f3933da028b58b",
+      "start": 16719360
+    },
+    {
+      "end": 16719904,
+      "file": "00ff2000-file-0007.bin",
+      "name": "file-0007",
+      "sha256": "f9d59d960aecf91d5e313523b89729334a473cb3cc8122886ba05c0f549066dd",
+      "start": 16719872
+    },
+    {
+      "end": 16720384,
+      "file": "00ff2020-gap-00ff2020.bin",
+      "name": "gap-00ff2020",
+      "sha256": "bf9b62d4418d862aa0826a28a846948151da66b8042967382ca6bfd6d7d1cdb2",
+      "start": 16719904
+    },
+    {
+      "end": 17587400,
+      "file": "00ff2200-file-0008.bin",
+      "name": "file-0008",
+      "sha256": "290b5e653afc32cd50a9559fc6fa3b23a8b9e76c110263d0179333daba8df37d",
+      "start": 16720384
+    },
+    {
+      "end": 17587712,
+      "file": "010c5cc8-gap-010c5cc8.bin",
+      "name": "gap-010c5cc8",
+      "sha256": "26e1989c6b3b3e1b905dcc17405a2767a1a3ebbb76b26ae3ac6b16bfd61c031c",
+      "start": 17587400
+    },
+    {
+      "end": 35858384,
+      "file": "010c5e00-file-0019.bin",
+      "name": "file-0019",
+      "sha256": "56cd3b21a1826c4031f432b95700fc920aca1a06520ddf096d9938abe09b995e",
+      "start": 17587712
+    },
+    {
+      "end": 35858432,
+      "file": "022327d0-gap-022327d0.bin",
+      "name": "gap-022327d0",
+      "sha256": "80a76a18acf8cb64fec3a659ffc4bab4a87cd9a6fde4dab2161a8751d136c9d2",
+      "start": 35858384
+    },
+    {
+      "end": 35901064,
+      "file": "02232800-file-0012.bin",
+      "name": "file-0012",
+      "sha256": "40e9adc23758180334c835c0aa3787d1e3ef43b48435db5b671d899b06edd118",
+      "start": 35858432
+    },
+    {
+      "end": 35901440,
+      "file": "0223ce88-gap-0223ce88.bin",
+      "name": "gap-0223ce88",
+      "sha256": "56bc6d5c0d4743f39209256e9aba44cbd0676ef2eadb133d4da64d51b192d3fa",
+      "start": 35901064
+    },
+    {
+      "end": 35940552,
+      "file": "0223d000-file-0013.bin",
+      "name": "file-0013",
+      "sha256": "30d25dbe9947f591bfda1231cc2843c6e79974ee6594d6417e50ee504cac6836",
+      "start": 35901440
+    },
+    {
+      "end": 35940864,
+      "file": "022468c8-gap-022468c8.bin",
+      "name": "gap-022468c8",
+      "sha256": "26e1989c6b3b3e1b905dcc17405a2767a1a3ebbb76b26ae3ac6b16bfd61c031c",
+      "start": 35940552
+    },
+    {
+      "end": 35956772,
+      "file": "02246a00-file-0014.bin",
+      "name": "file-0014",
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "start": 35940864
+    },
+    {
+      "end": 35957248,
+      "file": "0224a824-gap-0224a824.bin",
+      "name": "gap-0224a824",
+      "sha256": "6014b202385aa136291df620d3de009e948cc020d4e215784a34aebb58b3d855",
+      "start": 35956772
+    },
+    {
+      "end": 35973156,
+      "file": "0224aa00-file-0015.bin",
+      "name": "file-0015",
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "start": 35957248
+    },
+    {
+      "end": 35973632,
+      "file": "0224e824-gap-0224e824.bin",
+      "name": "gap-0224e824",
+      "sha256": "6014b202385aa136291df620d3de009e948cc020d4e215784a34aebb58b3d855",
+      "start": 35973156
+    },
+    {
+      "end": 35989540,
+      "file": "0224ea00-file-0016.bin",
+      "name": "file-0016",
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "start": 35973632
+    },
+    {
+      "end": 35990016,
+      "file": "02252824-gap-02252824.bin",
+      "name": "gap-02252824",
+      "sha256": "6014b202385aa136291df620d3de009e948cc020d4e215784a34aebb58b3d855",
+      "start": 35989540
+    },
+    {
+      "end": 36005924,
+      "file": "02252a00-file-0017.bin",
+      "name": "file-0017",
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "start": 35990016
+    },
+    {
+      "end": 36006400,
+      "file": "02256824-gap-02256824.bin",
+      "name": "gap-02256824",
+      "sha256": "6014b202385aa136291df620d3de009e948cc020d4e215784a34aebb58b3d855",
+      "start": 36005924
+    },
+    {
+      "end": 36022308,
+      "file": "02256a00-file-0018.bin",
+      "name": "file-0018",
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "start": 36006400
+    },
+    {
+      "end": 67108864,
+      "file": "0225a824-rom-tail-padding.bin",
+      "name": "rom-tail-padding",
+      "sha256": "4216d5663be133fec41fc9ea09d6c2f747ba0354a1b835985e11729e50ad99d6",
+      "start": 36022308
+    }
+  ],
+  "compression": "overlays flagged as stored; main binaries separately analyzed by dsd",
+  "filesystem": [
+    {
+      "id": 0,
+      "path": null,
+      "rom_offset": 1072128,
+      "sha256": "5d628a41a1c2ca1bbd6a996bc25d671597bbc2c1258c441c8af71137cb17195e",
+      "size": 133216
+    },
+    {
+      "id": 1,
+      "path": null,
+      "rom_offset": 1205760,
+      "sha256": "7b05208af6b5a8c9226a59f85ec022bb8e495106b8c04a283ec8eb9b590c51d3",
+      "size": 253920
+    },
+    {
+      "id": 2,
+      "path": null,
+      "rom_offset": 1459712,
+      "sha256": "06317faa622b8d3b56801eb06b470e1f8b6af05f77afd590ef8eaca00f4268d6",
+      "size": 159776
+    },
+    {
+      "id": 3,
+      "path": "data_pack.bin",
+      "rom_offset": 1780736,
+      "sha256": "79d6b99ff5e95644cc8f8333937c6813aeffaffd946749a72964f8574f928430",
+      "size": 11186504
+    },
+    {
+      "id": 4,
+      "path": "data_pack_en.bin",
+      "rom_offset": 12967424,
+      "sha256": "587795499c2caabe8ab207b3407fef17039dd2077e90f0e9fc3baaa711aff109",
+      "size": 178772
+    },
+    {
+      "id": 5,
+      "path": "data_pack_jp.bin",
+      "rom_offset": 13146624,
+      "sha256": "7bbcbf4448ae82fb364ce3141cd689274dad4a1f8c1553285cb2093f3fa6d38a",
+      "size": 974476
+    },
+    {
+      "id": 6,
+      "path": "childrom/icon.char",
+      "rom_offset": 16719360,
+      "sha256": "5f7aeb538290651da2ede4e1f99c8b77e4b6b482c975177c30f3933da028b58b",
+      "size": 512
+    },
+    {
+      "id": 7,
+      "path": "childrom/icon.plt",
+      "rom_offset": 16719872,
+      "sha256": "f9d59d960aecf91d5e313523b89729334a473cb3cc8122886ba05c0f549066dd",
+      "size": 32
+    },
+    {
+      "id": 8,
+      "path": "childrom/main.srl",
+      "rom_offset": 16720384,
+      "sha256": "290b5e653afc32cd50a9559fc6fa3b23a8b9e76c110263d0179333daba8df37d",
+      "size": 867016
+    },
+    {
+      "id": 9,
+      "path": "import/sItxCommon.itx",
+      "rom_offset": 16584704,
+      "sha256": "03503930a44d0a7d6987b5ae1c136bac48841409c878cd63e2d86018fe71aba8",
+      "size": 2160
+    },
+    {
+      "id": 10,
+      "path": "import/sItxGame.itx",
+      "rom_offset": 16587264,
+      "sha256": "b834c5aee3e6da5b10c666063dd8d2f923714883c3c63a8a21b80cfa89e29e74",
+      "size": 124056
+    },
+    {
+      "id": 11,
+      "path": "import/sItxMenu.itx",
+      "rom_offset": 16711680,
+      "sha256": "a28a4164f1c90501f14b5d4be8dd1a5b58377e808dba249114ee8d52c8a52249",
+      "size": 7201
+    },
+    {
+      "id": 12,
+      "path": "manual/m2dres_narc.blz",
+      "rom_offset": 35858432,
+      "sha256": "40e9adc23758180334c835c0aa3787d1e3ef43b48435db5b671d899b06edd118",
+      "size": 42632
+    },
+    {
+      "id": 13,
+      "path": "manual/manpages_narc.blz",
+      "rom_offset": 35901440,
+      "sha256": "30d25dbe9947f591bfda1231cc2843c6e79974ee6594d6417e50ee504cac6836",
+      "size": 39112
+    },
+    {
+      "id": 14,
+      "path": "manual/manpages_narc_en.blz",
+      "rom_offset": 35940864,
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "size": 15908
+    },
+    {
+      "id": 15,
+      "path": "manual/manpages_narc_fr.blz",
+      "rom_offset": 35957248,
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "size": 15908
+    },
+    {
+      "id": 16,
+      "path": "manual/manpages_narc_ge.blz",
+      "rom_offset": 35973632,
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "size": 15908
+    },
+    {
+      "id": 17,
+      "path": "manual/manpages_narc_it.blz",
+      "rom_offset": 35990016,
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "size": 15908
+    },
+    {
+      "id": 18,
+      "path": "manual/manpages_narc_sp.blz",
+      "rom_offset": 36006400,
+      "sha256": "ba7297b5a98439007fe5a8925046d5c7a3dcaade33235bc6d5f87c16a3dd8e93",
+      "size": 15908
+    },
+    {
+      "id": 19,
+      "path": "movie/credits_ds.mods",
+      "rom_offset": 17587712,
+      "sha256": "56cd3b21a1826c4031f432b95700fc920aca1a06520ddf096d9938abe09b995e",
+      "size": 18270672
+    },
+    {
+      "id": 20,
+      "path": "sound/child_sound_data.sdat",
+      "rom_offset": 14121472,
+      "sha256": "bfce5fee7023d160d9d188a13c0b12442bbe8681c38ad7a15ac5f6f94b365de7",
+      "size": 771232
+    },
+    {
+      "id": 21,
+      "path": "sound/sound_data.sdat",
+      "rom_offset": 14893056,
+      "sha256": "3a46b51a24a58b7f5fb7493f2c5362baf18d53b519e43071ecc0afdfc1bbc4f2",
+      "size": 1691264
+    }
+  ],
+  "game_code": "BWBE",
+  "header_crc16_valid": true,
+  "modules": [
+    {
+      "entry_address": 33556480,
+      "executable_regions": "mixed code/data; see discovery baseline",
+      "load_address": 33554432,
+      "module": "arm9",
+      "rom_offset": 16384,
+      "sha256": "0d6a36aed79796e55d3882419166acc632a9f8bc2a667df42066505e0f589aa1",
+      "stored_size": 1054776
+    },
+    {
+      "entry_address": 37224448,
+      "executable_regions": "mixed code/data; see discovery baseline",
+      "load_address": 37224448,
+      "module": "arm7",
+      "rom_offset": 1619968,
+      "sha256": "67cb7dbc851451acf2533d52826eeca44c49213a11a3ac9300b576a5485f90f5",
+      "stored_size": 156716
+    }
+  ],
+  "overlays": [
+    {
+      "address": 35513824,
+      "bss_size": 192,
+      "compressed": false,
+      "ctor_end": 35644264,
+      "ctor_start": 35644240,
+      "file_id": 0,
+      "flags": 0,
+      "module": "arm9/ov000",
+      "ram_size": 133216,
+      "rom_offset": 1072128,
+      "stored_size": 133216
+    },
+    {
+      "address": 35513824,
+      "bss_size": 1216,
+      "compressed": false,
+      "ctor_end": 35761824,
+      "ctor_start": 35761820,
+      "file_id": 1,
+      "flags": 0,
+      "module": "arm9/ov001",
+      "ram_size": 253920,
+      "rom_offset": 1205760,
+      "stored_size": 253920
+    },
+    {
+      "address": 35513824,
+      "bss_size": 2368,
+      "compressed": false,
+      "ctor_end": 35671004,
+      "ctor_start": 35671000,
+      "file_id": 2,
+      "flags": 0,
+      "module": "arm9/ov002",
+      "ram_size": 159776,
+      "rom_offset": 1459712,
+      "stored_size": 159776
+    }
+  ],
+  "revision": 0,
+  "schema": 1,
+  "sha1": "fcc5ec4cfd4fabcbb26dee847d9ed6803e9ad93b",
+  "sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
+  "size": 67108864
+}

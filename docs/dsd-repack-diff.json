@@ -1,0 +1,15 @@
+{
+  "original_size": 67108864,
+  "repack_size": 67108864,
+  "different_bytes_in_common_extent": 4,
+  "different_ranges": [
+    [
+      108,
+      110
+    ],
+    [
+      350,
+      352
+    ]
+  ]
+}

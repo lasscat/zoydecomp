@@ -1,0 +1,4 @@
+# Discovery notes only; no linker acceptance backend yet.
+# arm9:02000800:arm size=None aliases=[]
+# arm9:02034f40:arm size=84 aliases=[]
+# arm9:02034fc0:arm size=296 aliases=[]

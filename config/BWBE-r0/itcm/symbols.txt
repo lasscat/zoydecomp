@@ -1,0 +1,1 @@
+# Discovery notes only; no linker acceptance backend yet.

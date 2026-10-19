@@ -1,0 +1,28 @@
+/rom/
+/extract/
+/build/
+/reference/
+# Legal local compiler executables, companion DLLs and runners; never distribute.
+/tools/bin/
+__pycache__/
+*.pyc
+*.nds
+*.srl
+*.bin
+*.o
+*.elf
+*.exe
+*.dll
+*.a
+*.so
+.venv/
+
+# Credentials, private notes and machine-specific editor files.
+.env
+.env.*
+/private/
+.local/
+.DS_Store
+*.log
+.idea/
+.vscode/

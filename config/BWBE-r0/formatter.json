@@ -1,0 +1,5 @@
+{
+  "executable": "/usr/bin/clang-format",
+  "executable_sha256": "5f5d1c9fcf5b119194adfe63b6afc69269bea51fa80df488f20e251d5929aafc",
+  "version": "clang-format version 23.1.1"
+}

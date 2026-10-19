@@ -1,0 +1,20 @@
+{
+  "driver": "clang-standalone-c-v1",
+  "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+  "executable": "/usr/bin/clang",
+  "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+  "flags": [
+    "--target=arm-none-eabi",
+    "-mcpu=arm946e-s",
+    "-marm",
+    "-O2",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-fno-unwind-tables",
+    "-fno-asynchronous-unwind-tables"
+  ],
+  "name": "clang23-arm946-o2-exploratory",
+  "schema": 1,
+  "symbol_values": {},
+  "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+}
