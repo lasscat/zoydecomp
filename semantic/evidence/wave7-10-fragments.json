@@ -1,39 +1,108 @@
 {
   "schema": 1,
-  "kind": "negative methodological result",
+  "kind": "negative/ambiguous methodological result",
   "waves": "7-10",
   "seed_policy": "arm9 unconditional B/BL branch targets plus push{...,lr} prologues",
-  "candidate_count": 245,
+  "candidate_count": 300,
   "tier_counts": {
-    "S": 20,
-    "N": 39,
-    "X": 182,
-    "blocked": 4
+    "S": 22,
+    "N": 48,
+    "X": 200,
+    "blocked": 30
   },
-  "real_entry_exact_count": 0,
-  "fragment_exact_ids": [
-    "arm9:020016d4:arm",
-    "arm9:020016e0:arm",
-    "arm9:020016f8:arm",
-    "arm9:02001748:arm",
-    "arm9:02001754:arm",
-    "arm9:02001768:arm",
-    "arm9:02001770:arm",
-    "arm9:020017d8:arm",
-    "arm9:020017f0:arm",
-    "arm9:02001840:arm",
-    "arm9:0200184c:arm",
-    "arm9:02001860:arm",
-    "arm9:02018834:arm",
-    "arm9:0201ed90:arm",
-    "arm9:0204b328:arm",
-    "arm9:020b2958:arm",
-    "arm9:020b922c:arm",
-    "arm9:020ff118:arm",
-    "arm9:020ff368:arm",
-    "arm9:020ff598:arm"
+  "lanes_reporting": 11,
+  "exact_block_count": 22,
+  "exact_blocks": [
+    {
+      "id": "arm9:020016d4:arm",
+      "branch_refs": 5
+    },
+    {
+      "id": "arm9:020016e0:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:020016f8:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:02001748:arm",
+      "branch_refs": 5
+    },
+    {
+      "id": "arm9:02001754:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:02001768:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:02001770:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:020017d8:arm",
+      "branch_refs": 3
+    },
+    {
+      "id": "arm9:020017f0:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:020017f8:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:02001840:arm",
+      "branch_refs": 3
+    },
+    {
+      "id": "arm9:0200184c:arm",
+      "branch_refs": 3
+    },
+    {
+      "id": "arm9:02001860:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:02018834:arm",
+      "branch_refs": 2
+    },
+    {
+      "id": "arm9:0201ed90:arm",
+      "branch_refs": 2
+    },
+    {
+      "id": "arm9:0202e620:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:0204b328:arm",
+      "branch_refs": 6
+    },
+    {
+      "id": "arm9:020b2958:arm",
+      "branch_refs": 4
+    },
+    {
+      "id": "arm9:020b922c:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:020ff118:arm",
+      "branch_refs": 2
+    },
+    {
+      "id": "arm9:020ff368:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:020ff598:arm",
+      "branch_refs": 1
+    }
   ],
-  "finding": "Every exact match was a branch-target fragment, not a function entry (not a BL target and not a prologue). These extents begin inside a larger routine: live-in callee-saved registers, backward branches to before the extent, or bare add-sp/pop epilogues. A standalone C function cannot own those bytes.",
-  "action": "No fragment was integrated, banked as a candidate, or credited. functions-v5.json was restored to its prior reviewed 660 entries.",
-  "conclusion": "The bounded ARM9 leaf pool is effectively exhausted. Further verified gains need overlay/Thumb support or call-aware (non-leaf) reconstruction, not more leaf sweeps."
+  "finding": "Branch-target seeds produced mostly mid-routine fragments. The byte-exact blocks are self-contained code ranges, but they are indistinguishable by inspection from compiler-shared return/case blocks reached by multiple tail branches (e.g. shared return-0 and return-0x7fffffff tails); independent lane reviews disagreed on whether any is a real function.",
+  "action": "No wave-7-10 result was credited or added to the strict inventory. functions-v5 remains the 660-entry reviewed set. A reviewed classification (function vs shared block: e.g. reference origin clustering, call-graph ownership) is required before any can be accepted.",
+  "conclusion": "The bounded ARM9 leaf pool is effectively exhausted. Further verified gains need overlay/Thumb support, call-aware reconstruction, or a reviewed tail-call/shared-block classifier."
 }
