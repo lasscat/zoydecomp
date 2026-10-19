@@ -2479,6 +2479,16 @@
       "source": "src/auto/arm9_02100164_leaf.c",
       "source_sha256": "81de75cb89bc086c9601845bce9665ffc6f625c2a84e81bf561628ee14c29a55",
       "symbol": "pvz_02100164_leaf"
+    },
+    {
+      "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
+      "id": "arm9:021006bc:arm",
+      "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
+      "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown. Verified with a reviewed local Metrowerks profile (locally supplied, not distributed).",
+      "source": "src/auto/arm9_021006bc_leaf.c",
+      "source_sha256": "012b80e50e775f4d6f38991f1ea02a90e5a8bf5f0d8ce5fffceaad02067ffd5e",
+      "symbol": "pvz_021006bc_leaf"
     }
   ],
   "inventory": "functions-v5.json",
