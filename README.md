@@ -12,21 +12,21 @@ unknown.
 
 <!-- progress:start -->
 
-| Counter | Baseline | Current |
-| --- | --- | --- |
-| Verified functions / total | 0 / unknown | 8 / unknown |
-| Verified code bytes / total | 0 / unknown | 84 / unknown |
-| Verified + locally identical draft functions / total | 0 / unknown | 9 / unknown |
-| Verified + locally identical draft code bytes / total | 0 / unknown | 112 / unknown |
+| Metric | Baseline | Current | Scoped share |
+| --- | --- | --- | --- |
+| Verified functions / bounded inventory | 0 / unknown | 133 / 483 | 27.5% |
+| Verified code bytes / bounded inventory | 0 / unknown | 2072 / 10840 | 19.1% |
+| Whole-game coverage | unknown | unknown | not available |
 
-Since the baseline: 8 additional verified functions (84 code bytes); including locally identical drafts, 9 functions (112 code bytes). Percentage-point changes are unavailable.
+The share column is scoped to the 483 reviewed *bounded* ARM9 entries; it is a lower bound, not whole-game coverage, because the inventory is incomplete.
+Since the baseline: 133 additional verified functions (2072 code bytes). Whole-game percent is unavailable.
 
-Separately, **5 functions pass 1293 sampled behavior calls**. Draft comparisons: 1 locally identical, 7 near and 7 larger differences. These results overlap and must not be added together.
 
 <!-- progress:end -->
 
-Percentages are unavailable until the function inventory is complete. Passing sample
-behavior tests does not prove correctness for every input or game state.
+The scoped share is the honest lower bound of coverage against the reviewed inventory.
+Whole-game percentages stay unavailable until the function inventory is complete, and
+passing sample behavior tests does not prove correctness for every input or game state.
 
 ## Get started
 

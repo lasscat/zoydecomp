@@ -11,15 +11,16 @@ SHA256: `43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad`.
 
 | Evidence | Baseline | Current |
 | --- | --- | --- |
-| Verified functions / total | 0 / unknown | 8 / unknown |
-| Verified code bytes / total | 0 / unknown | 84 / unknown |
-| Verified plus locally identical draft functions / total | 0 / unknown | 9 / unknown |
-| Verified plus locally identical draft code bytes / total | 0 / unknown | 112 / unknown |
+| Verified functions / total | 0 / unknown | 133 / unknown |
+| Verified code bytes / total | 0 / unknown | 2072 / unknown |
+| Verified plus locally identical draft functions / total | 0 / unknown | 133 / unknown |
+| Verified plus locally identical draft code bytes / total | 0 / unknown | 2072 / unknown |
 
-Changes: +8 verified functions/+84 bytes; including locally exact drafts, +9/+112.
-Percentage-point changes are unknown. The partial v2 inventory contains 68 entries;
-it is not a full-game function or code-size denominator. The v1 inventory is unchanged.
-Technical tiers: B8/S1/N7/X7. Behavior is separate: 5 drafts pass 1293 sampled calls.
+Changes: +133 verified functions/+2072 bytes. Percentage-point changes are unknown.
+The bounded inventory is now functions-v3.json (485 reviewed ARM9 entries); it is
+still not a full-game denominator. Research tiers: S 125, N 72, X 277 (474 drafts;
+the research snapshot still lists the original 8 accepted functions). Technical
+strict tier: B 133. Behavior is separate: 6 drafts pass 1948 sampled calls.
 
 The seed draft passes 41 calls, including four persistent-state reseed/rejection
 sequences. Four adjacent +0x5c predicates pass 313 calls each: 299 unique boundary/
@@ -80,10 +81,22 @@ bytes and is not used for strict rebuilding. Preserve diagnostics outside Git.
 
 ## Next work
 
-Trace RNG seed-to-next/refill ownership and callers, then extend readable source
-and original-instruction transition checks. Next, identify writes to the predicates'
-shared +0x5c field and its owner. Keep matching attempts bounded; stop for review
-after six nonimproving attempts and require new evidence before continuing.
+The RNG seed/next ownership question is answered: all seed and wrapper callers pass
+explicit per-object embedded states seeded from the arm9 0x02005d48 system-time getter;
+the global default path appears unreachable. The mt_next draft and its 655-call
+transitions are banked (X similarity; no exact compiler match yet).
+
+The largest remaining matching gap is structural, not missing work: many ARM9 leaves
+load a 32-bit constant from a literal pool that the original keeps in the inter-function
+gap, outside the reviewed extent, while Clang emits its pool inside `.text`. Extending
+those reviewed extents to include the pool word (or treating it as an opaque retained
+tail) would convert many honest N/X drafts into exact matches. This needs a reviewed
+inventory/size revision, not instruction masking.
+
+Next concrete steps: (1) review pool-inclusive extents for the recorded N/X leaves in
+functions-v3; (2) continue connected-system work (the +0x5c predicate owner); (3) keep
+matching attempts bounded and require new binary/ABI/compiler evidence before another
+shape sweep.
 
 Read per-function guides and system records before large evidence archives. Save
 useful unresolved sources, tests and failed hypotheses. Publication must exclude

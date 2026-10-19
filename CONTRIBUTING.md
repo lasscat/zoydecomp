@@ -66,6 +66,12 @@ tests, provenance, diagnostics and failed/next hypotheses on the research branch
 5. Keep ROMs, assets, tools, generated output, credentials, private notes and personal
    machine paths out of the patch. Run the publication audit before release.
 
+Refresh the scoped progress with `python3 -B tools/render_progress.py --write` before
+committing on the verified branch, so every commit updates the percentage; `--check`
+fails when README.md or docs/progress.svg is out of date. The scoped share is measured
+against the reviewed bounded inventory only. Whole-game coverage stays unknown and no
+whole-game percentage is ever invented.
+
 No assembly, instruction arrays, binary stubs, generated-instruction patches or
 embedded target bytes may manufacture a C match. Platform-instruction exceptions
 need review and remain outside accepted reconstructed-C credit. Never weaken
