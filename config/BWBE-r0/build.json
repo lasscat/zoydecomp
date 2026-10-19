@@ -282,6 +282,16 @@
     },
     {
       "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
+      "id": "arm9:0200f2f8:arm",
+      "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
+      "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown. Verified with a reviewed local Metrowerks profile (locally supplied, not distributed).",
+      "source": "src/auto/arm9_0200f2f8_leaf.c",
+      "source_sha256": "76eeffd067398cbdaf161238a6305d4db578a73091f14b19ade875099b003bbf",
+      "symbol": "pvz_0200f2f8_leaf"
+    },
+    {
+      "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
       "id": "arm9:02014e08:arm",
       "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
       "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
@@ -322,6 +332,16 @@
     },
     {
       "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
+      "id": "arm9:02017a18:arm",
+      "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
+      "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown. Verified with a reviewed local Metrowerks profile (locally supplied, not distributed).",
+      "source": "src/auto/arm9_02017a18_leaf.c",
+      "source_sha256": "020c80b2ff0550e65b1b3319c3532208c63feab8296b0b95096b96719f71910c",
+      "symbol": "pvz_02017a18_leaf"
+    },
+    {
+      "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
       "id": "arm9:02018b94:arm",
       "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
       "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
@@ -359,6 +379,16 @@
       "source": "src/auto/arm9_0201a994_leaf.c",
       "source_sha256": "21262fce7e86a19586a8832268ddb7d1383c8a6a62bba1cd05d53dc32db31b4c",
       "symbol": "pvz_0201a994_leaf"
+    },
+    {
+      "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
+      "id": "arm9:0201ade0:arm",
+      "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
+      "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown. Verified with a reviewed local Metrowerks profile (locally supplied, not distributed).",
+      "source": "src/auto/arm9_0201ade0_leaf.c",
+      "source_sha256": "18d348b9c82f9965aa390bec49f011e4392536afa2091fef8e2da3b45f8570ad",
+      "symbol": "pvz_0201ade0_leaf"
     },
     {
       "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
@@ -1672,6 +1702,16 @@
     },
     {
       "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
+      "id": "arm9:0205de40:arm",
+      "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
+      "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown. Verified with a reviewed local Metrowerks profile (locally supplied, not distributed).",
+      "source": "src/auto/arm9_0205de40_leaf.c",
+      "source_sha256": "8e1f49f4ce60301e87946017da58839b81e99cd2bc44e0d24bcea24fa9777d01",
+      "symbol": "pvz_0205de40_leaf"
+    },
+    {
+      "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
       "id": "arm9:020611d8:arm",
       "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
       "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
@@ -1929,6 +1969,16 @@
       "source": "src/auto/arm9_0208a350_leaf.c",
       "source_sha256": "cecc1416e2cd278f503c2723fc5273b99bf4e410d5761752b2d27f91759e3137",
       "symbol": "pvz_0208a350_leaf"
+    },
+    {
+      "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
+      "id": "arm9:0208e418:arm",
+      "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
+      "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown. Verified with a reviewed local Metrowerks profile (locally supplied, not distributed).",
+      "source": "src/auto/arm9_0208e418_leaf.c",
+      "source_sha256": "b893104b61c90992f91414ae8b20cf178184c1f1e885881c53c5edefdd63197c",
+      "symbol": "pvz_0208e418_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
