@@ -5,6 +5,7 @@
     "arm9:020014a8:arm",
     "arm9:02004398:arm",
     "arm9:020044dc:arm",
+    "arm9:02004564:arm",
     "arm9:02004c64:arm",
     "arm9:02004dc8:arm",
     "arm9:02004f30:arm",
@@ -71,6 +72,7 @@
     "arm9:02033140:arm",
     "arm9:02034620:arm",
     "arm9:0203761c:arm",
+    "arm9:02038484:arm",
     "arm9:02038f14:arm",
     "arm9:02038f48:arm",
     "arm9:02038f84:arm",
@@ -212,7 +214,7 @@
     "arm9:020c97c8:arm",
     "arm9:020cad28:arm"
   ],
-  "inputs_digest": "0249505d27cfa43714ebab392ccd29c3f58517fc379653269f0f3a34f4542aed",
+  "inputs_digest": "6d1dd1d06221f6f0ad6e2f184fc5b46d0da231ebe7cf67f7787f5c6c845d2d84",
   "original_sha1": "fcc5ec4cfd4fabcbb26dee847d9ed6803e9ad93b",
   "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
   "schema": 1

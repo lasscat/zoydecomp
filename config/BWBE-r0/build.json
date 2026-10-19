@@ -41,6 +41,16 @@
       "symbol": "pvz_020044dc_leaf"
     },
     {
+      "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
+      "id": "arm9:02004564:arm",
+      "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
+      "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown. Verified with a reviewed local Metrowerks profile (locally supplied, not distributed).",
+      "source": "src/auto/arm9_02004564_leaf.c",
+      "source_sha256": "48c01c2cc71a273a362e0aea6ccf4a6a05a7468f671c5ee43ff0dc2e4ba2cb55",
+      "symbol": "pvz_02004564_leaf"
+    },
+    {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:02004c64:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
@@ -699,6 +709,16 @@
       "source": "src/auto/arm9_0203761c_leaf.c",
       "source_sha256": "7fcbd7d45c038fc3d8b593b9eb704ede51a4e16cad00ab7ed0d698d149763059",
       "symbol": "pvz_0203761c_leaf"
+    },
+    {
+      "evidence": "functions-v4.json reviewed leaf; isolated unmasked comparison with the reviewed local MWCC profile; whole-module/full-ROM gate required",
+      "id": "arm9:02038484:arm",
+      "profile": "config/BWBE-r0/mwcc20-arm946-o2-interwork.json",
+      "profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown. Verified with a reviewed local Metrowerks profile (locally supplied, not distributed).",
+      "source": "src/auto/arm9_02038484_leaf.c",
+      "source_sha256": "e79cdf2839282d7c3acb50145473a8f4ad282c14c4672533ddb173958d09911f",
+      "symbol": "pvz_02038484_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -2101,7 +2121,7 @@
       "symbol": "pvz_020cad28_leaf"
     }
   ],
-  "inventory": "functions-v4.json",
+  "inventory": "functions-v5.json",
   "linker": "config/BWBE-r0/linker.json",
   "linker_sha256": "18f7202a599aa6010301cba52d7e17ad56de4dc47329b3dc4944b234a4d14048",
   "schema": 1
