@@ -104,6 +104,15 @@ continue connected-system work (the +0x5c predicate owner) and behavior tests. K
 matching attempts bounded and require new binary/ABI/compiler evidence before another
 shape sweep.
 
+Waves 7-10 deliberately widened the seed set to unconditional branch targets. That was
+a negative result: all 20 exact matches were mid-routine fragments (live-in
+callee-saved registers, backward branches before the extent, or bare `add sp`/`pop`
+epilogues), not function entries. None was banked or credited, and functions-v5 was
+restored to its 660 reviewed entries. Evidence is saved on the research branch at
+`semantic/evidence/wave7-10-fragments.json`. The bounded ARM9 leaf pool is effectively
+exhausted; further verified gains need overlay/Thumb support or call-aware (non-leaf)
+reconstruction, not more leaf sweeps.
+
 Read per-function guides and system records before large evidence archives. Save
 useful unresolved sources, tests and failed hypotheses. Publication must exclude
 private setup/history; the public repository begins with a clean reviewed snapshot.
