@@ -1,0 +1,15 @@
+# arm9:02025a2c:arm
+
+Research only; no semantic proof or B acceptance.
+
+Source: semantic/src/leaves/02025a2c.c
+SHA256: d3836c90a04247c5b59fecd6214090a0989cd0534ad752e29629e0f583625fe9
+Profile: semantic/profiles/clang23-arm946-o2.json
+Profile SHA256: 2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc
+Target size: 92; mode: arm
+Metrics: {"candidate_size": 68, "comparator": "unmasked-capstone5-instruction-boundaries-v1", "instruction_differences": null, "masked_fields": [], "near_threshold": {"instructions": 4, "resolved_bytes": 16}, "registers_normalized": false, "resolved_byte_differences": 80, "target_size": 92, "tier": "X"}
+Donor: {"adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."}
+Blocker: Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending
+Failed hypotheses: ["3 isolated hypotheses; best tier X. Fills a 0x10-byte entry at obj->entries+offset from obj->value/name/limit; if name[0] != 42 it stores value+extra, else it links the next slot and stores value[0]+extra there."]
+Next hypothesis: Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.
+Behavior evidence (separate): {"status": "not tested; isolated unmasked comparison only, no behavior evidence"}

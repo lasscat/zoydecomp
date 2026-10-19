@@ -9,7 +9,7 @@
   },
   "behavior_evidence": "Six functions, 1948 sampled calls: 41 seed calls, 655 connected seed-to-next/reseed calls (two twist reloads) and 313 per predicate for four connected +0x5c predicates; separate scoped evidence, no equivalence proof",
   "denominator_complete": false,
-  "functions_sha256": "bc08d67e732ed977957125e9c037847cb36fb859e7b18623efe0ba017071121b",
+  "functions_sha256": "fa2ef5af1707513b0e1421aaf5d3b1a8809eb7bfa13d0711fcee2b5c2dd3ecae",
   "inventory": "functions-v5.json",
   "original_sha1": "fcc5ec4cfd4fabcbb26dee847d9ed6803e9ad93b",
   "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
