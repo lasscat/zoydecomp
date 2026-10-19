@@ -61,6 +61,18 @@ class Arm:
         self.n, self.z, self.c = bool(result & 0x80000000), result == 0, a >= b
         self.v = bool((a ^ b) & (a ^ result) & 0x80000000)
 
+    def set_logic_flags(self, result):
+        # Logical/test result flags. The shifter carry out is not modelled; V is
+        # left unchanged, matching the subset needed by the checked functions.
+        result &= 0xffffffff
+        self.n, self.z = bool(result & 0x80000000), result == 0
+
+    def set_add_flags(self, a, b, result):
+        result &= 0xffffffff
+        self.n, self.z = bool(result & 0x80000000), result == 0
+        self.c = (a + b) > 0xffffffff
+        self.v = bool((~(a ^ b) & (a ^ result)) & 0x80000000)
+
     def operand2(self, instruction):
         if instruction & (1 << 25):
             value, rotate = instruction & 255, ((instruction >> 8) & 15) * 2
@@ -149,11 +161,14 @@ class Arm:
         elif instruction & 0x0c000000 == 0:
             opcode, dest, base = (instruction >> 21) & 15, (instruction >> 12) & 15, (instruction >> 16) & 15
             value, left = self.operand2(instruction), self.reg(base)
-            if opcode == 10:
+            sets_flags = bool(instruction & (1 << 20))
+            if opcode == 8:
+                self.set_logic_flags(left & value)
+            elif opcode == 10:
                 self.cmp(left, value)
+            elif opcode in (9, 11):
+                raise Unsupported('TEQ/CMN not implemented')
             else:
-                if instruction & (1 << 20):
-                    raise Unsupported('data-processing flags not implemented except CMP')
                 if opcode == 0:
                     result = left & value
                 elif opcode == 1:
@@ -162,10 +177,21 @@ class Arm:
                     result = left - value
                 elif opcode == 4:
                     result = left + value
+                elif opcode == 12:
+                    result = left | value
                 elif opcode == 13:
                     result = value
+                elif opcode == 14:
+                    result = left & (~value & 0xffffffff)
                 else:
                     raise Unsupported('unimplemented data-processing opcode')
+                if sets_flags:
+                    if opcode == 2:
+                        self.cmp(left, value)
+                    elif opcode == 4:
+                        self.set_add_flags(left, value, result)
+                    else:
+                        self.set_logic_flags(result)
                 if dest == 15:
                     raise Unsupported('computed PC write outside bounded subset')
                 self.r[dest] = result & 0xffffffff

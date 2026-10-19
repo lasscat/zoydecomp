@@ -21,11 +21,14 @@ Saved comparisons reuse unchanged source/profile/target/tool bindings. --recheck
 explicitly recompiles for validation. Compiler failures, stale inputs and unsupported
 relocations are errors, never matches. Per-function records are under guide/.
 
-Current saved comparisons: one locally exact draft, seven near and seven larger
-differences, including the seed. Separately, five drafts pass 1293 sampled behavior
-calls. Seed checks include four persistent-state transition sequences. Predicate
-checks use controlled field values; their owner and actual game transitions remain
-unknown. All-state, hardware and full-game equivalence are unproven. See BEHAVIOR.md.
+Current saved comparisons: one locally exact draft, seven near and eight larger
+differences, including the seed and next drafts. Separately, six drafts pass 1948
+sampled behavior calls: 41 seed, 655 connected seed-to-next/reseed calls with two
+twist reloads, and 1252 predicate calls. Seed/next checks include persistent-state
+transition sequences. Predicate checks use controlled field values; their owner and
+actual game transitions remain unknown. RNG ownership evidence shows per-object
+embedded states seeded from a system-time getter. All-state, hardware and full-game
+equivalence are unproven. See BEHAVIOR.md.
 
 Candidate metadata requires explicit behavior status, hashes, provenance, failed
 hypotheses and the next evidence-backed hypothesis. If testing is blocked, say why.

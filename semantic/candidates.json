@@ -3,7 +3,7 @@
     {
       "behavior_validation": {
         "report": "semantic/behavior/mt_seed.json",
-        "report_sha256": "5c54086bed92e779a7116721b88c23cb6c513029e3db797a9e4d825fecd949a1",
+        "report_sha256": "711bfeb2e732f13d5ca9cc44a02e27549490711df6834d464333b678ef5203db",
         "semantic_equivalence_proven": false,
         "status": "41 sampled calls across 36 scenarios including four reseed/rejection transition sequences; not an equivalence proof"
       },
@@ -26,6 +26,32 @@
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
       "source": "semantic/src/mt_seed.c",
       "source_sha256": "896546789b6503fbd3e153bc825cca3d14a15e15cb2b61296e141fe8e130b6ec"
+    },
+    {
+      "behavior_validation": {
+        "report": "semantic/behavior/mt_next.json",
+        "report_sha256": "e5414e13ab112e8e96fab5a74e1943fe43704e74ebbf0afafed8976c2679c639",
+        "semantic_equivalence_proven": false,
+        "status": "655 sampled calls across 6 seed/next/reseed scenarios including two twist reloads; not an equivalence proof"
+      },
+      "blocker": "Modern clang output is 276 bytes versus the 296-byte target; the refill/temper structure does not match the DS scheduling. Readable connected draft; no B acceptance.",
+      "donor_attribution": {
+        "adaptation": "independent DS binary reconstruction with attributed MT algorithm reference; DS keeps the raw 32-bit value while the reference masks to 31 bits in NextNoAssert; DS stores an explicit next-word address",
+        "commit": "325b2229a7225d73870bb69322eefcda3a45bf8d",
+        "function": "MTRand::NextNoAssert()",
+        "license": "MIT root plus file-specific Matsumoto/Nishimura notice; see semantic/NOTICE-MT.txt",
+        "path": "SexyAppFramework/MTRand.cpp",
+        "repository": "ruslan831/PlantsVsZombies-decompilation"
+      },
+      "failed_hypotheses": [
+        "Natural two-loop twist with an explicit 32-bit next-word address compiled to 276 bytes versus the 296-byte target; instruction scheduling differs, so the draft is X, not S/N."
+      ],
+      "function_id": "arm9:02034fc0:arm",
+      "next_hypothesis": "Map which of the eleven per-object seed owners first calls the reload path and whether any caller depends on the raw (unmasked) 32-bit value; keep the connected behavior transitions instead of chasing code shape.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/mt_next.c",
+      "source_sha256": "9af075f7def36e404be866e8a3e7c966f172669b85581430737949580cda63fb"
     },
     {
       "behavior_validation": {
@@ -84,7 +110,7 @@
     {
       "behavior_validation": {
         "report": "semantic/behavior/predicate-02068fd8.json",
-        "report_sha256": "6adc32d8b813a1eff3c6bec9b71aaba7fb5fc865e4c0b2092ed470096659f44f",
+        "report_sha256": "93c8ce00a0f989ed12ce93388068125edf4d9f1bd5d339c07a7203a9e20901da",
         "semantic_equivalence_proven": false,
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
@@ -114,7 +140,7 @@
     {
       "behavior_validation": {
         "report": "semantic/behavior/predicate-02068ff0.json",
-        "report_sha256": "8f46a5987cd0c364b6b3a62070539ae6bfb0070a0b86d29904146bf2f434040d",
+        "report_sha256": "6bd3398a7d8d446170a01ae24d97fe01ce4fc23e389f1df1f24fb6042c5e9a9f",
         "semantic_equivalence_proven": false,
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
@@ -144,7 +170,7 @@
     {
       "behavior_validation": {
         "report": "semantic/behavior/predicate-02069008.json",
-        "report_sha256": "3f86e353f3d9cd8ee5f7b45a46700f876021f4fdd6b7934ed34c61586e9523b9",
+        "report_sha256": "3f50f49bfe5a786d55e990e54d228d41c1d4e9e58e4f465c5e5e3c8f881a22dc",
         "semantic_equivalence_proven": false,
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
@@ -174,7 +200,7 @@
     {
       "behavior_validation": {
         "report": "semantic/behavior/predicate-0206901c.json",
-        "report_sha256": "ea25c9a0529bbcd94adb8590c98eb6f405a05c6004b83893b5f9af642fce4aa1",
+        "report_sha256": "ef14977586cd9ad9eecf904522dc808b5cb3817abd2292201d480e8260b02537",
         "semantic_equivalence_proven": false,
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },

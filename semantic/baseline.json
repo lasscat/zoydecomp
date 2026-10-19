@@ -7,7 +7,7 @@
     "/usr/lib/python3.14/site-packages/elftools/elf/elffile.py": "2615f5052b79d8f5065f5739920b5f29aafd4831e4915a8983030ebe1cc978cf",
     "/usr/lib/python3.14/site-packages/elftools/elf/relocation.py": "d9b4a0e47e5297bae9214f6ac40b9e2d779738777c8fe0cd1b31656cc605ed48"
   },
-  "behavior_evidence": "Five functions, 1293 sampled calls: 41 seed calls plus 313 per predicate for four connected +0x5c predicates; separate scoped evidence, no equivalence proof",
+  "behavior_evidence": "Six functions, 1948 sampled calls: 41 seed calls, 655 connected seed-to-next/reseed calls (two twist reloads) and 313 per predicate for four connected +0x5c predicates; separate scoped evidence, no equivalence proof",
   "denominator_complete": false,
   "functions_sha256": "ce2187c25b2681b16e8467de4948c2adbbc5185945e4ba5051b81aed32ded72c",
   "inventory": "functions-v2.json",

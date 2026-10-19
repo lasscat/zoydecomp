@@ -13,6 +13,19 @@ after initialization. Each call records before/after state-and-guard hashes.
 All executed cases are saved
 in behavior/mt_seed.json, bound to source, target, compiler and harness hashes.
 
+## Connected seed-to-next checks
+
+The mt_next draft (ARM9 0x02034fc0) passes 655 sampled calls across 6 scenarios:
+four seeds with a few outputs each, one seed followed by 626 consecutive calls that
+cross two complete twist reloads, and a reseed transition. The harness maps the state
+at its real ARM address (0x02280000) via MAP_FIXED_NOREPLACE so the +4 next-word
+cursor address is compared byte-for-byte, not relocated away. It compares the 32-bit
+return, the full 2504-byte state and 128 guard bytes, and the original preserved
+r4-r11/SP. The interpreter was extended with ARM TST/BIC/ORR and flag-setting SUBS for
+this function; focused synthetic tests cover them. See behavior/mt_next.json. This is
+sampled evidence, not an equivalence proof, and the draft is X for instruction
+similarity (276 versus 296 bytes).
+
 These are sampled behavior results, not an equivalence proof. The interpreter is
 not a general DS emulator: only its explicit ARM subset and mapped memory are
 supported. Unknown instructions/accesses, Thumb transitions, nested calls, byte
@@ -39,17 +52,19 @@ python3 -B -m unittest discover -s semantic/tests -v
 
 Reports are validated against the target, source/profile/compiler and current
 harness/interpreter hashes, case counts and explicit scope. Missing/stale reports
-never earn behavior coverage. Status reports five tested functions and 1293 sampled
-calls separately; the seed still has X instruction similarity and no B credit.
-These checks cover seed state transitions, not next/refill or gameplay transitions.
-No automatic conversion from sampled tests into S or strict acceptance exists.
+never earn behavior coverage. Status reports six tested functions and 1948 sampled
+calls separately; the seed and next drafts still have X instruction similarity and no
+B credit. These checks cover seed, next/refill and +0x5c predicate state transitions,
+not gameplay transitions. No automatic conversion from sampled tests into S or strict
+acceptance exists.
 
 ## Connected +0x5c predicate checks
 
 Four adjacent drafts at ARM9 0x02068fd8, 0x02068ff0, 0x02069008 and 0x0206901c
 are tested against original DS instructions. Each passes 313 calls: 299 unique
 values (0..35, signed/unsigned boundaries and 256 deterministic 32-bit values) plus
-14 ordered controlled field values. This is 1252 calls, plus 41 seed calls = 1293.
+14 ordered controlled field values. This is 1252 calls, plus 41 seed and 655
+next/reseed calls = 1948.
 Checks compare boolean returns, all 96 owner bytes plus 128 guard bytes, and original
 preserved registers/SP. The predicates must leave memory unchanged. No modeled
 gameplay transition is claimed: the +0x5c owner and valid states remain unknown.

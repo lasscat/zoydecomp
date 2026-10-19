@@ -1,6 +1,6 @@
 # Saved research progress
 
-Behavior tested (separate): 5 functions, 1293 sampled calls; not an S tier or proof.
+Behavior tested (separate): 6 functions, 1948 sampled calls; not an S tier or proof.
 
 Strict credit is an authoritative Track-A snapshot; drafts never earn B here. No equivalence proof. Comparator masks nothing.
 
@@ -12,11 +12,12 @@ Strict credit is an authoritative Track-A snapshot; drafts never earn B here. No
 | B union S code bytes / total | 0 / unknown | 112 / unknown |
 
 Delta: 9 functions, 112 bytes; code percentage points unavailable.
-Tiers: B 8, S 1, N 7, X 7. Inventory incomplete; never use ROM size as code size.
+Tiers: B 8, S 1, N 7, X 8. Inventory incomplete; never use ROM size as code size.
 
 | Function | Tier | Target / candidate bytes | Resolved differing bytes | Differing instructions |
 | --- | --- | --- | --- | --- |
 | arm9:02034f40:arm | X | 84 / 100 | 90 | incomparable size |
+| arm9:02034fc0:arm | X | 296 / 276 | 274 | incomparable size |
 | arm9:02065a48:arm | X | 28 / 32 | 26 | incomparable size |
 | arm9:0206645c:arm | X | 24 / 32 | 26 | incomparable size |
 | arm9:02068fd8:arm | N | 24 / 24 | 8 | 4 |

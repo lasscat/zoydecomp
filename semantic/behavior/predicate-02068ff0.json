@@ -2228,8 +2228,8 @@
     0
   ],
   "function_id": "arm9:02068ff0:arm",
-  "harness_sha256": "be5db9c690aa41103c78011f2319288d8f1313d6a870389bdcf7fafd6aace5ae",
-  "interpreter_sha256": "c067310172e2142b7b3e84fbfdef21efe3aedf7a91f67f0fbccd136dd40e2b89",
+  "harness_sha256": "82c3b952c1cee2ecd2603cfe9868374e6966119aa04587ece61922d82350bed3",
+  "interpreter_sha256": "8e6932118b8c80b59eee28217907c35ebde78bd0b09ed45d7aff6054f25546d8",
   "method": "original ROM instructions in restricted ARM interpreter versus host-compiled saved C",
   "native_compiler": "/usr/bin/clang",
   "native_compiler_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",

@@ -166,6 +166,52 @@ class LogicAndBankBoundaries(unittest.TestCase):
         with self.assertRaisesRegex(GateError, 'explicit behavior status'):
             validate_candidate(item)
 
+    def test_new_data_processing_ops(self):
+        # Synthetic ARM only: mov r0,#5; subs r0,r0,#1; tst r0,#4; bic r1,r0,#1; orr r2,r1,#8.
+        code = bytes.fromhex('0500a0e3' '010050e2' '041000e3' '0110c0e3' '082081e3')
+        cpu = Arm([Region(0x1000, bytearray(code), False)])
+        cpu.r[15] = 0x1000
+        cpu.step()                       # mov r0, #5
+        self.assertEqual(cpu.r[0], 5)
+        cpu.step()                       # subs r0, r0, #1 -> 4 with C=1
+        self.assertEqual(cpu.r[0], 4)
+        self.assertFalse(cpu.z)
+        self.assertTrue(cpu.c)
+        cpu.step()                       # tst r0, #4 -> nonzero, Z clear
+        self.assertFalse(cpu.z)
+        self.assertEqual(cpu.r[0], 4)
+        cpu.step()                       # bic r1, r0, #1 -> 4
+        self.assertEqual(cpu.r[1], 4)
+        cpu.step()                       # orr r2, r1, #8 -> 12
+        self.assertEqual(cpu.r[2], 12)
+
+    def test_wrong_mt_next_return_is_detected(self):
+        import ctypes as C
+        import subprocess
+        from behavior_check import compare_next_sequence, fixed_state
+        # Synthetic ARM only: mov r0,#42; bx lr. No original game bytes.
+        target = bytes.fromhex('2a00a0e31eff2fe1')
+        base = 0x02281000
+        size = 64 + 2504 + 64
+        initial = bytearray((i * 13 + 7) & 255 for i in range(size))
+        initial[64:68] = (5).to_bytes(4, 'little')
+        initial[68:72] = (base + 8).to_bytes(4, 'little')
+        initial = bytes(initial)
+        profile = read_json(ROOT / 'semantic/profiles/clang23-arm946-o2.json')
+        self.assertEqual(sha256(Path(profile['executable']).read_bytes()), profile['executable_sha256'])
+        with tempfile.TemporaryDirectory() as td:
+            work = Path(td)
+            (work / 'bad.c').write_text('unsigned int pvz_mt_next(void *state) {(void)state; return 0u;}\n')
+            subprocess.run([profile['executable'], '-shared', '-fPIC', '-O2', '-std=c11',
+                            str(work / 'bad.c'), '-o', str(work / 'bad.so')], check=True)
+            library = C.CDLL(str(work / 'bad.so'))
+            bad = library.pvz_mt_next
+            bad.argtypes, bad.restype = [C.c_void_p], C.c_uint32
+            buffer = fixed_state(base, size)
+            with self.assertRaisesRegex(GateError, 'return discrepancy'):
+                compare_next_sequence(base, buffer, {'address': 0}, b'', {'address': 0x02000000},
+                                      target, None, bad, [('next',)], initial, 0)
+
 
 if __name__ == '__main__':
     unittest.main()
