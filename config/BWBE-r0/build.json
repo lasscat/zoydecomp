@@ -79,6 +79,16 @@
       "source": "src/auto/arm9_0206ee84_get_0x16c.c",
       "source_sha256": "2c5b9390880e6493428fe2afbc99be0d694caa7e28109053b7f8b35a7f58723e",
       "symbol": "pvz_0206ee84_get_field_0x16c_from_second_argument"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:020b780c:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Record identity and field meanings unknown.",
+      "source": "src/auto/arm9_020b780c_clear_unknown_words.c",
+      "source_sha256": "decb69814f9f6d359963b78c428ebb2c89c15975801c98d0265fab1a067d3a5a",
+      "symbol": "pvz_020b780c_clear_unknown_words"
     }
   ],
   "inventory": "functions-v2.json",
