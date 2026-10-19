@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "status": "Ideas only; no sources compiled or behavior tested",
+  "leads": [
+    {
+      "function": "arm9:0203e8fc:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33810684,
+        "mode": "arm",
+        "size": 16,
+        "code_size": 16,
+        "target_sha256": "1dab8a48dffde161412470277ac5dd54c775d9740b85e17752d0b8b9eff8c0ce"
+      }
+    },
+    {
+      "function": "arm9:0203e90c:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33810700,
+        "mode": "arm",
+        "size": 20,
+        "code_size": 20,
+        "target_sha256": "501afdee35318d051fd4194a1bd29528648a2da0056478d92cde1df1061ea551"
+      }
+    },
+    {
+      "function": "arm9:0203e9fc:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33810940,
+        "mode": "arm",
+        "size": 20,
+        "code_size": 20,
+        "target_sha256": "902cc48313946b67bf4e3bc7daa7d005ec561999ab724e21e52b8d9f248f2003"
+      }
+    },
+    {
+      "function": "arm9:0203ea34:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33810996,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "bde07f8ec0bf1bf2c7dbcfb123f58121aeccbc3a1564869cac9cb06b06a81c5c"
+      }
+    },
+    {
+      "function": "arm9:0203efa0:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33812384,
+        "mode": "arm",
+        "size": 20,
+        "code_size": 20,
+        "target_sha256": "0ec16b35ac1f38ad91b98296f47f9a63905a5d8221039d7df89ab03f84d510b1"
+      }
+    },
+    {
+      "function": "arm9:020469c4:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33843652,
+        "mode": "arm",
+        "size": 20,
+        "code_size": 20,
+        "target_sha256": "5c9bc75990442e4f6b0f914129f76e7a7a759830d8b46db991bba9a80a5caf88"
+      }
+    },
+    {
+      "function": "arm9:02046db4:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33844660,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "bde07f8ec0bf1bf2c7dbcfb123f58121aeccbc3a1564869cac9cb06b06a81c5c"
+      }
+    },
+    {
+      "function": "arm9:02047b58:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33848152,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "a960d8ec0f1f747c918b523ea76d2361b475eea99bcce90991d385b394ba6b47"
+      }
+    },
+    {
+      "function": "arm9:02047dd8:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33848792,
+        "mode": "arm",
+        "size": 32,
+        "code_size": 32,
+        "target_sha256": "5995d332c627ac5c4e7e5941ccfc1bec22070425edb583f3862ca827ff58fd9e"
+      }
+    },
+    {
+      "function": "arm9:02048024:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33849380,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "d9a1c23030315114018eb009aa5f779559e6b44c78b5d62fd00bd15cac26efa0"
+      }
+    },
+    {
+      "function": "arm9:02054abc:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33901244,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "d8a8f93fab8403cdc67de6251af745f79ac228ac92c62ae7734df6c2c61acfab"
+      }
+    },
+    {
+      "function": "arm9:02055c38:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33905720,
+        "mode": "arm",
+        "size": 20,
+        "code_size": 20,
+        "target_sha256": "4f715e0e695901e49ff503128bbe512ac33fdfa1e1f6641d17022d5b8470cae4"
+      }
+    },
+    {
+      "function": "arm9:02062454:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33956948,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "ccb0e1d9147b95c4106cd078b2c63bef9018c7bdbf172bc17a4099d2a944fcf5"
+      }
+    },
+    {
+      "function": "arm9:02065a10:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33970704,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "f46573375e2d44034101a99ba03109d04fdfa7eadf764040aca2b15712ff49cf"
+      }
+    }
+  ]
+}

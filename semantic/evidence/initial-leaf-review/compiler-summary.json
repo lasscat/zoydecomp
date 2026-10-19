@@ -1,0 +1,118 @@
+{
+  "limitations": "No original-compiler identification or MWCC game match. Use tools/compiler.py with legal local inputs for new probes.",
+  "profiles": [
+    {
+      "banner": "Metrowerks C/C++ for Embedded ARM; Version 1.0 build 2; Runtime Built: May 13 2005 10:13:56",
+      "compiler_sha256": "87b4f748825ded418355e4ae35e032ce8b27c083cc4c60598ce2a75d346e4399",
+      "name": "mwccarm12",
+      "options": [
+        "-c",
+        "-proc",
+        "arm946e",
+        "-O2",
+        "-fp",
+        "soft",
+        "-little",
+        "-nothumb",
+        "-o",
+        "{output}",
+        "{source}"
+      ],
+      "runner_sha256": {
+        "qemu_i386": "3cf00b1b4bc0a0dd90044690bee094355376b5d19588a23cc1b9e66028adbcfc",
+        "wibo": "8a8490a6172aa4f0f6ddcadb144ca96f51da6e90e6648ce9adaf4f6babb6e00b"
+      },
+      "source_sha256": "896546789b6503fbd3e153bc825cca3d14a15e15cb2b61296e141fe8e130b6ec",
+      "target": "arm9:02034f40:arm"
+    },
+    {
+      "banner": "Metrowerks C/C++ for Embedded ARM; Version 1.0 build 2; Runtime Built: Mar 30 2006 14:39:17",
+      "compiler_sha256": "7150fa4fe4cb6db6867ac530ec1a0754f6ca4df92868d963a7875196f9222880",
+      "name": "mwccarm20",
+      "options": [
+        "-c",
+        "-proc",
+        "arm946e",
+        "-O2",
+        "-fp",
+        "soft",
+        "-little",
+        "-nothumb",
+        "-o",
+        "{output}",
+        "{source}"
+      ],
+      "runner_sha256": {
+        "qemu_i386": "3cf00b1b4bc0a0dd90044690bee094355376b5d19588a23cc1b9e66028adbcfc",
+        "wibo": "8a8490a6172aa4f0f6ddcadb144ca96f51da6e90e6648ce9adaf4f6babb6e00b"
+      },
+      "source_sha256": "896546789b6503fbd3e153bc825cca3d14a15e15cb2b61296e141fe8e130b6ec",
+      "target": "arm9:02034f40:arm"
+    },
+    {
+      "banner": "Freescale C/C++ for Embedded ARM; Version 1.0 build 5; Runtime Built: Nov 3 2008 15:35:10",
+      "compiler_sha256": "fb50f5082ba4a2176e370f5c584dde1e066b7a5a12a795a8ebdb368e18773013",
+      "name": "mwccarmdsi11",
+      "options": [
+        "-c",
+        "-proc",
+        "arm946e",
+        "-O2",
+        "-fp",
+        "soft",
+        "-little",
+        "-nothumb",
+        "-o",
+        "{output}",
+        "{source}"
+      ],
+      "runner_sha256": {
+        "qemu_i386": "3cf00b1b4bc0a0dd90044690bee094355376b5d19588a23cc1b9e66028adbcfc",
+        "wibo": "8a8490a6172aa4f0f6ddcadb144ca96f51da6e90e6648ce9adaf4f6babb6e00b"
+      },
+      "source_sha256": "896546789b6503fbd3e153bc825cca3d14a15e15cb2b61296e141fe8e130b6ec",
+      "target": "arm9:02034f40:arm"
+    }
+  ],
+  "purpose": "Historical exploratory compiler evidence, not active build configuration",
+  "schema": 1,
+  "seed_comparison": {
+    "rom_sha1": "fcc5ec4cfd4fabcbb26dee847d9ed6803e9ad93b",
+    "rows": [
+      {
+        "byte_differences": 89,
+        "compiler": "mwccarm12",
+        "function_sha256": "d97b33f070faae4b05ea703e0636c3a253e3d9b4d9d7fe7bf6aaf20874f17566",
+        "function_size": 100,
+        "function_symbol": "pvz_mt_seed",
+        "object_sha256": "65ab248a4a89e01b1d1a386b78e862dc81572768700cf620914f63d3e027ebab",
+        "target_code_size": 80,
+        "target_size": 84,
+        "text_size": 100
+      },
+      {
+        "byte_differences": 76,
+        "compiler": "mwccarm20",
+        "function_sha256": "fc76b8b4dcc216c62e8b0ab87359ee6f7c2843a3c69da7cc0c7a44ae6c1e2ef2",
+        "function_size": 92,
+        "function_symbol": "pvz_mt_seed",
+        "object_sha256": "921c9cc44d8ea577d021fde7ed9775c5ef263172807b87d239846ca06ef06774",
+        "target_code_size": 80,
+        "target_size": 84,
+        "text_size": 92
+      },
+      {
+        "byte_differences": 76,
+        "compiler": "mwccarmdsi11",
+        "function_sha256": "fc76b8b4dcc216c62e8b0ab87359ee6f7c2843a3c69da7cc0c7a44ae6c1e2ef2",
+        "function_size": 92,
+        "function_symbol": "pvz_mt_seed",
+        "object_sha256": "1b6246aaf9d1dc2b05bb05a9417db833001a090dc4f9bf4f88c5e844886bae20",
+        "target_code_size": 80,
+        "target_size": 84,
+        "text_size": 92
+      }
+    ],
+    "target_sha256": "9b82473ae704e9556865f78ecf79a08f0ea884ba25dbb348f95138564e4c89b0"
+  }
+}

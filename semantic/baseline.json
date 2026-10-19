@@ -1,0 +1,31 @@
+{
+  "accepted_B_code_bytes": 84,
+  "accepted_B_functions": 8,
+  "analysis_inputs": {
+    "/usr/lib/libcapstone.so.5": "682d8f1d8dbad76b2748ca55f2e5ddbbdf23ab61f5c5933aecfbbf07a3e546b9",
+    "/usr/lib/python3.14/site-packages/elftools/__init__.py": "d8a071e9e68576ceab6ed200c5f4718119f7d61ee0fae337a867b095f1d5c5d9",
+    "/usr/lib/python3.14/site-packages/elftools/elf/elffile.py": "2615f5052b79d8f5065f5739920b5f29aafd4831e4915a8983030ebe1cc978cf",
+    "/usr/lib/python3.14/site-packages/elftools/elf/relocation.py": "d9b4a0e47e5297bae9214f6ac40b9e2d779738777c8fe0cd1b31656cc605ed48"
+  },
+  "behavior_evidence": "Five functions, 1293 sampled calls: 41 seed calls plus 313 per predicate for four connected +0x5c predicates; separate scoped evidence, no equivalence proof",
+  "denominator_complete": false,
+  "functions_sha256": "ce2187c25b2681b16e8467de4948c2adbbc5185945e4ba5051b81aed32ded72c",
+  "inventory": "functions-v2.json",
+  "original_sha1": "fcc5ec4cfd4fabcbb26dee847d9ed6803e9ad93b",
+  "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
+  "schema": 1,
+  "strict_baseline_commit": "6444bb5ace4b5f7925a45c90699383190d1be751",
+  "strict_credit_commit": "6444bb5ace4b5f7925a45c90699383190d1be751",
+  "strict_tool_snapshot_commit": "6444bb5ace4b5f7925a45c90699383190d1be751",
+  "tool_hashes": {
+    "semantic/tools/semantic_progress.py": "77d94bf8fcafb7e19cd1f2f974f9f3b733d5744334667fb509fa6bff74f2a15d",
+    "tools/compiler.py": "abfdc5a5cdd0155e2803ac9f78e7f40387c2ccaf22ff468ca267e0772ca103e5",
+    "tools/disasm.py": "6f06252f5fbb45bafbdd58498f3a4e6747b569b9d43053f7b16ded58191b3195",
+    "tools/link_backend.py": "6d5b48c929d0a849edaa181900d88014300d5f105d9ed5446160bf5b30ff1a40",
+    "tools/mwcc_support.py": "8defceb7328c5c6295bfdce043853f3d200f400419e9aa93ccf071818d293f9c",
+    "tools/probe_compiler.py": "e9d25aad87b5a8d0d352d619d7d226f6e809c8a6d6e481e5efc241c3d449dadb",
+    "tools/progress_support.py": "8b634c34f7ea183eda0c13310e15c93ea922642ac318ab4f2f9e6773bb5c8f25",
+    "tools/project.py": "d402de4704a68991e3b38e7273e46f7f45c9f7259e6b6d075f7cc094993e7654",
+    "tools/wip_support.py": "bf10e360e1abf8d46480bdb957782c4097c8486716d157a47eb0354abdd6c162"
+  }
+}

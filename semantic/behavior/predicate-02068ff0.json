@@ -1,0 +1,2265 @@
+{
+  "assumptions": [
+    "aligned accessible 96-byte owner; 32-bit unsigned int",
+    "single-threaded stable field at +0x5c; no MMIO or interrupts",
+    "restricted ARM model implements exercised instructions correctly"
+  ],
+  "cases": [
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 0
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 1,
+      "value": 4
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 1,
+      "value": 5
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 1,
+      "value": 6
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 7
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 8
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 9
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 10
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 11
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 12
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 13
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 14
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 15
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 16
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 17
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 18
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 19
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 20
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 21
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 22
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 23
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 24
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 25
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 26
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 27
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 28
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 29
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 30
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 31
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 32
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 33
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 34
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 35
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 8243553
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 21582161
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 43164322
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 56502930
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 78085091
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 99667252
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 113005860
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 134588021
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 147926629
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 156170182
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 169508790
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 191090951
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 204429559
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 226011720
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 247593881
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 260932489
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 282514650
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 295853258
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 317435419
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 339017580
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 352356188
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 373938349
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 387276957
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 395520510
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 408859118
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 430441279
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 443779887
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 465362048
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 486944209
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 500282817
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 521864978
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 535203586
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 543447139
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 556785747
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 578367908
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 591706516
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 613288677
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 634870838
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 648209446
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 669791607
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 683130215
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 704712376
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 726294537
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 739633145
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 761215306
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 774553914
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 782797467
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 796136075
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 817718236
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 831056844
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 852639005
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 874221166
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 887559774
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 909141935
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 922480543
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 930724096
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 944062704
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 965644865
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 978983473
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1000565634
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1013904242
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1022147795
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1035486403
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1057068564
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1070407172
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1091989333
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1113571494
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1126910102
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1148492263
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1161830871
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1170074424
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1183413032
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1204995193
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1218333801
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1239915962
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1261498123
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1274836731
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1296418892
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1309757500
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1331339661
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1352921822
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1366260430
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1387842591
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1401181199
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1409424752
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1422763360
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1444345521
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1457684129
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1479266290
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1500848451
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1514187059
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1535769220
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1549107828
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1557351381
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1570689989
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1592272150
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1605610758
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1627192919
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1648775080
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1662113688
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1683695849
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1697034457
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1718616618
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1740198779
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1753537387
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1775119548
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1788458156
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1796701709
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1810040317
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1831622478
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1844961086
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1866543247
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1888125408
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1901464016
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1923046177
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1936384785
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1957966946
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1979549107
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1992887715
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2014469876
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2027808484
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2036052037
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2049390645
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2070972806
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2084311414
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2105893575
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2127475736
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2140814344
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2147483647
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2147483648
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2147483649
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2162396505
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2175735113
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2183978666
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2197317274
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2218899435
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2232238043
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2253820204
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2275402365
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2288740973
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2310323134
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2323661742
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2345243903
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2366826064
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2380164672
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2401746833
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2415085441
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2423328994
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2436667602
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2458249763
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2471588371
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2493170532
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2514752693
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2528091301
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2549673462
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2563012070
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2571255623
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2584594231
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2606176392
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2619515000
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2641097161
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2654435769
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2662679322
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2676017930
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2697600091
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2710938699
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2732520860
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2754103021
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2767441629
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2789023790
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2802362398
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2810605951
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2823944559
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2845526720
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2858865328
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2880447489
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2902029650
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2915368258
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2936950419
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2950289027
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2971871188
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 2993453349
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3006791957
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3028374118
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3041712726
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3049956279
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3063294887
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3084877048
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3098215656
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3119797817
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3141379978
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3154718586
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3176300747
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3189639355
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3197882908
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3211221516
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3232803677
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3246142285
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3267724446
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3289306607
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3302645215
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3324227376
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3337565984
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3359148145
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3380730306
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3394068914
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3415651075
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3428989683
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3437233236
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3450571844
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3472154005
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3485492613
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3507074774
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3528656935
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3541995543
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3563577704
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3576916312
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3598498473
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3620080634
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3633419242
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3655001403
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3668340011
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3676583564
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3689922172
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3711504333
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3724842941
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3746425102
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3768007263
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3781345871
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3802928032
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3816266640
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3824510193
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3837848801
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3859430962
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3872769570
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3894351731
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3915933892
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3929272500
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3950854661
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3964193269
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3985775430
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4007357591
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4020696199
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4042278360
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4055616968
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4063860521
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4077199129
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4098781290
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4112119898
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4133702059
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4155284220
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4168622828
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4190204989
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4203543597
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4211787150
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4225125758
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4246707919
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4260046527
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4281628688
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4294967292
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4294967293
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4294967294
+    },
+    {
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4294967295
+    },
+    {
+      "controlled_field_transition_step": 0,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 0
+    },
+    {
+      "controlled_field_transition_step": 1,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 1
+    },
+    {
+      "controlled_field_transition_step": 2,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 3
+    },
+    {
+      "controlled_field_transition_step": 3,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 1,
+      "value": 4
+    },
+    {
+      "controlled_field_transition_step": 4,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 1,
+      "value": 6
+    },
+    {
+      "controlled_field_transition_step": 5,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 7
+    },
+    {
+      "controlled_field_transition_step": 6,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 24
+    },
+    {
+      "controlled_field_transition_step": 7,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 25
+    },
+    {
+      "controlled_field_transition_step": 8,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 28
+    },
+    {
+      "controlled_field_transition_step": 9,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 29
+    },
+    {
+      "controlled_field_transition_step": 10,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 30
+    },
+    {
+      "controlled_field_transition_step": 11,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 31
+    },
+    {
+      "controlled_field_transition_step": 12,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 4294967295
+    },
+    {
+      "controlled_field_transition_step": 13,
+      "full_state_and_guard_bytes_equal": true,
+      "original_instructions": 6,
+      "owner_and_guards_unchanged": true,
+      "return_value": 0,
+      "value": 0
+    }
+  ],
+  "controlled_field_value_sequence": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7,
+    24,
+    25,
+    28,
+    29,
+    30,
+    31,
+    4294967295,
+    0
+  ],
+  "function_id": "arm9:02068ff0:arm",
+  "harness_sha256": "be5db9c690aa41103c78011f2319288d8f1313d6a870389bdcf7fafd6aace5ae",
+  "interpreter_sha256": "c067310172e2142b7b3e84fbfdef21efe3aedf7a91f67f0fbccd136dd40e2b89",
+  "method": "original ROM instructions in restricted ARM interpreter versus host-compiled saved C",
+  "native_compiler": "/usr/bin/clang",
+  "native_compiler_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+  "native_flags": [
+    "-shared",
+    "-fPIC",
+    "-O2",
+    "-std=c11",
+    "-ffreestanding",
+    "-fno-builtin"
+  ],
+  "observations": [
+    "boolean return",
+    "entire 96-byte owner and 128 guard bytes unchanged",
+    "original preserved r4-r11 and SP"
+  ],
+  "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
+  "passed_cases": 313,
+  "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+  "schema": 1,
+  "semantic_equivalence_proven": false,
+  "source_sha256": "433a5e23dfe367d047b43a9c2187b82c01a3106f08825feb5148a79dd0482fbe",
+  "target_sha256": "9af44bbe46217843451471342b0530d8c6ab59f9706af678185192088eaf3ab8",
+  "transition_scenarios": 0,
+  "unknowns": [
+    "owner identity, valid gameplay states and writes to +0x5c",
+    "all other field values and memory states",
+    "actual gameplay transitions",
+    "real DS hardware, timing, native versus ARM ABI and whole-game effects",
+    "volatile access reflects a source hypothesis, not established source qualification",
+    "formal equivalence"
+  ]
+}

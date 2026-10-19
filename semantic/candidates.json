@@ -1,0 +1,420 @@
+{
+  "candidates": [
+    {
+      "behavior_validation": {
+        "report": "semantic/behavior/mt_seed.json",
+        "report_sha256": "5c54086bed92e779a7116721b88c23cb6c513029e3db797a9e4d825fecd949a1",
+        "semantic_equivalence_proven": false,
+        "status": "41 sampled calls across 36 scenarios including four reseed/rejection transition sequences; not an equivalence proof"
+      },
+      "blocker": "original compiler unknown; modern clang output has size discrepancy",
+      "donor_attribution": {
+        "adaptation": "independent DS binary reconstruction with attributed MT algorithm reference; DS rejects zero seed",
+        "commit": "325b2229a7225d73870bb69322eefcda3a45bf8d",
+        "function": "MTRand::SRand(unsigned long)",
+        "license": "MIT root plus file-specific Matsumoto/Nishimura notice; see semantic/NOTICE-MT.txt",
+        "path": "SexyAppFramework/MTRand.cpp",
+        "repository": "ruslan831/PlantsVsZombies-decompilation"
+      },
+      "failed_hypotheses": [
+        "clang23 ARM946 O2 natural recurrence produced 100 bytes vs target 84; not matching",
+        "pointer-shaped unused next field replaced by explicit 32-bit address field to permit host behavior tests; ARM32 layout is unchanged"
+      ],
+      "function_id": "arm9:02034f40:arm",
+      "next_hypothesis": "Map seed-to-next state ownership and refill transitions from DS callers before further compiler matching; preserve unknown pointer/remaining semantics.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/mt_seed.c",
+      "source_sha256": "896546789b6503fbd3e153bc825cca3d14a15e15cb2b61296e141fe8e130b6ec"
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured X; see preserved worker evidence."
+      ],
+      "function_id": "arm9:02065a48:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "44c81573602d5980634de34c31e0cf14dc17f4ca0f8a5f74cb43dd2162d9fdf7"
+        }
+      ],
+      "next_hypothesis": "Treat the input as a raw owner base plus a named unknown word at +0x5ae4 and express the test as explicit inclusive bounds (2 <= value && value <= 3), preserving volatile access.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/02065a48.c",
+      "source_sha256": "44c81573602d5980634de34c31e0cf14dc17f4ca0f8a5f74cb43dd2162d9fdf7",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured X; see preserved worker evidence."
+      ],
+      "function_id": "arm9:0206645c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "73571b7301c1bd37bbadae270de09cd7b94f65af7db78b3c175489b8aff82550"
+        }
+      ],
+      "next_hypothesis": "Keep the three stores but express each as an explicit byte-offset lvalue from the original owner pointer, to test whether the compiler preserves the observed +0x5000 base adjustment and final offsets.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/0206645c.c",
+      "source_sha256": "73571b7301c1bd37bbadae270de09cd7b94f65af7db78b3c175489b8aff82550",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "report": "semantic/behavior/predicate-02068fd8.json",
+        "report_sha256": "6adc32d8b813a1eff3c6bec9b71aaba7fb5fc865e4c0b2092ed470096659f44f",
+        "semantic_equivalence_proven": false,
+        "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured N; see preserved worker evidence."
+      ],
+      "function_id": "arm9:02068fd8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "f7941e58192d6ddfe4de9b4df9f226a64c6499cca8793fb9415c5dbb5b581bec"
+        }
+      ],
+      "next_hypothesis": "Replace unsigned delta comparison with explicit inclusive bounds (1 <= value && value <= 3) over the same unknown word at +0x5c.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/02068fd8.c",
+      "source_sha256": "f7941e58192d6ddfe4de9b4df9f226a64c6499cca8793fb9415c5dbb5b581bec",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "report": "semantic/behavior/predicate-02068ff0.json",
+        "report_sha256": "8f46a5987cd0c364b6b3a62070539ae6bfb0070a0b86d29904146bf2f434040d",
+        "semantic_equivalence_proven": false,
+        "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured N; see preserved worker evidence."
+      ],
+      "function_id": "arm9:02068ff0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "433a5e23dfe367d047b43a9c2187b82c01a3106f08825feb5148a79dd0482fbe"
+        }
+      ],
+      "next_hypothesis": "Replace unsigned delta comparison with explicit inclusive bounds (4 <= value && value <= 6) over the same unknown word at +0x5c.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/02068ff0.c",
+      "source_sha256": "433a5e23dfe367d047b43a9c2187b82c01a3106f08825feb5148a79dd0482fbe",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "report": "semantic/behavior/predicate-02069008.json",
+        "report_sha256": "3f86e353f3d9cd8ee5f7b45a46700f876021f4fdd6b7934ed34c61586e9523b9",
+        "semantic_equivalence_proven": false,
+        "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured N; see preserved worker evidence."
+      ],
+      "function_id": "arm9:02069008:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "c16e01d303e1239b176b7e4671f74606e3ae042f83e3beb473e82e7c402a3254"
+        }
+      ],
+      "next_hypothesis": "Try a signed integer view of the same +0x5c word for equality with 30, since the caller treats the result as a predicate but signedness is not established.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/02069008.c",
+      "source_sha256": "c16e01d303e1239b176b7e4671f74606e3ae042f83e3beb473e82e7c402a3254",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "report": "semantic/behavior/predicate-0206901c.json",
+        "report_sha256": "ea25c9a0529bbcd94adb8590c98eb6f405a05c6004b83893b5f9af642fce4aa1",
+        "semantic_equivalence_proven": false,
+        "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured N; see preserved worker evidence."
+      ],
+      "function_id": "arm9:0206901c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "cfa0a951084a4d4e9c316e98030d4659d549f6f8d26e670911f61564a35f298b"
+        }
+      ],
+      "next_hypothesis": "Replace unsigned delta comparison with explicit inclusive bounds (25 <= value && value <= 28) over the same unknown word at +0x5c.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/0206901c.c",
+      "source_sha256": "cfa0a951084a4d4e9c316e98030d4659d549f6f8d26e670911f61564a35f298b",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured X; see preserved worker evidence."
+      ],
+      "function_id": "arm9:0206f360:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "4769afb665c289346a92a10bd05b3e0682d189dff943c94b97c95d1ad0089caf"
+        }
+      ],
+      "next_hypothesis": "Express the nested-pointer test with explicit early returns (null inner pointer, then signed nested word <= 0) to test source control-flow shape while keeping both unknown offsets volatile.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/0206f360.c",
+      "source_sha256": "4769afb665c289346a92a10bd05b3e0682d189dff943c94b97c95d1ad0089caf",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured X; see preserved worker evidence."
+      ],
+      "function_id": "arm9:02073310:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "cd1d2bdc054a0eca43a5e0805c290cd29a94ecef7c2bc6112d593f0780b09824"
+        }
+      ],
+      "next_hypothesis": "Use a switch over the unknown +0x24 word with cases 1, 9, and 41 returning one, to test whether source switch lowering produces the observed ordered compares.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/02073310.c",
+      "source_sha256": "cd1d2bdc054a0eca43a5e0805c290cd29a94ecef7c2bc6112d593f0780b09824",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured N; see preserved worker evidence."
+      ],
+      "function_id": "arm9:0207afe0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "2a2d8ec0488ad7e167d305f4271bb6ca0641f19607b2b91d5d4ace42f1911aa0"
+        }
+      ],
+      "next_hypothesis": "Correct the signature to a single unsigned scalar argument; the target compares r0 directly, while the first draft incorrectly introduced an unused first parameter and moved the value to r1.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/0207afe0.c",
+      "source_sha256": "2a2d8ec0488ad7e167d305f4271bb6ca0641f19607b2b91d5d4ace42f1911aa0",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured X; see preserved worker evidence."
+      ],
+      "function_id": "arm9:0207aff0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "e095d3d70bbdaf87887be056d6d980c70ba5cb879d2b3e31b71bffdb69133e1b"
+        }
+      ],
+      "next_hypothesis": "Use a switch over the unknown +0x24 word with cases 21 and 46 returning one, preserving the unknown owner/field interpretation.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/0207aff0.c",
+      "source_sha256": "e095d3d70bbdaf87887be056d6d980c70ba5cb879d2b3e31b71bffdb69133e1b",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured N; see preserved worker evidence."
+      ],
+      "function_id": "arm9:0208c168:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "3a6bbcfd65fdbe1a85ea2cbc2aa3ba6a5779fb73d6c09f9664429cff70340299"
+        }
+      ],
+      "next_hypothesis": "Replace unsigned delta comparison with explicit inclusive bounds (73 <= value && value <= 74) over the same unknown word at +0x28.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/0208c168.c",
+      "source_sha256": "3a6bbcfd65fdbe1a85ea2cbc2aa3ba6a5779fb73d6c09f9664429cff70340299",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured X; see preserved worker evidence."
+      ],
+      "function_id": "arm9:02097ca8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "897aff67c1789c6cd52f439f7c9a27492c02746aa794670c6d4a394f410ce142"
+        }
+      ],
+      "next_hypothesis": "Express the result as (byte >> (bit_index & 7)) & 1, rather than a mask-and-compare boolean, while retaining the observed byte offset calculation.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/02097ca8.c",
+      "source_sha256": "897aff67c1789c6cd52f439f7c9a27492c02746aa794670c6d4a394f410ce142",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; not selected for strict integration",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [],
+      "function_id": "arm9:020b780c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "3b5780efd18c7a3d3b4f19a393391cdbc09c40f26b37796e656d123604728d3e"
+        }
+      ],
+      "next_hypothesis": "Investigate owner/lifetime and surrounding DS callers; add behavior tests before strict selection.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/020b780c.c",
+      "source_sha256": "3b5780efd18c7a3d3b4f19a393391cdbc09c40f26b37796e656d123604728d3e",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; observed source shape is not behavioral validation"
+      },
+      "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings. Measured N; see preserved worker evidence."
+      ],
+      "function_id": "arm9:020b8c60:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "722dc5bb4c853801b8bbf2498cfb84e97bc68a6870e06aa7aff9f1170e2055d4"
+        }
+      ],
+      "next_hypothesis": "Use a signed int view for the extracted nibble comparison, because the target uses the signed GE condition; retain -1 for values at least four.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/initial-leaves/020b8c60.c",
+      "source_sha256": "722dc5bb4c853801b8bbf2498cfb84e97bc68a6870e06aa7aff9f1170e2055d4",
+      "uncertainties": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established."
+    }
+  ],
+  "schema": 1
+}

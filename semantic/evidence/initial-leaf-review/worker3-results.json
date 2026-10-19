@@ -1,0 +1,1087 @@
+{
+  "schema": 1,
+  "lane": "worker_3",
+  "assignment_source": "semantic/evidence/initial-leaf-review/reviewed-42.json",
+  "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+  "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+  "compiler_executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+  "rom_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
+  "max_hypotheses_per_function": 2,
+  "functions": [
+    {
+      "id": "arm9:02065a48:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33970760,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "f46573375e2d44034101a99ba03109d04fdfa7eadf764040aca2b15712ff49cf"
+      },
+      "source": "semantic/src/initial-leaves/02065a48.c",
+      "source_sha256": "44c81573602d5980634de34c31e0cf14dc17f4ca0f8a5f74cb43dd2162d9fdf7",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "X",
+            "metrics": {
+              "target_size": 28,
+              "candidate_size": 32,
+              "resolved_byte_differences": 26,
+              "instruction_differences": null,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "X"
+            },
+            "output_sha256": "8f99af1d39a056334de4083d4e7f462ea7e4a47cadbfedd41bc775f0fc3fd243",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Treat the input as a raw owner base plus a named unknown word at +0x5ae4 and express the test as explicit inclusive bounds (2 <= value && value <= 3), preserving volatile access.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Treat the input as a raw owner base plus a named unknown word at +0x5ae4 and express the test as explicit inclusive bounds (2 <= value && value <= 3), preserving volatile access.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 7-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x02057544",
+          "0x020627e8",
+          "0x02065f20",
+          "0x020661a0",
+          "0x020662c0",
+          "0x02078348",
+          "0x02078400"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x02057544",
+            "start": "0x020574f8",
+            "cfg_instruction_count": 47,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0xae4"
+        ]
+      }
+    },
+    {
+      "id": "arm9:0206645c:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33973340,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "4415dea8ea963cb07507668935e1c834683ad72eb4d575db5e3bed512f138f50"
+      },
+      "source": "semantic/src/initial-leaves/0206645c.c",
+      "source_sha256": "73571b7301c1bd37bbadae270de09cd7b94f65af7db78b3c175489b8aff82550",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "X",
+            "metrics": {
+              "target_size": 24,
+              "candidate_size": 32,
+              "resolved_byte_differences": 26,
+              "instruction_differences": null,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "X"
+            },
+            "output_sha256": "2689223723d09e53629e31caefa8bfe7855190120bab540575f3ed574da8b4d4",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Keep the three stores but express each as an explicit byte-offset lvalue from the original owner pointer, to test whether the compiler preserves the observed +0x5000 base adjustment and final offsets.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Keep the three stores but express each as an explicit byte-offset lvalue from the original owner pointer, to test whether the compiler preserves the observed +0x5000 base adjustment and final offsets.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "write fixed-offset field(s); owner and field names unknown",
+        "boundary_evidence": "ARM BL immediate target; 6-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x0207453c",
+          "0x02076330",
+          "0x02076354",
+          "0x02079464",
+          "0x02079534",
+          "0x02079574",
+          "0x0207f664",
+          "0x0207f800",
+          "0x0207fed0",
+          "0x0208038c",
+          "0x0208b91c",
+          "0x0208bc4c",
+          "0x0208ca00",
+          "0x0208ce00",
+          "0x0208da54",
+          "0x02099d88",
+          "0x0209a2d4"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x0208ce00",
+            "start": "0x0208cd9c",
+            "cfg_instruction_count": 30,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0xad8",
+          "r0, #0xadc",
+          "r0, #0xae0"
+        ]
+      }
+    },
+    {
+      "id": "arm9:02068fd8:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33984472,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "f78684aa7fdc21df8c41c8468fa2c3db59b046b72247bf455b78ab58742dc547"
+      },
+      "source": "semantic/src/initial-leaves/02068fd8.c",
+      "source_sha256": "f7941e58192d6ddfe4de9b4df9f226a64c6499cca8793fb9415c5dbb5b581bec",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "N",
+            "metrics": {
+              "target_size": 24,
+              "candidate_size": 24,
+              "resolved_byte_differences": 8,
+              "instruction_differences": 4,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "N"
+            },
+            "output_sha256": "8285281389402c7c8c97bcec95e7a7f5d5c8785c6ecd94b28c41f7c10ce92af8",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Replace unsigned delta comparison with explicit inclusive bounds (1 <= value && value <= 3) over the same unknown word at +0x5c.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Replace unsigned delta comparison with explicit inclusive bounds (1 <= value && value <= 3) over the same unknown word at +0x5c.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 6-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x0206549c",
+          "0x02069090",
+          "0x0206952c",
+          "0x0206956c",
+          "0x02069784",
+          "0x02069b50",
+          "0x02069d4c",
+          "0x0206a678",
+          "0x0206ad7c"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x0206549c",
+            "start": "0x02065474",
+            "cfg_instruction_count": 24,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x5c"
+        ]
+      }
+    },
+    {
+      "id": "arm9:02068ff0:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33984496,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "9af44bbe46217843451471342b0530d8c6ab59f9706af678185192088eaf3ab8"
+      },
+      "source": "semantic/src/initial-leaves/02068ff0.c",
+      "source_sha256": "433a5e23dfe367d047b43a9c2187b82c01a3106f08825feb5148a79dd0482fbe",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "N",
+            "metrics": {
+              "target_size": 24,
+              "candidate_size": 24,
+              "resolved_byte_differences": 8,
+              "instruction_differences": 4,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "N"
+            },
+            "output_sha256": "85b9dfd18562e4facf5828d1983c2ce8f7d9938a55f0ba52bdb14af1079e9404",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Replace unsigned delta comparison with explicit inclusive bounds (4 <= value && value <= 6) over the same unknown word at +0x5c.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Replace unsigned delta comparison with explicit inclusive bounds (4 <= value && value <= 6) over the same unknown word at +0x5c.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 6-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x0205d29c",
+          "0x0205d574",
+          "0x02065434",
+          "0x02068554",
+          "0x02069044",
+          "0x0206973c",
+          "0x02069d2c",
+          "0x0206a694",
+          "0x0206ada0",
+          "0x0206b054",
+          "0x0206b0b4"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x02065434",
+            "start": "0x02065408",
+            "cfg_instruction_count": 27,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x5c"
+        ]
+      }
+    },
+    {
+      "id": "arm9:02069008:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33984520,
+        "mode": "arm",
+        "size": 20,
+        "code_size": 20,
+        "target_sha256": "f072da42a02918270cefa6f857cd8126d4538cbc32b85671a1a1d326f46a9f17"
+      },
+      "source": "semantic/src/initial-leaves/02069008.c",
+      "source_sha256": "c16e01d303e1239b176b7e4671f74606e3ae042f83e3beb473e82e7c402a3254",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "N",
+            "metrics": {
+              "target_size": 20,
+              "candidate_size": 20,
+              "resolved_byte_differences": 9,
+              "instruction_differences": 3,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "N"
+            },
+            "output_sha256": "65d04927032f99aea6d5e77523924aea360acb274fd6ddd992eee414122b64ea",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Try a signed integer view of the same +0x5c word for equality with 30, since the caller treats the result as a predicate but signedness is not established.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Try a signed integer view of the same +0x5c word for equality with 30, since the caller treats the result as a predicate but signedness is not established.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 5-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x0205d24c",
+          "0x0205d540",
+          "0x020653d4",
+          "0x02068610",
+          "0x0206906c",
+          "0x0206976c",
+          "0x02069d3c",
+          "0x0206b0d4"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x020653d4",
+            "start": "0x020653ac",
+            "cfg_instruction_count": 23,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x5c"
+        ]
+      }
+    },
+    {
+      "id": "arm9:0206901c:arm",
+      "target": {
+        "module": "arm9",
+        "address": 33984540,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "c51f7624d188f799166b79fc9aa4b60e51b5f805512bb0a401025ffedd7acb1d"
+      },
+      "source": "semantic/src/initial-leaves/0206901c.c",
+      "source_sha256": "cfa0a951084a4d4e9c316e98030d4659d549f6f8d26e670911f61564a35f298b",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "N",
+            "metrics": {
+              "target_size": 24,
+              "candidate_size": 24,
+              "resolved_byte_differences": 8,
+              "instruction_differences": 4,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "N"
+            },
+            "output_sha256": "92d40214081940ae22e80e5035b4e8bb686b10815a41f85af56c65e71beec759",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Replace unsigned delta comparison with explicit inclusive bounds (25 <= value && value <= 28) over the same unknown word at +0x5c.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Replace unsigned delta comparison with explicit inclusive bounds (25 <= value && value <= 28) over the same unknown word at +0x5c.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 6-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x02068b78",
+          "0x020694f4",
+          "0x02069684",
+          "0x020697e0",
+          "0x02069a7c",
+          "0x0206a128",
+          "0x0206a6b8",
+          "0x0206af7c",
+          "0x0206afd4",
+          "0x0206b084",
+          "0x0206b2d0",
+          "0x0206b60c"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x0206b2d0",
+            "start": "0x0206b2a4",
+            "cfg_instruction_count": 173,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x5c"
+        ]
+      }
+    },
+    {
+      "id": "arm9:0206f360:arm",
+      "target": {
+        "module": "arm9",
+        "address": 34009952,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "2e0c8b72c3103e92a58c2756bd3096ae88327623b894ddf7c5e30dfe81003ea3"
+      },
+      "source": "semantic/src/initial-leaves/0206f360.c",
+      "source_sha256": "4769afb665c289346a92a10bd05b3e0682d189dff943c94b97c95d1ad0089caf",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "X",
+            "metrics": {
+              "target_size": 28,
+              "candidate_size": 36,
+              "resolved_byte_differences": 24,
+              "instruction_differences": null,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "X"
+            },
+            "output_sha256": "aabc7057986c07104bf7b260ddfcee0f6482eecbb77ee8e25a6d8b540c815701",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Express the nested-pointer test with explicit early returns (null inner pointer, then signed nested word <= 0) to test source control-flow shape while keeping both unknown offsets volatile.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Express the nested-pointer test with explicit early returns (null inner pointer, then signed nested word <= 0) to test source control-flow shape while keeping both unknown offsets volatile.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 7-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x020556cc",
+          "0x02058268",
+          "0x02067894",
+          "0x0206d614",
+          "0x0206d670",
+          "0x0206d6f8",
+          "0x0206d790",
+          "0x0206db08",
+          "0x0206dc84",
+          "0x0206ebe4",
+          "0x0206ec0c",
+          "0x0206f10c",
+          "0x0206f14c",
+          "0x0206f394",
+          "0x0206f3d4",
+          "0x0207030c",
+          "0x02070330",
+          "0x020704b0",
+          "0x02070e44",
+          "0x02070eb8",
+          "0x02070f4c",
+          "0x02070f9c",
+          "0x02088464",
+          "0x02088478",
+          "0x0208b618",
+          "0x0208f4a4",
+          "0x0208fdf8",
+          "0x020905e8",
+          "0x02096000",
+          "0x020a98ac",
+          "0x020a9a58",
+          "0x020a9a88",
+          "0x020a9ab8",
+          "0x020a9ae8",
+          "0x020a9b18",
+          "0x020a9b58",
+          "0x020aaa8c",
+          "0x020aadf4",
+          "0x020aafb8",
+          "0x020b0fa4"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x0207030c",
+            "start": "0x020702d0",
+            "cfg_instruction_count": 46,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x688",
+          "r0, #0xc"
+        ]
+      }
+    },
+    {
+      "id": "arm9:02073310:arm",
+      "target": {
+        "module": "arm9",
+        "address": 34026256,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "99d4f8606d0de925fe1c29fa5f1fd9d93eb4c734407757d4df0097e86d1d7d65"
+      },
+      "source": "semantic/src/initial-leaves/02073310.c",
+      "source_sha256": "cd1d2bdc054a0eca43a5e0805c290cd29a94ecef7c2bc6112d593f0780b09824",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "X",
+            "metrics": {
+              "target_size": 28,
+              "candidate_size": 32,
+              "resolved_byte_differences": 22,
+              "instruction_differences": null,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "X"
+            },
+            "output_sha256": "a3ec6b2c7c5654c04f5e4afe1e5177d915a2740e764dc962132195ac8be39707",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Use a switch over the unknown +0x24 word with cases 1, 9, and 41 returning one, to test whether source switch lowering produces the observed ordered compares.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Use a switch over the unknown +0x24 word with cases 1, 9, and 41 returning one, to test whether source switch lowering produces the observed ordered compares.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 7-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x02059270",
+          "0x02071424",
+          "0x02071690",
+          "0x0207cfa8",
+          "0x0207d078"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x02059270",
+            "start": "0x02059258",
+            "cfg_instruction_count": 15,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x24"
+        ]
+      }
+    },
+    {
+      "id": "arm9:0207afe0:arm",
+      "target": {
+        "module": "arm9",
+        "address": 34058208,
+        "mode": "arm",
+        "size": 16,
+        "code_size": 16,
+        "target_sha256": "3b8664db82020c12c192a3548b28c0cae514430f27835ef99ea4adf00404b683"
+      },
+      "source": "semantic/src/initial-leaves/0207afe0.c",
+      "source_sha256": "2a2d8ec0488ad7e167d305f4271bb6ca0641f19607b2b91d5d4ace42f1911aa0",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "N",
+            "metrics": {
+              "target_size": 16,
+              "candidate_size": 16,
+              "resolved_byte_differences": 9,
+              "instruction_differences": 3,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "N"
+            },
+            "output_sha256": "27c18b3232aef29145db0bb1459eda32f16d9f604c443aa30b965437825850ca",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Correct the signature to a single unsigned scalar argument; the target compares r0 directly, while the first draft incorrectly introduced an unused first parameter and moved the value to r1.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Correct the signature to a single unsigned scalar argument; the target compares r0 directly, while the first draft incorrectly introduced an unused first parameter and moved the value to r1.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a boolean/integer from comparisons; semantic labels unknown",
+        "boundary_evidence": "ARM BL immediate target; 4-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x02058cc0",
+          "0x020590b8",
+          "0x0205a5b0",
+          "0x0205a648",
+          "0x0205a6fc",
+          "0x0205c5e8",
+          "0x02065d7c",
+          "0x02071c8c",
+          "0x02078190",
+          "0x02078438",
+          "0x02078a64",
+          "0x0207a6e0",
+          "0x020910cc"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x02065d7c",
+            "start": "0x02065d68",
+            "cfg_instruction_count": 28,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": []
+      }
+    },
+    {
+      "id": "arm9:0207aff0:arm",
+      "target": {
+        "module": "arm9",
+        "address": 34058224,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "c6885babba4f17faf156840dd4ff07fbb3111307ceed3cd23e5751842f6d742c"
+      },
+      "source": "semantic/src/initial-leaves/0207aff0.c",
+      "source_sha256": "e095d3d70bbdaf87887be056d6d980c70ba5cb879d2b3e31b71bffdb69133e1b",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "X",
+            "metrics": {
+              "target_size": 24,
+              "candidate_size": 36,
+              "resolved_byte_differences": 30,
+              "instruction_differences": null,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "X"
+            },
+            "output_sha256": "fb9d74dc696f63601d7cc2d7c18881292519804f1dd746872fa46cd35c01f0ac",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Use a switch over the unknown +0x24 word with cases 21 and 46 returning one, preserving the unknown owner/field interpretation.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Use a switch over the unknown +0x24 word with cases 21 and 46 returning one, preserving the unknown owner/field interpretation.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 6-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x0207e130",
+          "0x02086b68",
+          "0x02086ed8",
+          "0x02087338"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x0207e130",
+            "start": "0x0207e0d4",
+            "cfg_instruction_count": 44,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x24"
+        ]
+      }
+    },
+    {
+      "id": "arm9:0208c168:arm",
+      "target": {
+        "module": "arm9",
+        "address": 34128232,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "ff148cd74f67f6036a9a4cd134224cc1782a51f392cbb0203d2b4721e1f74bf0"
+      },
+      "source": "semantic/src/initial-leaves/0208c168.c",
+      "source_sha256": "3a6bbcfd65fdbe1a85ea2cbc2aa3ba6a5779fb73d6c09f9664429cff70340299",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "N",
+            "metrics": {
+              "target_size": 24,
+              "candidate_size": 24,
+              "resolved_byte_differences": 8,
+              "instruction_differences": 4,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "N"
+            },
+            "output_sha256": "241b93951e76b6d70c41ba818ec2eb5a5727630b45650c8c7b17a3ca4651274e",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Replace unsigned delta comparison with explicit inclusive bounds (73 <= value && value <= 74) over the same unknown word at +0x28.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Replace unsigned delta comparison with explicit inclusive bounds (73 <= value && value <= 74) over the same unknown word at +0x28.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 6-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x02079258",
+          "0x0207a4b8",
+          "0x02082f00",
+          "0x02086df0",
+          "0x02087a8c",
+          "0x02087c14",
+          "0x02089b58",
+          "0x02089e5c",
+          "0x0208a0e0",
+          "0x0208a108",
+          "0x0208a9bc",
+          "0x0208ac5c",
+          "0x0208af50"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x02086df0",
+            "start": "0x02086d94",
+            "cfg_instruction_count": 63,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x28"
+        ]
+      }
+    },
+    {
+      "id": "arm9:02097ca8:arm",
+      "target": {
+        "module": "arm9",
+        "address": 34176168,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "20b02776e0c31db60478eafb659492d58f12ede0f4219feec961d175e8fcc7bb"
+      },
+      "source": "semantic/src/initial-leaves/02097ca8.c",
+      "source_sha256": "897aff67c1789c6cd52f439f7c9a27492c02746aa794670c6d4a394f410ce142",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "X",
+            "metrics": {
+              "target_size": 28,
+              "candidate_size": 24,
+              "resolved_byte_differences": 23,
+              "instruction_differences": null,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "X"
+            },
+            "output_sha256": "2fdf072e08af67ca4ae9af59714b7b1b0afe086a05db2da4f3927922a9fdbb65",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Express the result as (byte >> (bit_index & 7)) & 1, rather than a mask-and-compare boolean, while retaining the observed byte offset calculation.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Express the result as (byte >> (bit_index & 7)) & 1, rather than a mask-and-compare boolean, while retaining the observed byte offset calculation.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 7-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x0206d81c",
+          "0x0206f2fc",
+          "0x0206f314",
+          "0x0206f32c",
+          "0x02070410",
+          "0x020711f8"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x02070410",
+            "start": "0x020703c8",
+            "cfg_instruction_count": 39,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0, #0x5ef"
+        ]
+      }
+    },
+    {
+      "id": "arm9:020b780c:arm",
+      "target": {
+        "module": "arm9",
+        "address": 34306060,
+        "mode": "arm",
+        "size": 28,
+        "code_size": 28,
+        "target_sha256": "78c462ed85958c85a12a7f578efc6dcd4e3e67b366d57c796714e68494dee537"
+      },
+      "source": "semantic/src/initial-leaves/020b780c.c",
+      "source_sha256": "3b5780efd18c7a3d3b4f19a393391cdbc09c40f26b37796e656d123604728d3e",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "S",
+            "metrics": {
+              "target_size": 28,
+              "candidate_size": 28,
+              "resolved_byte_differences": 0,
+              "instruction_differences": 0,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "S"
+            },
+            "output_sha256": "78c462ed85958c85a12a7f578efc6dcd4e3e67b366d57c796714e68494dee537",
+            "compiler_diagnostics": ""
+          }
+        }
+      ],
+      "next_hypothesis": null,
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "write fixed-offset field(s); owner and field names unknown",
+        "boundary_evidence": "ARM BL immediate target; 7-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x020b6fa8",
+          "0x020b719c"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x020b719c",
+            "start": "0x020b7124",
+            "cfg_instruction_count": 80,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0",
+          "r0, #4",
+          "r0, #8",
+          "r0, #0xc",
+          "r0, #0x10"
+        ]
+      }
+    },
+    {
+      "id": "arm9:020b8c60:arm",
+      "target": {
+        "module": "arm9",
+        "address": 34311264,
+        "mode": "arm",
+        "size": 24,
+        "code_size": 24,
+        "target_sha256": "142e60814f99643685418b7b34a9dc37422c0f520e3dd6697bda3bf43a434238"
+      },
+      "source": "semantic/src/initial-leaves/020b8c60.c",
+      "source_sha256": "722dc5bb4c853801b8bbf2498cfb84e97bc68a6870e06aa7aff9f1170e2055d4",
+      "hypotheses": [
+        {
+          "number": 1,
+          "statement": "Model only the observed operation with raw opaque pointer/word offsets; preserve unknown owner and field meanings.",
+          "result": {
+            "tier": "N",
+            "metrics": {
+              "target_size": 24,
+              "candidate_size": 24,
+              "resolved_byte_differences": 7,
+              "instruction_differences": 3,
+              "masked_fields": [],
+              "registers_normalized": false,
+              "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+              "near_threshold": {
+                "instructions": 4,
+                "resolved_bytes": 16
+              },
+              "tier": "N"
+            },
+            "output_sha256": "7335992f8060503e1f700b6369f7511f45c6c646bcfa51f01e13397561f41a0d",
+            "compiler_diagnostics": ""
+          }
+        },
+        {
+          "number": 2,
+          "statement": "Use a signed int view for the extracted nibble comparison, because the target uses the signed GE condition; retain -1 for values at least four.",
+          "result": "not run; broad wave stopped below 20% exact yield"
+        }
+      ],
+      "next_hypothesis": "Use a signed int view for the extracted nibble comparison, because the target uses the signed GE condition; retain -1 for values at least four.",
+      "donor_paths": [],
+      "license": "No donor evidence used.",
+      "behavior_evidence": {
+        "source_shape_candidate": "derive a scalar/boolean result from field or flag bits; source names unknown",
+        "boundary_evidence": "ARM BL immediate target; 6-instruction linear extent ending BX LR; no other control transfer or PC-relative operand; no incoming BL target into interior",
+        "caller_addresses": [
+          "0x020b880c",
+          "0x020b8ca8"
+        ],
+        "reviewed_caller_contexts": [
+          {
+            "call_site": "0x020b8ca8",
+            "start": "0x020b8c98",
+            "cfg_instruction_count": 37,
+            "shape": "prologue-rooted local CFG reaches call site and normal return(s)"
+          }
+        ],
+        "uncertainty": "Caller context is a bounded prologue-rooted CFG, but full ARM9 code/data ownership and semantic names are not established.",
+        "field_or_memory_operands": [
+          "r0"
+        ]
+      }
+    }
+  ],
+  "connected_groups": [
+    {
+      "ids": [
+        "arm9:02068fd8:arm",
+        "arm9:02068ff0:arm",
+        "arm9:02069008:arm",
+        "arm9:0206901c:arm"
+      ],
+      "evidence": "Four adjacent reviewed leaf blocks read the same opaque owner offset +0x5c and return range/equality predicates. Bounded caller contexts around 0x020653ac-0x02065474 and 0x02065408-0x02065470 use these results as conditional gates in one repeated local flow. This supports treating them as a related predicate family; field semantics remain unknown."
+    },
+    {
+      "ids": [
+        "arm9:020b780c:arm"
+      ],
+      "evidence": "A bounded caller at 0x020b719c passes temporary record storage and source storage to this five-word writer; target performs four zero stores and one value store. Record field meanings remain unknown. This is the sole exact local S result."
+    },
+    {
+      "ids": [
+        "arm9:02097ca8:arm"
+      ],
+      "evidence": "Bounded caller at 0x02070410 supplies a bit index in a repeated 0..2 loop and an owner-derived base; target reads a byte and tests one indexed bit. This is evidence for a bit-map predicate, not proof of the map owner or flag meaning."
+    }
+  ],
+  "wave_decision": {
+    "first_hypotheses_run": 14,
+    "exact_local_S": 1,
+    "yield": "1/14 (7.14%); below the provisional 20% review threshold",
+    "next_step": "Stop this broad draft wave. Keep best drafts and proposed distinct source-shape hypotheses for later evidence-led review; do not run unchanged or systematic flag/source permutations.",
+    "credit": "All S labels here are local Track-B probe evidence only; no strict acceptance credit."
+  }
+}
