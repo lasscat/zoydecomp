@@ -14,15 +14,15 @@ unknown.
 
 | Metric | Baseline | Current | Share |
 | --- | --- | --- | --- |
-| Verified functions / bounded inventory | 0 / unknown | 133 / 561 | 23.7% (exact, scoped) |
-| Verified code bytes / bounded inventory | 0 / unknown | 2072 / 15732 | 13.2% (exact, scoped) |
-| Estimated whole-game functions | 0 | 133 / ~6542 | ~2.0% (provisional) |
-| Estimated whole-game code bytes | 0 | 2072 / ~1755784 | ~0.12% (provisional) |
+| Verified functions / bounded inventory | 0 / unknown | 210 / 561 | 37.4% (exact, scoped) |
+| Verified code bytes / bounded inventory | 0 / unknown | 4092 / 15732 | 26.0% (exact, scoped) |
+| Estimated whole-game functions | 0 | 210 / ~6542 | ~3.2% (provisional) |
+| Estimated whole-game code bytes | 0 | 4092 / ~1755784 | ~0.23% (provisional) |
 | Frozen whole-game coverage | unknown | unknown | not available |
 
 The **scoped share** is exact for the 561 reviewed *bounded* ARM9 entries. The **global estimate** is a discovery census (method and caveats in config/BWBE-r0/universe-estimate.json); it is provisional, not a frozen whole-game denominator, and the inventory is still incomplete.
 
-Since the baseline: 133 additional verified functions (2072 code bytes).
+Since the baseline: 210 additional verified functions (4092 code bytes).
 
 
 <!-- progress:end -->

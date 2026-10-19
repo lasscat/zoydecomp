@@ -2,15 +2,21 @@
 from pathlib import Path
 import subprocess
 import tempfile
-from project import GateError, sha256
+from project import GateError, ROOT, sha256
 
 MEASURED_FLAGS = ('-proc', 'arm946e', '-O2', '-fp', 'soft', '-little')
+INTERWORKING_FLAGS = MEASURED_FLAGS + ('-nothumb', '-interworking')
 
 
 def command(profile):
     result = []
+
+    def resolve(name):
+        path = Path(name)
+        return path if path.is_absolute() else ROOT / path
+
     for record in profile.get('runner_chain', []):
-        path = Path(record['executable'])
+        path = resolve(record['executable'])
         if sha256(path.read_bytes()) != record['executable_sha256']:
             raise GateError('compiler runner identity changed')
         if record.get('version_args'):
@@ -19,7 +25,7 @@ def command(profile):
             if check.returncode or check.stdout.strip() != record['version']:
                 raise GateError('compiler runner version changed/failed')
         result.append(str(path))
-    executable = Path(profile['executable'])
+    executable = resolve(profile['executable'])
     if sha256(executable.read_bytes()) != profile['executable_sha256']:
         raise GateError('compiler identity changed')
     return result + [str(executable)]
@@ -27,7 +33,7 @@ def command(profile):
 
 def compile_bytes(raw, profile):
     flags = tuple(profile['flags'])
-    if flags not in (MEASURED_FLAGS + ('-nothumb',), MEASURED_FLAGS + ('-thumb',)):
+    if flags not in (MEASURED_FLAGS + ('-nothumb',), MEASURED_FLAGS + ('-thumb',), INTERWORKING_FLAGS):
         raise GateError('unreviewed MWCC flags; measured ARM/Thumb profile required')
     argv = command(profile)
     version = subprocess.run([*argv, '-version'], capture_output=True, text=True, timeout=20)
