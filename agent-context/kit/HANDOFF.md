@@ -107,7 +107,7 @@ shape sweep.
 Waves 7-10 deliberately widened the seed set to unconditional branch targets. That was
 essentially a negative result: most extents were mid-routine fragments (live-in
 callee-saved registers, backward branches before the extent, or bare `add sp`/`pop`
-epilogues). Twenty-two blocks were byte-exact, but they are indistinguishable by
+epilogues). Twenty-five blocks were byte-exact, but they are indistinguishable by
 inspection from compiler-shared return/case blocks reached by several tail branches
 (for example shared return-0 and return-0x7fffffff tails); independent lane reviews
 disagreed on whether any is a real function. None was credited or added to the strict

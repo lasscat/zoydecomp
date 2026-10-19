@@ -5,13 +5,13 @@
   "seed_policy": "arm9 unconditional B/BL branch targets plus push{...,lr} prologues",
   "candidate_count": 300,
   "tier_counts": {
-    "S": 22,
-    "N": 48,
-    "X": 200,
+    "S": 25,
+    "N": 49,
+    "X": 223,
     "blocked": 30
   },
-  "lanes_reporting": 11,
-  "exact_block_count": 22,
+  "lanes_reporting": 12,
+  "exact_block_count": 25,
   "exact_blocks": [
     {
       "id": "arm9:020016d4:arm",
@@ -23,6 +23,10 @@
     },
     {
       "id": "arm9:020016f8:arm",
+      "branch_refs": 1
+    },
+    {
+      "id": "arm9:02001700:arm",
       "branch_refs": 1
     },
     {
@@ -66,6 +70,10 @@
       "branch_refs": 1
     },
     {
+      "id": "arm9:02001868:arm",
+      "branch_refs": 1
+    },
+    {
       "id": "arm9:02018834:arm",
       "branch_refs": 2
     },
@@ -92,6 +100,10 @@
     {
       "id": "arm9:020ff118:arm",
       "branch_refs": 2
+    },
+    {
+      "id": "arm9:020ff354:arm",
+      "branch_refs": 1
     },
     {
       "id": "arm9:020ff368:arm",
