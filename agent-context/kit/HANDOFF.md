@@ -105,13 +105,16 @@ matching attempts bounded and require new binary/ABI/compiler evidence before an
 shape sweep.
 
 Waves 7-10 deliberately widened the seed set to unconditional branch targets. That was
-a negative result: all 20 exact matches were mid-routine fragments (live-in
+essentially a negative result: most extents were mid-routine fragments (live-in
 callee-saved registers, backward branches before the extent, or bare `add sp`/`pop`
-epilogues), not function entries. None was banked or credited, and functions-v5 was
-restored to its 660 reviewed entries. Evidence is saved on the research branch at
-`semantic/evidence/wave7-10-fragments.json`. The bounded ARM9 leaf pool is effectively
-exhausted; further verified gains need overlay/Thumb support or call-aware (non-leaf)
-reconstruction, not more leaf sweeps.
+epilogues). Twenty-two blocks were byte-exact, but they are indistinguishable by
+inspection from compiler-shared return/case blocks reached by several tail branches
+(for example shared return-0 and return-0x7fffffff tails); independent lane reviews
+disagreed on whether any is a real function. None was credited or added to the strict
+inventory, and functions-v5 remains the 660-entry reviewed set. Evidence is saved on the
+research branch at `semantic/evidence/wave7-10-fragments.json`. The bounded ARM9 leaf
+pool is effectively exhausted; further verified gains need overlay/Thumb support,
+call-aware reconstruction, or a reviewed tail-call/shared-block classifier.
 
 Read per-function guides and system records before large evidence archives. Save
 useful unresolved sources, tests and failed hypotheses. Publication must exclude
