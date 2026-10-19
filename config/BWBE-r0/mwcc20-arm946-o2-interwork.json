@@ -1,0 +1,29 @@
+{
+  "driver": "mwcc-standalone-c-v1",
+  "evidence": "Reviewed exploratory MWCC profile. ARM946E-S, -O2, soft float, ARM mode, with -interworking so returns use bx lr as the DS original does. Not proof of the original compiler; per-file full-ROM verification is still required.",
+  "executable": "tools/bin/mwccarm/2.0/base/mwccarm.exe",
+  "executable_sha256": "7150fa4fe4cb6db6867ac530ec1a0754f6ca4df92868d963a7875196f9222880",
+  "flags": [
+    "-proc",
+    "arm946e",
+    "-O2",
+    "-fp",
+    "soft",
+    "-little",
+    "-nothumb",
+    "-interworking"
+  ],
+  "help_sha256": "a2e37059ee309b53b8c120e8692560682cc085d19e239701d29300fdf3ce83bd",
+  "name": "mwcc20-arm946-o2-interwork-local",
+  "provenance": "Exploratory installed compiler; option names checked against help; measured flags require per-function evidence. Not original-compiler identification. The compiler binary is a local ignored input under tools/bin/.",
+  "runner_chain": [
+    {
+      "executable": "tools/bin/wibo",
+      "executable_sha256": "8a8490a6172aa4f0f6ddcadb144ca96f51da6e90e6648ce9adaf4f6babb6e00b"
+    }
+  ],
+  "schema": 1,
+  "symbol_values": {},
+  "version": "Metrowerks C/C++ for Embedded ARM.\nCopyright (c)1998-2002 Freescale Semiconductor, Inc.\nAll rights reserved.\nVersion 1.0 build 2\nRuntime Built: Mar 30 2006 14:39:17",
+  "version_stderr": ""
+}

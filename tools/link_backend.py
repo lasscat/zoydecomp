@@ -100,10 +100,10 @@ def inspect_object(data, fn, symbol):
             continue
         for sym in table.iter_symbols():
             if sym['st_shndx'] == text_index:
-                if sym['st_info']['type'] == 'STT_FUNC':
-                    functions.append(sym)
                 if sym.name.startswith(('$a', '$t', '$d')):
                     mappings.append(sym)
+                elif sym['st_info']['type'] == 'STT_FUNC':
+                    functions.append(sym)
             if sym['st_info']['type'] == 'STT_OBJECT' and sym['st_shndx'] != 'SHN_UNDEF':
                 raise GateError('extra compiler-generated object requires reviewed data layout')
     if (len(functions) != 1 or functions[0].name != symbol
