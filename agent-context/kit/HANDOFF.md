@@ -11,16 +11,17 @@ SHA256: `43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad`.
 
 | Evidence | Baseline | Current |
 | --- | --- | --- |
-| Verified functions / total | 0 / unknown | 133 / unknown |
-| Verified code bytes / total | 0 / unknown | 2072 / unknown |
-| Verified plus locally identical draft functions / total | 0 / unknown | 133 / unknown |
-| Verified plus locally identical draft code bytes / total | 0 / unknown | 2072 / unknown |
+| Verified functions / total | 0 / unknown | 210 / unknown |
+| Verified code bytes / total | 0 / unknown | 4092 / unknown |
+| Verified plus locally identical draft functions / total | 0 / unknown | 210 / unknown |
+| Verified plus locally identical draft code bytes / total | 0 / unknown | 4092 / unknown |
 
-Changes: +133 verified functions/+2072 bytes. Percentage-point changes are unknown.
-The bounded inventory is now functions-v3.json (485 reviewed ARM9 entries); it is
-still not a full-game denominator. Research tiers: S 125, N 72, X 277 (474 drafts;
-the research snapshot still lists the original 8 accepted functions). Technical
-strict tier: B 133. Behavior is separate: 6 drafts pass 1948 sampled calls.
+Changes: +210 verified functions/+4092 bytes. Percentage-point changes are unknown.
+The bounded inventory is functions-v4.json (563 reviewed ARM9 entries); it is still not
+a full-game denominator. Research tiers: S 125, N 74, X 353 (552 drafts; the research
+snapshot still lists the original 8 accepted functions). Technical strict tier: B 210,
+built by mixing per-function Clang and reviewed local MWCC profiles. Behavior is
+separate: 6 drafts pass 1948 sampled calls.
 
 The seed draft passes 41 calls, including four persistent-state reseed/rejection
 sequences. Four adjacent +0x5c predicates pass 313 calls each: 299 unique boundary/

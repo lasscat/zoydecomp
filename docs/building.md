@@ -22,9 +22,11 @@ runs gate tests, rebuilds/verifies, then stages just those files. It never commi
 or pushes. The narrow reviewed C backend accepts complete standalone ARM9 ARM-mode leaf
 functions without text relocations, extra executable sections or allocated data.
 config/BWBE-r0/build.json binds each individual source/profile hash, symbol and
-reviewed inventory identity. It compiles immutable snapshots through the shared
-actual driver and links whole modules with original opaque retained ELF sections
-using hash-pinned LLD at exact VMAs. No generated instruction is patched. The
+reviewed inventory identity. Each entry names its own compiler profile, so functions
+reconstructed with different reviewed tools (for example the pinned Clang profile and
+the optional local MWCC profile) coexist in one module. It compiles immutable snapshots
+through the shared actual driver and links whole modules with original opaque retained
+ELF sections using hash-pinned LLD at exact VMAs. No generated instruction is patched. The
 compiler's non-runtime .ARM.exidx metadata is discarded only under the reviewed
 R_ARM_PREL31 metadata rule; text relocations remain rejected. All allocated output
 sections must match the declared contiguous original/C section plan. The actual
