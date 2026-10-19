@@ -12,7 +12,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "f337f9b48a76ecf5fbe8a1e4a1c57f0bf52803e4ea452287a6c22472b173b9d4",
+      "cache_key": "86a050b1896a34c6a3202fe3b18262db6908b54dda685917cd87ee9f04f56552",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -231,7 +231,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "61dadde53b9de4bd9a0a76a762a31cecab9fd03650279d24a37c2dc9872500e8",
+      "cache_key": "e8246b7135e6a9fba8d81593aa622470d30f738e320af0ab8da2b4b652138164",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -451,7 +451,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "413e410bb9362e44f34800b49615d08dbee30ab63058889658be1278ea27b41d",
+      "cache_key": "ba41cd7e9162260a7a83a06561b4f2463b6bc85079c3222c6cdd345ea15c653d",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -750,7 +750,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "3f14da77b394e743855deec9f910688e631ef8776b1e2f96c166a85b4ac70635",
+      "cache_key": "563f0ee7d1027e11ecda9baa3f58cc55851746f28396b75a5a38804daa9aab32",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -919,7 +919,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "134fb93477939571b6cca3c2cea45a01766d7f493bb363d09df33c1ae08e441a",
+      "cache_key": "58a8938f1cee8c2834e14bdee73e2faab6cbaf10e3070e6385ae99dbc468a2fc",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -1101,7 +1101,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "b59de8b7459962ad5d724ddf407ca09ad9acbe2314474262ffd1418cd6fe1812",
+      "cache_key": "2d616c83a4d303720bf41294e5d62a9c6489df6d0452fad2abedf69e476bb496",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -1357,7 +1357,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "81a6e5049552dee8d29201e554ef901a1f8f96919b44ee8b95955ba219c30956",
+      "cache_key": "1d3bba0a84a8f093b30d5c776540ae862870cd0d512447509b6eb4e86d89cfb2",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -1562,7 +1562,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "1107ceca7df5d534c7270074a68d9e386d0c9701f3cff694d290a2c1097a3a04",
+      "cache_key": "cacdc512fdb32111b5d699ae9417f1cbb02558cb1d472c9b8a8e7472943095a6",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -1763,7 +1763,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "bed4cb10e93ab2547de4359831d3706ae030af4c3ab597c388c99766df71264d",
+      "cache_key": "a777a43f8a5ad6685c7856f9cf2bc8a5d08709990a01cdb1ee3b57c77ee23b4c",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -2044,7 +2044,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "55600445bed1eda246c2f9570641d3a9c3d8e8b1bbc153cd7b808fec27378041",
+      "cache_key": "67888668882b83985160538e05ab05dc485b52a2f8fcd333061e15f51bdcfc78",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -2408,7 +2408,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "8e1dbcf06dd0d55a644fa00c6f6f4939c6b7646cc67f620e41631455d833212e",
+      "cache_key": "6df831e2fb749b7953856644eb7969faef5f458790ef8da3f9d745a9437a1389",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -2979,7 +2979,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "56c430c89e6550b5c2c9cd99614c1142e8a9dd1e09fd19d28a094a6efb4e2c95",
+      "cache_key": "7b1c1f0b21092c015086d4de41caafa12d6c5ef15d9ef07c2640b2d23f734953",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -3215,7 +3215,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "ee89b75fb14e094fc254122a0bf93d36da1a3543a5f3da8fc33cf405d3182c55",
+      "cache_key": "98d9ade8947fd0b14969a641f9bc872c9250c12180ba87a064702cfd7bcd9885",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -3630,7 +3630,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "5d93a35c18b3e78cfc6d4d62986151b01edb00e91c9add0c9f9329c431fcd2b7",
+      "cache_key": "334be52ffd38b0c7efe213f03275437ab64dcaafeefecc77820ce27e07285e3e",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -3837,7 +3837,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "e2a65df831fd65bbdd3ba630435faee6c26f4cb10bd5ce980f3045b4788ddbcc",
+      "cache_key": "523cf1de4bc9b0a9c409a8ea1d3b4aefd9d8278989b95640a5e00f5c05390d23",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -4010,7 +4010,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "6a12a4c608a327150b566233ddacc9a50159396ffba63daf0d05cd14798c7eab",
+      "cache_key": "bff75825b5fc8e79cdf52081c08d83f1e27aaac837fc839a5d6c610e559dade1",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -4231,7 +4231,7 @@
         "status": "41 sampled calls across 36 scenarios including four reseed/rejection transition sequences; not an equivalence proof"
       },
       "blocker": "original compiler unknown; modern clang output has size discrepancy",
-      "cache_key": "d83023ee7afde20a8f1fe7df3062d9f291099be5eda9d005f9c0f937c2317a71",
+      "cache_key": "b0c7274f8c6f74023e2f50f866e272410cb5be93fad747697e09aa2c83115972",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -4308,7 +4308,7 @@
         "status": "655 sampled calls across 6 seed/next/reseed scenarios including two twist reloads; not an equivalence proof"
       },
       "blocker": "Modern clang output is 276 bytes versus the 296-byte target; the refill/temper structure does not match the DS scheduling. Readable connected draft; no B acceptance.",
-      "cache_key": "a506a02d815936dcfad5f5c131725993e65b8d2e1d17fd8303a52f75d373c72e",
+      "cache_key": "1ebac2ab985f9b4e36f6598c97e39e02ad9773e4031b81a12b30713eba551485",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -4381,7 +4381,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "b2fb5662b8b349ef56cd61e0d69837ac747946819960703f1612deac5e56cbc7",
+      "cache_key": "53cd96c0cec8485d15b952f373eb8545568f3bd5f4fd894a4c0bb428c6c26ed7",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -4790,7 +4790,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "218011f77bad63eceec534a5ddb497081784a9bc8d722de9e1576958462d424e",
+      "cache_key": "27f95260afa7da8b8664e600c49c3754c58bfc61dbfc82a99d1e3380eae0871a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -5574,7 +5574,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "fd88d25788cee5c6bfb3b948f5b9a327ea310d208ea76b8052d5f03a385de7d9",
+      "cache_key": "5e3b8ba30e074ad400431c042862873b4324d2b94da82c376daa11d88530024f",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -5983,7 +5983,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "3f856f1bc7210316f05707937ad8eb37bedb63f57bb7afb659fca143e54fa791",
+      "cache_key": "f141c941cd31ddfbce139b58140c99a7ac97d36c11b3d863a88db712c1fe94e9",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -6397,7 +6397,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "c7c2cd198af7a81dae63a1b73a6b5a3a01503272aba13bf51688001a57ba8eb0",
+      "cache_key": "7010c9f87373c920e04a88b91c7979ae5cab3402b4a171decf7ad24625d8b77b",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -6561,7 +6561,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "3afe84cd3572228933e0c185a7af90e70a7a066cde52d9ec4363a078453d4b6f",
+      "cache_key": "34e3919c2b9bdfcb660d93cd939623a0b0fb71270946b20158b3150c1e697eaa",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -6795,7 +6795,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "59444dfdf35671494e2201cadc36e9d343ead1ab0f2e6c705fd42e34b2d00c91",
+      "cache_key": "10c5d95d5faadc7efe0e495427b227c3c44f53c45f6e78495b2f089a065d3dc1",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -7362,7 +7362,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "4942f6157c0b373f649aa3301973fc993eb80e172a201a6b55b8378e737690c2",
+      "cache_key": "043b6ebe9222a9b3607d1cabd85da0e2f3ae36fe140785a29ce444684a16e128",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -7540,7 +7540,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "8dbaaa98e96865de734265bb10352bfa1c22d57608fe85c40590d8349c0bea2a",
+      "cache_key": "7d267ba98f55851252198be94c199e8932879302afc636654f617e7c0d3c35b0",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -7709,7 +7709,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "536a3b5b8d0872643be3a15707e55369b458c79db41bdcde44ad58b4b572ef6c",
+      "cache_key": "021d405d81b85331d036401706542def79abc4c392009165d39478d3f11d04ac",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -8023,7 +8023,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "71f2428a9b4cac3b246bd0951b411ab746644f5840e8f7712c50492fe7e64b73",
+      "cache_key": "db6ad932f59ae17c3664394071522f0fa7e4e1d6445b4eeb1513cbabf65f63ad",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -8608,7 +8608,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "12664229952b77861692330faa8c9fdd7f896b807a409709b38e66c7ede05994",
+      "cache_key": "bd289076c90c4304ce860903b9214407a8a896e855d9d22f612e4613186348d3",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -8966,7 +8966,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "12c16d1db224af0d62f40b10ba082b9c4484134ab864f9f0dda04d6096232bca",
+      "cache_key": "d2a070eb625aac09dd171fc21cd907f8840035bc2bbbb144b1d7b43d95b3fe68",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -9799,7 +9799,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "5da861ef35c8b2f4878ca828492169023a0fca43bd538e84b7e461ca1dd65676",
+      "cache_key": "55d21ee170df7f9f1e2d30d86e3ef9b5247bdb587f09f185cc195a2fbf542dbf",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -10288,7 +10288,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "1b5d0588bd077638803b9fb07e59c08fc71e7311cecbc5c2afb16e03fc30dac7",
+      "cache_key": "d7498036f1c931bf9d21066ba6bd591775ae423b6f2dba53b0e66f73f6ec9adc",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -10861,7 +10861,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "303dabfeb2209e44b3c65450d2a6a9aaca90df599535502ac0fc9562a2d8ae01",
+      "cache_key": "c464d96d3f03df54669b689081366268d9a550708765ac616f62c4f913d50789",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -11013,7 +11013,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "c46eb93677953fb69a573ddb5d5bcdde3fc41a3296e2df91c6556bba53dcb3dc",
+      "cache_key": "97da3b3dfd45f829bc59c7a0d14e02a63bd7d9985533ea1849295f3376226635",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -11155,7 +11155,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "5a49e58852be8ebeec1b88374b6842231275cefadb24d45a0d235754e19ac702",
+      "cache_key": "94670f66ef22bf3669bbea683c6091b37a7a57936b2c01a40c305410367e0a8f",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -11404,7 +11404,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "9cb4373a4653d5bd983128adbada80fa8ddba3dc06bf29301a2b85df56458631",
+      "cache_key": "b4b76f62f5d28572576d887d5d221b924c3b59487a7a3107a3b62ee0a5e3ad65",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -11601,7 +11601,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "3042384cf3c4ff658c9e313d22de9207a27ba7e6090733afa39849a35c2921ed",
+      "cache_key": "c62bb0cf13a56ee7693f63b051f1fc7df36a14ace82182f29bc94c07e1227a11",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -11736,7 +11736,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "ab3823b30e66f453a157740da225edae4891619636e59896051892d4fdf6fc8e",
+      "cache_key": "35e9df0e13f1ee8395381f27fbd8f1086fb6c8bc2e34a88c0cfd1c1511d9d7ae",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -12031,7 +12031,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "212b31ec66f64d650e8684937315393801254f3aac3dd0b17ca341897d54b022",
+      "cache_key": "67ddef72243ff5ef6d25b04d473a3dbf372fa4bad9a50c5a90807edfbd98d9df",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -12297,7 +12297,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "64e954993d1034dfb2cf3c33f13a284bec7f954ce92caf9e6e3b30bf135f1b4c",
+      "cache_key": "3abf894d203e10ee6d23f7c93d2d42813d304657e71e15cd951e915705a52cda",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -12796,7 +12796,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "429a8a82e283bf22016241583ece90bbe4916aacd1f9c9090542782391ac4497",
+      "cache_key": "be0d81aef9f247775cf3ed4538ef1d3bc67d88fc209778b1669c99ab9c8013e2",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -13170,7 +13170,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "b79e19feef0abe43cc987611dc578586afe8386f8e8c4b9561f2b3db38c02cd2",
+      "cache_key": "0a50208cb14e69148570fbfbe474c399eb24a203d6b44d835eae46a155ab5891",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -13544,7 +13544,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "1e80a1f81d4279006ddfdb101c59f401b1eafa889e76dccd8eac26131927f805",
+      "cache_key": "d112445f68d7d6b9fcf0457dc4516eea63a343bc43beb95c96752ad964eda2ae",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -13838,7 +13838,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "fb50db1031f88993bfb2752b9236d490686e2fb3ca4f773597ab8b3bf611cbfb",
+      "cache_key": "ed12a3f78cdcd60c09b93d75b95eade2d29f12102708681565800ebfcbd72f3a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -14114,7 +14114,7 @@
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "8dd1cfbb071658cc61f9f82d8117864bfbebdda442ff8165ac388f0e827ea657",
+      "cache_key": "c2e4d540c499cdbae4d0366815bb5cfc083e84c64473feb296060e69affe4f73",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -14373,7 +14373,7 @@
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "09d4d09a7e2649fc1403a11500e675bb3d682a69a6cbc077b47b332bfa39fb4a",
+      "cache_key": "c6823a5e062cc487ead81583b48c48ebe1d3877c25bb0d79a55182891bd8bb34",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -14649,7 +14649,7 @@
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "f1423591e9c8249d10d6264be99c333dfb04a4525b2c4cc61d14a7ed63f0ebfb",
+      "cache_key": "800ee6cdcdc4ed9e2e4dbbe527ff7caa9d0a718684552d639fb8579de5e62d47",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -14896,7 +14896,7 @@
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "6ea99062e4b5bcc875096d2d3c862236fd86ad2cf77b8ae8fdb16084e1c3601a",
+      "cache_key": "747861822e200007e78c346997d0a397eb4053724d9879d7435ed6d3e2178cb3",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -15900,7 +15900,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "8862015d35fdf37894913904fad03b9116de2573d08a63ec2f97d94988e3a877",
+      "cache_key": "01d15dd133b533740632e10559f93d7b17bb2adf51572ef42e46f2a5941aff8a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -16301,7 +16301,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "5fff783b3100230bc9fdfcda2f5b745c2312a73a59355ce864ffd7d65f097da5",
+      "cache_key": "21e1023d9a4480c8032cbca9afb089c994f925c4f8efba6f1f14cd61ae5a081a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -16512,7 +16512,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "76940d13fcf351041f0a619b7e1af4440a2dd199a4086e07477ee8e7837ce222",
+      "cache_key": "405a907fd62b724eb3372fb5be5e795c6699c2fc769261911347e2244722803a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -16779,7 +16779,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "51ff588dcc60e8813aad71136ff11760ffe926f258d41a19cba9ce185a024efe",
+      "cache_key": "11c6cfe0d00707fa47b81d149549fc4416ba8c402e7b342740f29035fedfd430",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -17129,7 +17129,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "b8931aef8fd58af12ef00bed30202351c18d26616db2013a3b28138bf1186e1e",
+      "cache_key": "f22ee49c22ecdf894bc1f99a550633c040089839d6d983a2332fac89f806e585",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -17584,7 +17584,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "aaab8ac6459e1191cafd609432ccf3540617288e25de1f28112dc39e8dab8729",
+      "cache_key": "42b7656cf20afa25e9a53402d7c2df715e43d888116501c3404c8f2c8e24f082",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -18021,7 +18021,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "3f952fae47b89b4da6cca141a6ef618f3aadd68a0c1a1e8b9a8aa2bd5a3b9858",
+      "cache_key": "3b5b561e793d6511c09f06ff5d2f4c1c1f3fa8d92a4142e41fb6718631931c99",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -18354,7 +18354,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; not selected for strict integration",
-      "cache_key": "068702c6c501304c866805d550aa24d47a819f1679bb57cebc9066ef27dad27d",
+      "cache_key": "7f9d9b6803e8dcaf466a7b3b9e7b41931b5e5effaeb3640b9bfd363add599446",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -18885,7 +18885,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "9071bc2ddb1fd92d0127b81b8936af761e82e57564e5a2a6c2fcf409bd973fc2",
+      "cache_key": "7727cb270a31cad155cbaf0f6c0c4e2206fae5a5c2ab758b979355ca16228dc6",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -19204,7 +19204,7 @@
         "status": "41 sampled calls across 36 scenarios including four reseed/rejection transition sequences; not an equivalence proof"
       },
       "blocker": "original compiler unknown; modern clang output has size discrepancy",
-      "cache_key": "d83023ee7afde20a8f1fe7df3062d9f291099be5eda9d005f9c0f937c2317a71",
+      "cache_key": "b0c7274f8c6f74023e2f50f866e272410cb5be93fad747697e09aa2c83115972",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -19281,7 +19281,7 @@
         "status": "655 sampled calls across 6 seed/next/reseed scenarios including two twist reloads; not an equivalence proof"
       },
       "blocker": "Modern clang output is 276 bytes versus the 296-byte target; the refill/temper structure does not match the DS scheduling. Readable connected draft; no B acceptance.",
-      "cache_key": "a506a02d815936dcfad5f5c131725993e65b8d2e1d17fd8303a52f75d373c72e",
+      "cache_key": "1ebac2ab985f9b4e36f6598c97e39e02ad9773e4031b81a12b30713eba551485",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -19354,7 +19354,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "b79e19feef0abe43cc987611dc578586afe8386f8e8c4b9561f2b3db38c02cd2",
+      "cache_key": "0a50208cb14e69148570fbfbe474c399eb24a203d6b44d835eae46a155ab5891",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -19728,7 +19728,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "1e80a1f81d4279006ddfdb101c59f401b1eafa889e76dccd8eac26131927f805",
+      "cache_key": "d112445f68d7d6b9fcf0457dc4516eea63a343bc43beb95c96752ad964eda2ae",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -20025,7 +20025,7 @@
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "8dd1cfbb071658cc61f9f82d8117864bfbebdda442ff8165ac388f0e827ea657",
+      "cache_key": "c2e4d540c499cdbae4d0366815bb5cfc083e84c64473feb296060e69affe4f73",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -20284,7 +20284,7 @@
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "09d4d09a7e2649fc1403a11500e675bb3d682a69a6cbc077b47b332bfa39fb4a",
+      "cache_key": "c6823a5e062cc487ead81583b48c48ebe1d3877c25bb0d79a55182891bd8bb34",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -20560,7 +20560,7 @@
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "f1423591e9c8249d10d6264be99c333dfb04a4525b2c4cc61d14a7ed63f0ebfb",
+      "cache_key": "800ee6cdcdc4ed9e2e4dbbe527ff7caa9d0a718684552d639fb8579de5e62d47",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -20807,7 +20807,7 @@
         "status": "313 sampled return/full-owner/guard checks; boundary and deterministic fields; no game-state equivalence proof"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "6ea99062e4b5bcc875096d2d3c862236fd86ad2cf77b8ae8fdb16084e1c3601a",
+      "cache_key": "747861822e200007e78c346997d0a397eb4053724d9879d7435ed6d3e2178cb3",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -21811,7 +21811,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "8862015d35fdf37894913904fad03b9116de2573d08a63ec2f97d94988e3a877",
+      "cache_key": "01d15dd133b533740632e10559f93d7b17bb2adf51572ef42e46f2a5941aff8a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -22212,7 +22212,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "5fff783b3100230bc9fdfcda2f5b745c2312a73a59355ce864ffd7d65f097da5",
+      "cache_key": "21e1023d9a4480c8032cbca9afb089c994f925c4f8efba6f1f14cd61ae5a081a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -22423,7 +22423,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "76940d13fcf351041f0a619b7e1af4440a2dd199a4086e07477ee8e7837ce222",
+      "cache_key": "405a907fd62b724eb3372fb5be5e795c6699c2fc769261911347e2244722803a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -22690,7 +22690,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "51ff588dcc60e8813aad71136ff11760ffe926f258d41a19cba9ce185a024efe",
+      "cache_key": "11c6cfe0d00707fa47b81d149549fc4416ba8c402e7b342740f29035fedfd430",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -23040,7 +23040,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "b8931aef8fd58af12ef00bed30202351c18d26616db2013a3b28138bf1186e1e",
+      "cache_key": "f22ee49c22ecdf894bc1f99a550633c040089839d6d983a2332fac89f806e585",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -23495,7 +23495,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "3f952fae47b89b4da6cca141a6ef618f3aadd68a0c1a1e8b9a8aa2bd5a3b9858",
+      "cache_key": "3b5b561e793d6511c09f06ff5d2f4c1c1f3fa8d92a4142e41fb6718631931c99",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -23828,7 +23828,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; not selected for strict integration",
-      "cache_key": "068702c6c501304c866805d550aa24d47a819f1679bb57cebc9066ef27dad27d",
+      "cache_key": "7f9d9b6803e8dcaf466a7b3b9e7b41931b5e5effaeb3640b9bfd363add599446",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -24359,7 +24359,7 @@
         "status": "not tested; observed source shape is not behavioral validation"
       },
       "blocker": "Local comparison only; owner/field semantics and behavior not validated; instruction or size discrepancy remains",
-      "cache_key": "9071bc2ddb1fd92d0127b81b8936af761e82e57564e5a2a6c2fcf409bd973fc2",
+      "cache_key": "7727cb270a31cad155cbaf0f6c0c4e2206fae5a5c2ab758b979355ca16228dc6",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -24673,7 +24673,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "f337f9b48a76ecf5fbe8a1e4a1c57f0bf52803e4ea452287a6c22472b173b9d4",
+      "cache_key": "86a050b1896a34c6a3202fe3b18262db6908b54dda685917cd87ee9f04f56552",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -24892,7 +24892,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "81a6e5049552dee8d29201e554ef901a1f8f96919b44ee8b95955ba219c30956",
+      "cache_key": "1d3bba0a84a8f093b30d5c776540ae862870cd0d512447509b6eb4e86d89cfb2",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -25097,7 +25097,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "ee89b75fb14e094fc254122a0bf93d36da1a3543a5f3da8fc33cf405d3182c55",
+      "cache_key": "98d9ade8947fd0b14969a641f9bc872c9250c12180ba87a064702cfd7bcd9885",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -25512,7 +25512,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "fd88d25788cee5c6bfb3b948f5b9a327ea310d208ea76b8052d5f03a385de7d9",
+      "cache_key": "5e3b8ba30e074ad400431c042862873b4324d2b94da82c376daa11d88530024f",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -25921,7 +25921,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "8dbaaa98e96865de734265bb10352bfa1c22d57608fe85c40590d8349c0bea2a",
+      "cache_key": "7d267ba98f55851252198be94c199e8932879302afc636654f617e7c0d3c35b0",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -26090,7 +26090,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "1b5d0588bd077638803b9fb07e59c08fc71e7311cecbc5c2afb16e03fc30dac7",
+      "cache_key": "d7498036f1c931bf9d21066ba6bd591775ae423b6f2dba53b0e66f73f6ec9adc",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -26663,7 +26663,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "ab3823b30e66f453a157740da225edae4891619636e59896051892d4fdf6fc8e",
+      "cache_key": "35e9df0e13f1ee8395381f27fbd8f1086fb6c8bc2e34a88c0cfd1c1511d9d7ae",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -26958,7 +26958,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "b59de8b7459962ad5d724ddf407ca09ad9acbe2314474262ffd1418cd6fe1812",
+      "cache_key": "2d616c83a4d303720bf41294e5d62a9c6489df6d0452fad2abedf69e476bb496",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -27214,7 +27214,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "56c430c89e6550b5c2c9cd99614c1142e8a9dd1e09fd19d28a094a6efb4e2c95",
+      "cache_key": "7b1c1f0b21092c015086d4de41caafa12d6c5ef15d9ef07c2640b2d23f734953",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -27450,7 +27450,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "218011f77bad63eceec534a5ddb497081784a9bc8d722de9e1576958462d424e",
+      "cache_key": "27f95260afa7da8b8664e600c49c3754c58bfc61dbfc82a99d1e3380eae0871a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -28234,7 +28234,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "4942f6157c0b373f649aa3301973fc993eb80e172a201a6b55b8378e737690c2",
+      "cache_key": "043b6ebe9222a9b3607d1cabd85da0e2f3ae36fe140785a29ce444684a16e128",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -28412,7 +28412,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "5da861ef35c8b2f4878ca828492169023a0fca43bd538e84b7e461ca1dd65676",
+      "cache_key": "55d21ee170df7f9f1e2d30d86e3ef9b5247bdb587f09f185cc195a2fbf542dbf",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -28901,7 +28901,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "3042384cf3c4ff658c9e313d22de9207a27ba7e6090733afa39849a35c2921ed",
+      "cache_key": "c62bb0cf13a56ee7693f63b051f1fc7df36a14ace82182f29bc94c07e1227a11",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -29036,7 +29036,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "aaab8ac6459e1191cafd609432ccf3540617288e25de1f28112dc39e8dab8729",
+      "cache_key": "42b7656cf20afa25e9a53402d7c2df715e43d888116501c3404c8f2c8e24f082",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -29473,7 +29473,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "134fb93477939571b6cca3c2cea45a01766d7f493bb363d09df33c1ae08e441a",
+      "cache_key": "58a8938f1cee8c2834e14bdee73e2faab6cbaf10e3070e6385ae99dbc468a2fc",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -29655,7 +29655,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "8e1dbcf06dd0d55a644fa00c6f6f4939c6b7646cc67f620e41631455d833212e",
+      "cache_key": "6df831e2fb749b7953856644eb7969faef5f458790ef8da3f9d745a9437a1389",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -30226,7 +30226,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "b2fb5662b8b349ef56cd61e0d69837ac747946819960703f1612deac5e56cbc7",
+      "cache_key": "53cd96c0cec8485d15b952f373eb8545568f3bd5f4fd894a4c0bb428c6c26ed7",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -30635,7 +30635,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "59444dfdf35671494e2201cadc36e9d343ead1ab0f2e6c705fd42e34b2d00c91",
+      "cache_key": "10c5d95d5faadc7efe0e495427b227c3c44f53c45f6e78495b2f089a065d3dc1",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -31202,7 +31202,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "12c16d1db224af0d62f40b10ba082b9c4484134ab864f9f0dda04d6096232bca",
+      "cache_key": "d2a070eb625aac09dd171fc21cd907f8840035bc2bbbb144b1d7b43d95b3fe68",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -32035,7 +32035,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "9cb4373a4653d5bd983128adbada80fa8ddba3dc06bf29301a2b85df56458631",
+      "cache_key": "b4b76f62f5d28572576d887d5d221b924c3b59487a7a3107a3b62ee0a5e3ad65",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -32232,7 +32232,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "fb50db1031f88993bfb2752b9236d490686e2fb3ca4f773597ab8b3bf611cbfb",
+      "cache_key": "ed12a3f78cdcd60c09b93d75b95eade2d29f12102708681565800ebfcbd72f3a",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -32505,7 +32505,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "413e410bb9362e44f34800b49615d08dbee30ab63058889658be1278ea27b41d",
+      "cache_key": "ba41cd7e9162260a7a83a06561b4f2463b6bc85079c3222c6cdd345ea15c653d",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -32804,7 +32804,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "bed4cb10e93ab2547de4359831d3706ae030af4c3ab597c388c99766df71264d",
+      "cache_key": "a777a43f8a5ad6685c7856f9cf2bc8a5d08709990a01cdb1ee3b57c77ee23b4c",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -33085,7 +33085,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "e2a65df831fd65bbdd3ba630435faee6c26f4cb10bd5ce980f3045b4788ddbcc",
+      "cache_key": "523cf1de4bc9b0a9c409a8ea1d3b4aefd9d8278989b95640a5e00f5c05390d23",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -33258,7 +33258,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "c7c2cd198af7a81dae63a1b73a6b5a3a01503272aba13bf51688001a57ba8eb0",
+      "cache_key": "7010c9f87373c920e04a88b91c7979ae5cab3402b4a171decf7ad24625d8b77b",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -33422,7 +33422,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "71f2428a9b4cac3b246bd0951b411ab746644f5840e8f7712c50492fe7e64b73",
+      "cache_key": "db6ad932f59ae17c3664394071522f0fa7e4e1d6445b4eeb1513cbabf65f63ad",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -34007,7 +34007,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "c46eb93677953fb69a573ddb5d5bcdde3fc41a3296e2df91c6556bba53dcb3dc",
+      "cache_key": "97da3b3dfd45f829bc59c7a0d14e02a63bd7d9985533ea1849295f3376226635",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -34149,7 +34149,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "64e954993d1034dfb2cf3c33f13a284bec7f954ce92caf9e6e3b30bf135f1b4c",
+      "cache_key": "3abf894d203e10ee6d23f7c93d2d42813d304657e71e15cd951e915705a52cda",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -34648,7 +34648,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "61dadde53b9de4bd9a0a76a762a31cecab9fd03650279d24a37c2dc9872500e8",
+      "cache_key": "e8246b7135e6a9fba8d81593aa622470d30f738e320af0ab8da2b4b652138164",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -34868,7 +34868,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "1107ceca7df5d534c7270074a68d9e386d0c9701f3cff694d290a2c1097a3a04",
+      "cache_key": "cacdc512fdb32111b5d699ae9417f1cbb02558cb1d472c9b8a8e7472943095a6",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -35069,7 +35069,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "5d93a35c18b3e78cfc6d4d62986151b01edb00e91c9add0c9f9329c431fcd2b7",
+      "cache_key": "334be52ffd38b0c7efe213f03275437ab64dcaafeefecc77820ce27e07285e3e",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -35276,7 +35276,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "3f856f1bc7210316f05707937ad8eb37bedb63f57bb7afb659fca143e54fa791",
+      "cache_key": "f141c941cd31ddfbce139b58140c99a7ac97d36c11b3d863a88db712c1fe94e9",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -35690,7 +35690,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "536a3b5b8d0872643be3a15707e55369b458c79db41bdcde44ad58b4b572ef6c",
+      "cache_key": "021d405d81b85331d036401706542def79abc4c392009165d39478d3f11d04ac",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -36004,7 +36004,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "303dabfeb2209e44b3c65450d2a6a9aaca90df599535502ac0fc9562a2d8ae01",
+      "cache_key": "c464d96d3f03df54669b689081366268d9a550708765ac616f62c4f913d50789",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -36156,7 +36156,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "212b31ec66f64d650e8684937315393801254f3aac3dd0b17ca341897d54b022",
+      "cache_key": "67ddef72243ff5ef6d25b04d473a3dbf372fa4bad9a50c5a90807edfbd98d9df",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -36422,7 +36422,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "3f14da77b394e743855deec9f910688e631ef8776b1e2f96c166a85b4ac70635",
+      "cache_key": "563f0ee7d1027e11ecda9baa3f58cc55851746f28396b75a5a38804daa9aab32",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -36591,7 +36591,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "55600445bed1eda246c2f9570641d3a9c3d8e8b1bbc153cd7b808fec27378041",
+      "cache_key": "67888668882b83985160538e05ab05dc485b52a2f8fcd333061e15f51bdcfc78",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -36955,7 +36955,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "6a12a4c608a327150b566233ddacc9a50159396ffba63daf0d05cd14798c7eab",
+      "cache_key": "bff75825b5fc8e79cdf52081c08d83f1e27aaac837fc839a5d6c610e559dade1",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -37173,7 +37173,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "3afe84cd3572228933e0c185a7af90e70a7a066cde52d9ec4363a078453d4b6f",
+      "cache_key": "34e3919c2b9bdfcb660d93cd939623a0b0fb71270946b20158b3150c1e697eaa",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -37407,7 +37407,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "12664229952b77861692330faa8c9fdd7f896b807a409709b38e66c7ede05994",
+      "cache_key": "bd289076c90c4304ce860903b9214407a8a896e855d9d22f612e4613186348d3",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -37765,7 +37765,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "5a49e58852be8ebeec1b88374b6842231275cefadb24d45a0d235754e19ac702",
+      "cache_key": "94670f66ef22bf3669bbea683c6091b37a7a57936b2c01a40c305410367e0a8f",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -38014,7 +38014,7 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
-      "cache_key": "429a8a82e283bf22016241583ece90bbe4916aacd1f9c9090542782391ac4497",
+      "cache_key": "be0d81aef9f247775cf3ed4538ef1d3bc67d88fc209778b1669c99ab9c8013e2",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
         "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
@@ -38394,8 +38394,8 @@
     "total_code_bytes": null,
     "total_functions": null
   },
-  "functions_sha256": "ce2187c25b2681b16e8467de4948c2adbbc5185945e4ba5051b81aed32ded72c",
-  "inventory": "functions-v2.json",
+  "functions_sha256": "65a9900945a8854e80598c41625aa8fd7022104fabaed5aa5a0ee8420436be07",
+  "inventory": "functions-v3.json",
   "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
   "schema": 1,
   "semantic_equivalence_proven": false,
@@ -38404,10 +38404,10 @@
     "semantic/tools/semantic_progress.py": "77d94bf8fcafb7e19cd1f2f974f9f3b733d5744334667fb509fa6bff74f2a15d",
     "tools/compiler.py": "abfdc5a5cdd0155e2803ac9f78e7f40387c2ccaf22ff468ca267e0772ca103e5",
     "tools/disasm.py": "6f06252f5fbb45bafbdd58498f3a4e6747b569b9d43053f7b16ded58191b3195",
-    "tools/link_backend.py": "6d5b48c929d0a849edaa181900d88014300d5f105d9ed5446160bf5b30ff1a40",
+    "tools/link_backend.py": "2c44cc2a8ceeb21aac5b35c62dc50eab1eb2492bd56b84d5b3c41db909898097",
     "tools/mwcc_support.py": "8defceb7328c5c6295bfdce043853f3d200f400419e9aa93ccf071818d293f9c",
     "tools/probe_compiler.py": "e9d25aad87b5a8d0d352d619d7d226f6e809c8a6d6e481e5efc241c3d449dadb",
-    "tools/progress_support.py": "8b634c34f7ea183eda0c13310e15c93ea922642ac318ab4f2f9e6773bb5c8f25",
+    "tools/progress_support.py": "32613a6c0dd1d97cdf6bba991b88a7f8939d273c984884fcd01a650166894679",
     "tools/project.py": "d402de4704a68991e3b38e7273e46f7f45c9f7259e6b6d075f7cc094993e7654",
     "tools/wip_support.py": "bf10e360e1abf8d46480bdb957782c4097c8486716d157a47eb0354abdd6c162"
   }

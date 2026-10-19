@@ -81,7 +81,7 @@
       "symbol": "pvz_0206ee84_get_field_0x16c_from_second_argument"
     }
   ],
-  "inventory": "functions-v2.json",
+  "inventory": "functions-v3.json",
   "linker": "config/BWBE-r0/linker.json",
   "linker_sha256": "18f7202a599aa6010301cba52d7e17ad56de4dc47329b3dc4944b234a4d14048",
   "schema": 1
