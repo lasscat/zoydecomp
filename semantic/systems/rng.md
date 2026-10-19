@@ -75,3 +75,52 @@ implemented and tested; do not replace original execution with donor behavior as
 oracle. Preserve the seed's tests while mapping which fields a mod/port can safely
 expose. Avoid further seed/next code-shape or flag permutations without new evidence.
 
+## Supplemental four-entry lifecycle oracle
+
+`systems/rng_lifecycle.c` restates the four operations as readable research C. Its
+source/profile/model/harness bindings and original target hashes are recorded in
+`behavior/rng-lifecycle.json`; this is separate from the 644 canonical comparison
+drafts. The default and 31-bit wrapper intervals remain behavior-only entries, not
+new strict inventory or B credit. The original comparison drafts and their hashes
+have not been overwritten.
+
+```sh
+python3 -B -m unittest discover -s semantic/tests -p test_arm_call_cluster.py -v
+python3 -B semantic/tools/rng_lifecycle_check.py --rom /absolute/legal/pvz.nds
+python3 -B semantic/tools/rng_lifecycle_check.py --status
+python3 -B -m unittest discover -s semantic/tests -v
+```
+
+The saved run passes **1263 top-level original/native calls** spanning all four entry
+points, including **626 paired masked/raw draws** on two interleaved objects, refill
+boundaries, rejection of seed zero before/after consumption, reseeding a live stream,
+and a controlled null/default path. Each call checks both complete 2504-byte states
+and 128 guard bytes per state, the controlled global page, original callee-saved
+registers/SP and stack guards. Raw/masked relations compare payload and cursor
+offsets across the two objects; each object's original/native address and memory
+comparison remains exact. Compiled wrong-return and wrong-memory controls are
+detected. Do not add these repeated samples to the older suite as unique inputs.
+
+Six focused synthetic tests cover the new bounded BL extension: signed forward/back
+targets, conditional taken/not-taken behavior, LR/flags, stack returns, undeclared or
+unmapped targets, and rejected BLX/Thumb. Only the measured original edge
+`0x02034fb4 -> 0x02034f94` is authorized in this oracle; the base interpreter is
+unchanged. This remains a restricted CPU model, not DS hardware/full emulation.
+
+Preserved research failures: the initial run stopped at the base model's deliberate
+`nested BL call outside bounded harness` rejection. The extension was tested before
+resuming. An early cross-object assertion also wrongly compared absolute cursor
+values/guard patterns between distinct addresses; per-object original/native checks
+were already exact. The paired check now compares within-object cursor offsets and
+MT payload, without weakening any original/native memory or guard comparison.
+
+The null/default BSS word is an artificial initialized test input; real callers still
+appear to pass explicit per-object states. Ownership/initialization of that global,
+untested seeds/invalid cursors, interrupts, timing and whole-game behavior remain
+unknown. Native/ARM ABI equivalence and all-state correctness are not established.
+
+Strict completion is **blocked**, not earned by these tests: canonical seed/next
+compiler outputs still mismatch, the helper tail branch is outside the BL prototype,
+and this four-operation restatement has no S/N/X measurement. Five cached seed/next
+comparisons were reviewed without repeating them. Next evidence should address the
+specific compiler scheduling/ABI and tail-call scope, not another unchanged probe.

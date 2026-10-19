@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "kind": "unvalidated connected system drafts; excluded from canonical candidate counters",
+  "original_sha1": "fcc5ec4cfd4fabcbb26dee847d9ed6803e9ad93b",
+  "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
+  "overlay": {
+    "module": "arm9/ov000",
+    "load_address": 35513824,
+    "rom_offset": 1072128,
+    "stored_size": 133216,
+    "sha256": "5d628a41a1c2ca1bbd6a996bc25d671597bbc2c1258c441c8af71137cb17195e",
+    "compressed": false,
+    "bss_size": 192
+  },
+  "question": "Which caller-provided object defaults are unconditional, and how is coordinate-dependent child setup gated?",
+  "donor_attribution": "Independent DS instruction reconstruction; no desktop source or layout imported.",
+  "drafts": [
+    {
+      "function_id": "arm9/ov000:021de5e0:arm",
+      "source": "semantic/systems/ov000_init_unvalidated.c",
+      "source_sha256": "f6e8c881dcf394d6da6a6a1ce20f6ec4129e0ae5d74e0620cecbfe012b13b2c1",
+      "address": 35513824,
+      "rom_offset": 1072128,
+      "code_size": 508,
+      "size": 520,
+      "target_sha256": "b72a7e8785ad3fa387f8bec1c41dcfefff205821cd7e51724b699c9c1a5cb520",
+      "boundary_evidence": "Entry prologue; internal loop/conditional targets; pop at 0x021de7d8; three referenced pool words at 0x021de7dc..0x021de7e8.",
+      "caller_evidence": "ARM9 BL at 0x02054350; caller stores returned r0 at [sl,#0x198].",
+      "behavior_validation": {
+        "status": "blocked: no original-instruction oracle covering cross-module dependencies; draft return signature is unresolved",
+        "passed_cases": 0,
+        "semantic_equivalence_proven": false
+      },
+      "similarity": {
+        "status": "unavailable; no valid saved comparator tier",
+        "strict_credit": false,
+        "historical_private_source_sha256": "6afe67b1492b573034a295094b06d06b9e594dfd2011992ccb78890cafeb2a38",
+        "clang_profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+        "clang_candidate_size": 1328,
+        "clang_output_sha256": "98d6798aaf80cd01b4aeda7971dda9c466b22f06f0259a1290d5564e66a734d4",
+        "measurement_limit": "Worker compared only 508 target code bytes, not the full 520-byte block. That manual result is not admitted as an S/N/X measurement. Banked source adds warning comments and has not been re-probed.",
+        "mwcc_profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+        "mwcc_status": "compiler failure: exit 1, no diagnostic text; stopped, no retry"
+      },
+      "failed_hypotheses": [
+        "Initializer is not a narrow overlay scope-proof function: it calls ARM9 and ITCM dependencies.",
+        "First draft declares void although the caller consumes r0; return/ownership contract is unvalidated.",
+        "Reviewed MWCC invocation failed; mixed declarations after statements are a plausible C89 syntax issue, not a measured diagnosis."
+      ],
+      "next_hypothesis": "Resolve the return contract and dependency interfaces from DS callers before developing a dedicated behavior oracle. Do not retry this source/profile unchanged."
+    },
+    {
+      "function_id": "arm9/ov000:021e0b7c:arm",
+      "source": "semantic/systems/ov000_read_coordinates_unvalidated.c",
+      "source_sha256": "d6e15ba25d70e05a52bd8d5a4b73aa6470ca2d0ef9d6e6692f0581028f7747ef",
+      "address": 35523452,
+      "size": 56,
+      "code_size": 56,
+      "target_sha256": "db85a3d1bc500f81b6870c40d0b8c9d176f3689a214d57a0c4cdea529eeea6e1",
+      "boundary_evidence": "Two-register prologue; full ARM decode through terminal pop {r3,pc}; no literal pool.",
+      "caller_evidence": "BL at 0x021de6cc in the initializer.",
+      "observations": "Follows object+4 then state+0x168; reads words +8/+0xc, adds 0x1d8 to x, narrows to signed halfwords, calls ARM9 0x02039734 with mode 0x5d and extent 0x50.",
+      "behavior_validation": {
+        "status": "blocked: ARM9 output helper behavior/interface unresolved; no compiled or original differential cases",
+        "passed_cases": 0,
+        "semantic_equivalence_proven": false
+      },
+      "similarity": {"status": "not measured", "strict_credit": false},
+      "failed_hypotheses": ["Not a pure memory leaf: sole call target is outside ov000 and not configured."],
+      "next_hypothesis": "Review the ARM9 helper contract and actual caller-valid ranges before testing coordinate narrowing/output effects."
+    },
+    {
+      "function_id": "arm9/ov000:021fd1ac:arm",
+      "source": "semantic/systems/ov000_find_active_record.c",
+      "source_sha256": "ceeb527b8e5e618b63a9280d8bedc84a57788935642346ceacc0d186625978f3",
+      "address": 35639724,
+      "rom_offset": 1198028,
+      "size": 100,
+      "code_size": 100,
+      "target_sha256": "f8c0d019ddc93eceea04cadf3c0d88b773de2835c31466ad7ee81e1891e2b0d4",
+      "boundary_evidence": "push {r4,r5,r6,lr}; closed loop back to 0x021fd1c0; conditional return at 0x021fd1f8; final return at 0x021fd20c. No calls or pool.",
+      "caller_evidence": "Direct BL at 0x021fd00c and 0x021fd02c; callers check returned pointer and access record+0x114.",
+      "observations": "Searches 24 records at root+0x4b8 with stride 0x13c. Tests active bit 0 at record+4, key at +0x0c, and selector at +0x10, with UINT32_MAX wildcard.",
+      "behavior_validation": {
+        "status": "blocked: base interpreter rejects MVN r3,#0 at 0x021fd1b4 before the first case; corrected banked source not tested",
+        "passed_cases": 0,
+        "negative_controls_run": 0,
+        "semantic_equivalence_proven": false,
+        "base_interpreter_sha256": "8e6932118b8c80b59eee28217907c35ebde78bd0b09ed45d7aff6054f25546d8",
+        "planned_cases": ["no matching records", "first/last slot", "skip inactive", "selector wildcard", "selector mismatch", "key mismatch", "first of multiple matches"]
+      },
+      "similarity": {
+        "status": "corrected saved source not measured; historical first draft had two full-block size nonmatches",
+        "strict_credit": false,
+        "historical_private_source_sha256": "b286c7fc525d8a8b58c46ba64a6a842c483ffdfa2e099b09589c71a54e12ff14",
+        "driver_sha256": "bf10e360e1abf8d46480bdb957782c4097c8486716d157a47eb0354abdd6c162",
+        "mwcc_driver_sha256": "40199315f952240c320a71475d6c9ebec895c4a7c20adb6e652438d08dafd806",
+        "clang_profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+        "clang_candidate_size": 108,
+        "clang_output_sha256": "000b22ba3ddca677e735fa2e89a2310d404e150b809e13133e0eae669442c4d0",
+        "clang_overlap_differing_bytes": 89,
+        "mwcc_profile_sha256": "7df1c52a98a31330e96105b03e1b908e32fab7505d6ab38b885d2f901d264f75",
+        "mwcc_candidate_size": 92,
+        "mwcc_output_sha256": "04c5e6cf37606ecb272c88375d84699a5603c2846602d4d7e51d606623f1c416",
+        "mwcc_overlap_differing_bytes": 80,
+        "measurement_limit": "No canonical inventory/candidate tier or strict credit. Historical outputs belong to the incorrect-selector first draft, not the corrected banked source."
+      },
+      "failed_hypotheses": [
+        "First-draft selector was wrongly at +0x14; original LDR uses root+0x4c8, hence record+0x10. Corrected without repeating the old profile probes.",
+        "Both historical compiler outputs had wrong size (108/92 versus 100), before any valid behavior case completed.",
+        "Private behavior harness was blocked by MVN; review also found its host return-pointer translation added the 16-byte guard twice. That harness is not admitted as reproducible passing evidence."
+      ],
+      "next_hypothesis": "First add and test a narrowly reviewed MVN model, then use the corrected DS offsets and native return translation to run the saved planned cases with full table/guards and compiled wrong-return/write controls. Require a compiler scheduling/loop hypothesis before more matching."
+    }
+  ],
+  "attempt_accounting": {
+    "compiler_runs": 4,
+    "compiler_errors": 1,
+    "exact": 0,
+    "valid_saved_comparator_measurements": 0,
+    "cached_comparisons_repeated": 0,
+    "note": "Three candidates frozen; initializer and final lookup each had two compiler runs. No exact prefilter, overlay integration, or new canonical S/N/X credit. No unchanged probe repeated."
+  },
+  "assumptions": ["Accessible aligned DS object/context storage; ownership and aliasing unresolved.", "Word/halfword widths follow DS ARM observations; host pointer layout is not a DS layout proof."],
+  "semantic_equivalence_proven": false
+}
