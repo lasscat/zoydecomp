@@ -2,6 +2,16 @@
   "functions": [
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02004398:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02004398_leaf.c",
+      "source_sha256": "2136fa1c60c5e42e25a980e20307fe50c288f90a80eefc099a7fc7a4be13f99f",
+      "symbol": "pvz_02004398_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:02004c64:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -9,6 +19,16 @@
       "source": "src/auto/arm9_02004c64_leaf.c",
       "source_sha256": "842d23c6294dde437c381f000df71629ce5afb9254d04fc1ca756662c92ce142",
       "symbol": "pvz_02004c64_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02004dc8:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02004dc8_leaf.c",
+      "source_sha256": "846704fd72555f6dd1a30b881bd9785db7e05f83d760c116d80d5863e33ea1a8",
+      "symbol": "pvz_02004dc8_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -32,6 +52,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02005ebc:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02005ebc_leaf.c",
+      "source_sha256": "b33fb7974049b2a498a73ab632f4a2cccec99be0feee3b29c0d103e59d7f7e19",
+      "symbol": "pvz_02005ebc_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:0200637c:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -49,6 +79,16 @@
       "source": "src/auto/arm9_02006a40_leaf.c",
       "source_sha256": "2ca7e2128e254d0db7be7375a366e63bb40e5875462081750a267113c7df4de3",
       "symbol": "pvz_02006a40_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0200877c:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0200877c_leaf.c",
+      "source_sha256": "7e858145f96036fc9eca76c5e2abf54f2e93ebad18cbb556e207b0239149a4a2",
+      "symbol": "pvz_0200877c_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -119,6 +159,16 @@
       "source": "src/auto/arm9_02028168_leaf.c",
       "source_sha256": "85b7b6b65895d2351a43f3708100b42b90cbed4d44887d0b7df57393cefcffc6",
       "symbol": "pvz_02028168_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02028200:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02028200_leaf.c",
+      "source_sha256": "fc60c1f2f297bdcdc995d41a0b39d4fb606d452183965140214280c3c343e47b",
+      "symbol": "pvz_02028200_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -232,6 +282,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0202f09c:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0202f09c_leaf.c",
+      "source_sha256": "1199f4e24333736ee3a00e598341ec781857d07709af500e46a6e5cabf85f8df",
+      "symbol": "pvz_0202f09c_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:0202f0b0:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -302,6 +362,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0203991c:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0203991c_leaf.c",
+      "source_sha256": "397e91b026f410d6b9468758b648187d9f6202e0c9e7c57144489462b210f996",
+      "symbol": "pvz_0203991c_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:02039934:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -319,6 +389,16 @@
       "source": "src/auto/arm9_0203993c_leaf.c",
       "source_sha256": "389f576c927e90c8c5664016327dc553e3417c9e557a7346066c4522649225b3",
       "symbol": "pvz_0203993c_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02039944:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02039944_leaf.c",
+      "source_sha256": "f28e4110b76c48b314ec7752b868ab8040b4eb9c1aa8898b746fb4a4fcc7c13b",
+      "symbol": "pvz_02039944_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -392,6 +472,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:020407b0:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_020407b0_leaf.c",
+      "source_sha256": "4695610c01a3f388410f22f9fa27fd7448dd067eec5e0f7b25b05cc27de01c05",
+      "symbol": "pvz_020407b0_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:020407b8:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -452,6 +542,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02043d14:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02043d14_leaf.c",
+      "source_sha256": "4dec4ee5e1d745ec2551d0877be53ceb6e98f2c2dc1fed71ca6a06b1b0cd612b",
+      "symbol": "pvz_02043d14_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:02044c88:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -459,6 +559,16 @@
       "source": "src/auto/arm9_02044c88_leaf.c",
       "source_sha256": "bdc148ee7e27d728acabbf3aacc2ef0f8f4b4d01d999b2094762e064fadd224d",
       "symbol": "pvz_02044c88_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0204686c:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0204686c_leaf.c",
+      "source_sha256": "d9120da8fa279bbf0eb8a9045cd50d96cc85327763e81ee32ac2eb6acadabc6d",
+      "symbol": "pvz_0204686c_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -522,6 +632,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0204994c:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0204994c_leaf.c",
+      "source_sha256": "794294072cb69657a25d42d5b94d01e5f257a04c012803baffbe52e0a647d8a1",
+      "symbol": "pvz_0204994c_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:0204a85c:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -559,6 +679,16 @@
       "source": "src/auto/arm9_0204b134_leaf.c",
       "source_sha256": "c395243e2b92d698f45e87f969e456e2f61509907aea40aa086115c6e7b77ba5",
       "symbol": "pvz_0204b134_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0204b140:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0204b140_leaf.c",
+      "source_sha256": "c208abfe24c120939945884b18e6f53961910edaca030b9d1d5bf5e59d22b47a",
+      "symbol": "pvz_0204b140_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -602,6 +732,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02051e78:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02051e78_leaf.c",
+      "source_sha256": "409a20a729586951cda6149d2bb901ae3dd5e2d2874294f531d97f4e21333fc1",
+      "symbol": "pvz_02051e78_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:02051f18:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -619,6 +759,16 @@
       "source": "src/auto/arm9_020524f0_leaf.c",
       "source_sha256": "4ab640a669c6ef9aa6a0132ee334bd2eb10ce2688c634b32fd8c8a008e778d44",
       "symbol": "pvz_020524f0_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02052584:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02052584_leaf.c",
+      "source_sha256": "f49631fb737fa9b26d7ddc6717c73cbdae05069ab9a1722736b131cb031edfe8",
+      "symbol": "pvz_02052584_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -649,6 +799,16 @@
       "source": "src/auto/arm9_02053dc4_leaf.c",
       "source_sha256": "7ea444c68eb86bdbdde876fbeedd590011df62dcb61941f975a3fa2629a49f31",
       "symbol": "pvz_02053dc4_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0205a1f4:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0205a1f4_leaf.c",
+      "source_sha256": "751435a20279a6592a57813c2fd4473133eb962a7e15f16e91e709f976cd595d",
+      "symbol": "pvz_0205a1f4_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -702,6 +862,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0206ee14:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0206ee14_leaf.c",
+      "source_sha256": "f19fb3152ab6b49a77b5cdbb92be7fd965487c5cd8710ca01877f64f438fa87e",
+      "symbol": "pvz_0206ee14_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:0206ee84:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -712,6 +882,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02074604:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02074604_leaf.c",
+      "source_sha256": "cfa9098a7204996d147fcd8dcd4004b5e2ad65e2cb9fa4e5fec2012f3fea7083",
+      "symbol": "pvz_02074604_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:02074620:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -719,6 +899,26 @@
       "source": "src/auto/arm9_02074620_leaf.c",
       "source_sha256": "eab488798b5fb7a3d43be8c48687686f15d753ddba2721ee584bd87c258c8018",
       "symbol": "pvz_02074620_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:0207daa0:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_0207daa0_leaf.c",
+      "source_sha256": "0a24181b60b6053706824ff633ddef240cb7a992dea3fb68396dc05b9608082b",
+      "symbol": "pvz_0207daa0_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02090330:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02090330_leaf.c",
+      "source_sha256": "55cfb703738896345c3d50c0db5e02e106d2d7ce905c498ce73b7dbde6d818b4",
+      "symbol": "pvz_02090330_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -752,6 +952,16 @@
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:02095c0c:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_02095c0c_leaf.c",
+      "source_sha256": "165d8ac1cc128b38868c0d92c8ab3c9a663e9e598a4100fc47adf49535e86026",
+      "symbol": "pvz_02095c0c_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
       "id": "arm9:02097a70:arm",
       "profile": "config/BWBE-r0/clang23-arm946-o2.json",
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
@@ -759,6 +969,26 @@
       "source": "src/auto/arm9_02097a70_leaf.c",
       "source_sha256": "29bc2475aab2a8f59d4ad654eb6a4908d8613916e9639617650d4f8210587ec2",
       "symbol": "pvz_02097a70_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:020a7df4:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_020a7df4_leaf.c",
+      "source_sha256": "6e7af061bab2c9d745a0250bdfbe9d6d8677111faeb02dff0b7c199689b17f99",
+      "symbol": "pvz_020a7df4_leaf"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:020a8800:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_020a8800_leaf.c",
+      "source_sha256": "d1ead71f6325b5de3c744e6ce72834f5e8c2256f19a4161359ce571618cdbd8d",
+      "symbol": "pvz_020a8800_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
@@ -789,6 +1019,16 @@
       "source": "src/auto/arm9_020b780c_clear_unknown_words.c",
       "source_sha256": "decb69814f9f6d359963b78c428ebb2c89c15975801c98d0265fab1a067d3a5a",
       "symbol": "pvz_020b780c_clear_unknown_words"
+    },
+    {
+      "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
+      "id": "arm9:020b8300:arm",
+      "profile": "config/BWBE-r0/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "provenance": "Independent DS binary reconstruction; no donor source adaptation. Field and record meanings unknown.",
+      "source": "src/auto/arm9_020b8300_leaf.c",
+      "source_sha256": "5f4dd6ddfaf39209b7344e4a1934392d14712ffb440f04d4a42b2ce209025bd5",
+      "symbol": "pvz_020b8300_leaf"
     },
     {
       "evidence": "functions-v2.json caller/boundary review; isolated unmasked comparison; whole-module/full-ROM gate required",
