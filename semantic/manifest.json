@@ -8929,6 +8929,82 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "99d2c901c2dc57a35171661a20f8c5e94b26186ca34f077a8dfe4ceca0a89bde",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Date-like record helper: reads {year-offset, month, day} from the record, borrows one year and adds 12 months when the month is before March, then returns the resulting day count modulo 7. blocked: the reviewed MWCC 2.0 build never inlines division by a constant, so the natural source needs an unresolved _s32_div_f BL; the original inlines /100, /10 and %7 as reciprocal multiplies."
+      ],
+      "function": {
+        "address": 33612648,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 176,
+        "id": "arm9:0200e368:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 74600,
+        "size": 188,
+        "target_sha256": "d831a0b07dea10b922ad48bf483d83f918e7ce7eed2182b956acbafe79e8c585"
+      },
+      "function_id": "arm9:0200e368:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Date-like record helper: reads {year-offset, month, day} from the record, borrows one year and adds 12 months when the month is before March, then returns the resulting day count modulo 7. blocked: the reviewed MWCC 2.0 build never inlines division by a constant, so the natural source needs an unresolved _s32_div_f BL; the original inlines /100, /10 and %7 as reciprocal multiplies.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "6401936ab2f08fd559e707da7c51196f3e4910df239e4f9201cef99411de7dca"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 196,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 163,
+        "target_size": 188,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "62fc2ec1300a1d0867b4af3d03a35c3727f942e71ddb97b23ec6849020bb5a6f",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0200e368.c",
+      "source_sha256": "6401936ab2f08fd559e707da7c51196f3e4910df239e4f9201cef99411de7dca",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
       "cache_key": "b72977d361ecd06854e22b83214446a5ad0d91dd2707a314f71f87c0e81a03f6",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
@@ -10366,6 +10442,82 @@
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
       "source": "semantic/src/leaves/02014e08.c",
       "source_sha256": "699ff4fe809ff067eae98302e811b06f96b0f0379d4151d3be75896fbea284bf",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "e90f8a5a7ffeea3677d4bd1264e99a76627f4f2a424aa250837f68c3e2ff973c",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "4 isolated hypotheses; best tier X. Level lookup + interpolation pack: returns 0 when value >= *(u16*)(base+0x12); walks base down from index 2 (do/while over a signed char counter) taking the first entry with value < base[i+6], else 0; then fills out[0..2] from the scaling factor at *(u32*)(*(u32*)0x02100c00+0x1318) and stores the level byte at out+0xc. Non-S: the whole instruction stream, size (180) and literal pool now match, but"
+      ],
+      "function": {
+        "address": 33642896,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 176,
+        "id": "arm9:02015990:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 104848,
+        "size": 180,
+        "target_sha256": "96ce639660120a42b157445a2262ec5462f477ddb474c017dac09394d5ba220b"
+      },
+      "function_id": "arm9:02015990:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Level lookup + interpolation pack: returns 0 when value >= *(u16*)(base+0x12); walks base down from index 2 (do/while over a signed char counter) taking the first entry with value < base[i+6], else 0; then fills out[0..2] from the scaling factor at *(u32*)(*(u32*)0x02100c00+0x1318) and stores the level byte at out+0xc. Non-S: the whole instruction stream, size (180) and literal pool now match, but",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "3cc37f02f001748c216047ed07e4cebfd6a7089510f46b6affbb60b1f2fa49b7"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 184,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 161,
+        "target_size": 180,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "495ac51b009fdda456d7032889962c51756fa65bcfaf0c72825e678a2cfa5413",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02015990.c",
+      "source_sha256": "3cc37f02f001748c216047ed07e4cebfd6a7089510f46b6affbb60b1f2fa49b7",
       "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
     },
     {
@@ -13130,6 +13282,82 @@
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
       "source": "semantic/src/leaves/0201d588.c",
       "source_sha256": "e3e2e1da0dff5973c260672127983bc2b3c205ce3e2a13a8183c749d7a3c206f",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "5d7287fded66a97581cb68ab130f91ef772d5e2cfae0fdae3a46e15dfb6bd2ac",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. String copy: copies the NUL-terminated string at src to dst and returns dst, using word copies while dst and src share 4-byte alignment and costed byte copies otherwise. X: size 124 vs the 200-byte original; the original aligns with a counted byte loop and a peeled NUL loop using pre-increment stores, which the reviewed MWCC expresses as post-increment loops."
+      ],
+      "function": {
+        "address": 33674660,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 192,
+        "id": "arm9:0201d5a4:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 136612,
+        "size": 200,
+        "target_sha256": "c4adcb7b1d9aadbcf7530e4236f7ab5cd1619809aa91433e984aebabf41ab4b6"
+      },
+      "function_id": "arm9:0201d5a4:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "String copy: copies the NUL-terminated string at src to dst and returns dst, using word copies while dst and src share 4-byte alignment and costed byte copies otherwise. X: size 124 vs the 200-byte original; the original aligns with a counted byte loop and a peeled NUL loop using pre-increment stores, which the reviewed MWCC expresses as post-increment loops.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "7f652b427568bff0c81e9bbf854226c487c0bf775cea312d2147ad171d93e69c"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 264,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 238,
+        "target_size": 200,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "da5fff49356201484b1b983b2babde39e322ff731bde394fc92ede1248b7f461",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0201d5a4.c",
+      "source_sha256": "7f652b427568bff0c81e9bbf854226c487c0bf775cea312d2147ad171d93e69c",
       "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
     },
     {
@@ -17510,6 +17738,82 @@
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
       "source": "semantic/src/leaves/02028750.c",
       "source_sha256": "585dd8a64147899a7b1f9ec2ac942b7ccffc7eb2cf5f840b9afa29dc0115e941",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "714087526f7086df781a6cbe46e44585be903caefdd01eeef0dd07979077a27f",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Appends one 4-halfword record: derives free space from a[5..7], returns 0xfffe when there is none, else stores b[0..3]>>4 into the 0x30-stride table at 0x02101824 + idx*0x540 and returns the previous a[7]. Non-S: MWCC if-converts the inner test (ldrhls/cmpls) and picks a different register set; 42 instruction diffs at matching size."
+      ],
+      "function": {
+        "address": 33720992,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 180,
+        "id": "arm9:02028aa0:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 182944,
+        "size": 188,
+        "target_sha256": "5e570b46eebed51e3e7ac321e51582aeabf1423b331469046e82acc6f376db33"
+      },
+      "function_id": "arm9:02028aa0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Appends one 4-halfword record: derives free space from a[5..7], returns 0xfffe when there is none, else stores b[0..3]>>4 into the 0x30-stride table at 0x02101824 + idx*0x540 and returns the previous a[7]. Non-S: MWCC if-converts the inner test (ldrhls/cmpls) and picks a different register set; 42 instruction diffs at matching size.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "ddc0429ac0288497ad5dc9504816a34a14f215d3ed27bc4af9f0de1a4467c5b7"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 156,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 163,
+        "target_size": 188,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "7044f130d7b67c52883b2f084ee889412f7dae81cf96da4759a188ef0e7fe788",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02028aa0.c",
+      "source_sha256": "ddc0429ac0288497ad5dc9504816a34a14f215d3ed27bc4af9f0de1a4467c5b7",
       "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
     },
     {
@@ -22005,6 +22309,82 @@
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
       "source": "semantic/src/leaves/02033140.c",
       "source_sha256": "75471efb9f923280c8ecbe6e33e21aec735209409e21a161089cb1185ed1f0ff",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "25408a1765fca145d7b26ae985734a3b457ff9109751e7b01fbf8c09a46ad0f7",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Free-list split: when at least 0x48 bytes remain past size, splits the block at p, links the tail before p, sets p->size and coalesces the tail with the next block when it is free. X: exact 164-byte size and identical control flow, but 9 instructions differ only in scratch register choice (remainder in ip vs lr, the zero constant in lr vs ip)."
+      ],
+      "function": {
+        "address": 33767664,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 164,
+        "id": "arm9:020340f0:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 229616,
+        "size": 164,
+        "target_sha256": "e033feaf17eab8280457dd83ea0ce9ad241792c6a2ff254f315e7a7ee15ca2c3"
+      },
+      "function_id": "arm9:020340f0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Free-list split: when at least 0x48 bytes remain past size, splits the block at p, links the tail before p, sets p->size and coalesces the tail with the next block when it is free. X: exact 164-byte size and identical control flow, but 9 instructions differ only in scratch register choice (remainder in ip vs lr, the zero constant in lr vs ip).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "91874d3a70112e5e032ed29bc043e7777f9c4a7e0a4cf494c0a3b8f377b951a3"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 164,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": 37,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 116,
+        "target_size": 164,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "97f41fc4a1a88f21a1e76293ddb1d1eee281c1dc28a0fb46924e69c993578f81",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020340f0.c",
+      "source_sha256": "91874d3a70112e5e032ed29bc043e7777f9c4a7e0a4cf494c0a3b8f377b951a3",
       "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
     },
     {
@@ -55290,6 +55670,82 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "f53b8bad29ed57054333b3ef52156f0bfd83f1acf2420e13f3206c1bdd7bf608",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Copies one of three word pairs (grouped by which%3) from the table at 0x020e99ec into two bytes of *src and stores the global word at 0x02108d70+4 into out[3]. Non-S: for `which==0||which==3` this profile emits an ARMv6 conditional-compare chain (cmpne) and re-materialises the pool constants in every branch, while the original uses two compares plus a branch with both base addresses hoisted once a"
+      ],
+      "function": {
+        "address": 34291832,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 180,
+        "id": "arm9:020b4078:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 753784,
+        "size": 188,
+        "target_sha256": "61b1d14b22793da8e11b2ce57efedb60eb3ac3e8758a6643a6550c6bc7529701"
+      },
+      "function_id": "arm9:020b4078:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Copies one of three word pairs (grouped by which%3) from the table at 0x020e99ec into two bytes of *src and stores the global word at 0x02108d70+4 into out[3]. Non-S: for `which==0||which==3` this profile emits an ARMv6 conditional-compare chain (cmpne) and re-materialises the pool constants in every branch, while the original uses two compares plus a branch with both base addresses hoisted once a",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "8af038d006344d2504bdd4a3fe7cc68cbd13a369b7c07a5a35412b6ea0244bec"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 148,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 168,
+        "target_size": 188,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "87a1712d94ec98d5bf3d2e8aface35ecbcbe459f7eeb9becb1c117db412de725",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b4078.c",
+      "source_sha256": "8af038d006344d2504bdd4a3fe7cc68cbd13a369b7c07a5a35412b6ea0244bec",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
       "cache_key": "3356dc3c30f94f570f6c5c4d9b0ff112e844eea9d425f60e9d77fdd702d3d2f4",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
@@ -60695,6 +61151,158 @@
         "status": "not tested; isolated unmasked comparison only, no behavior evidence"
       },
       "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "37bf0788cd6247d95e98382171477decc80334a862c2ae3ee72cb9af0c492b56",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Output-table setup: for each of two slots whose byte at 0x021de3d0 is non-zero, copies the first two halfwords of the 0x30-byte record at 0x021de340 into the 16-byte record array at 0x021de298 with the last two words zeroed, then sets bit 1 of the state word at 0x021de250. X: the reviewed MWCC rematerialises the absolute table addresses as immediate add chains instead of hoisting them into registe"
+      ],
+      "function": {
+        "address": 34371212,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 148,
+        "id": "arm9:020c768c:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 833164,
+        "size": 164,
+        "target_sha256": "57efd14d3ad6799b3f1d889a9f63281bb3b61d92ce669c086d77588761bb38a7"
+      },
+      "function_id": "arm9:020c768c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Output-table setup: for each of two slots whose byte at 0x021de3d0 is non-zero, copies the first two halfwords of the 0x30-byte record at 0x021de340 into the 16-byte record array at 0x021de298 with the last two words zeroed, then sets bit 1 of the state word at 0x021de250. X: the reviewed MWCC rematerialises the absolute table addresses as immediate add chains instead of hoisting them into registe",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "ab9e806ace81ea31a17cdc0e29bcd61e2cbde8c91bab7da9d7301478898d115d"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 136,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 146,
+        "target_size": 164,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "9ec69d78830adb5221a0355cc1cc391ef9b2f72f33db9445090c23192c14e71b",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c768c.c",
+      "source_sha256": "ab9e806ace81ea31a17cdc0e29bcd61e2cbde8c91bab7da9d7301478898d115d",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "e4de2c2ac9002e1ae57dc91bbdb75ec922c15f17a8166e680c40e95ba30f3c3d",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Display refresh: when flag bit0 is set and bit4 clear and bit2 set, shifts the two 12-byte records' halfword pairs and refills them from the 0x30-stride table bytes at 0x021de340, then sets flag bit4. Non-S: MWCC folds the three table base addresses into flag_base+imm (2 pool words instead of the original 4) and uses and/asr instead of the target's lsl/lsr byte splits."
+      ],
+      "function": {
+        "address": 34371592,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 176,
+        "id": "arm9:020c7808:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 833544,
+        "size": 192,
+        "target_sha256": "2ab8fcada3d09f1a77ca608af4f9eb15107ea728ab01704dd182921cce6f9eb1"
+      },
+      "function_id": "arm9:020c7808:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Display refresh: when flag bit0 is set and bit4 clear and bit2 set, shifts the two 12-byte records' halfword pairs and refills them from the 0x30-stride table bytes at 0x021de340, then sets flag bit4. Non-S: MWCC folds the three table base addresses into flag_base+imm (2 pool words instead of the original 4) and uses and/asr instead of the target's lsl/lsr byte splits.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "eff8b68ba14abf6490a55857e5464320cb2d8217d499b2b04d0b8c7d13f4578c"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 152,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 177,
+        "target_size": 192,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "83fe6f27786f7d74b8aa7b7b0c04cf57414f41551543369601927cbf15b30510",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c7808.c",
+      "source_sha256": "eff8b68ba14abf6490a55857e5464320cb2d8217d499b2b04d0b8c7d13f4578c",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
       "cache_key": "0e85009a0adb8324db61e843ede41ad61602c13c0fefa39e6c8668e56f4d0063",
       "compiler_profile": {
         "driver": "clang-standalone-c-v1",
@@ -60764,6 +61372,82 @@
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
       "source": "semantic/src/leaves/020c79c8.c",
       "source_sha256": "2044e2855a121732096bc04b33feb0ead0cbf1b2ccbdd5b1be76134e0baafc48",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "9bd03db93cd4dcc656359e2eca671734dc2dacc8784b55ebe456a49906cfed7e",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Output-table setup: for each of two slots whose byte at 0x021de3d0 is non-zero, packs the four bytes at offset 0x0c of the 0x30-byte record at 0x021de340 into the 32-bit slot array at 0x021de254, then sets bit 6 of the state word at 0x021de250. X: same absolute-address rematerialisation plus a differing local byte-pack."
+      ],
+      "function": {
+        "address": 34372180,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 156,
+        "id": "arm9:020c7a54:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 834132,
+        "size": 172,
+        "target_sha256": "0477258e6f6d6a0b3a4e7fd349a027fdf4026a0e28c5051cf63fbfe3c1dd29bb"
+      },
+      "function_id": "arm9:020c7a54:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Output-table setup: for each of two slots whose byte at 0x021de3d0 is non-zero, packs the four bytes at offset 0x0c of the 0x30-byte record at 0x021de340 into the 32-bit slot array at 0x021de254, then sets bit 6 of the state word at 0x021de250. X: same absolute-address rematerialisation plus a differing local byte-pack.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "97f4a72665a57a28012eab0c28d35b56ce496dd37a4e4613daee929174d5e265"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 116,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 158,
+        "target_size": 172,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "f8bfe710fd37692099255c50fe0cc95f34da072396b7879551939a2870545379",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c7a54.c",
+      "source_sha256": "97f4a72665a57a28012eab0c28d35b56ce496dd37a4e4613daee929174d5e265",
       "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
     },
     {
@@ -62968,6 +63652,82 @@
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
       "source": "semantic/src/leaves/021005e8.c",
       "source_sha256": "2da290d58f2e617dae22c2e4e96543434c6c0950ef3ce16a5ac2cde351f80296",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "7cb317e30ce00b39989a1511d85841841926aa5dbf4a57eb41b1eb4010f4c354",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Card read: builds the 0xb7 command from a 0x200-aligned address, polls ROMCTRL (0x040001a4) for busy, then copies CARD_DATA (0x04100010) into out until len, advancing 0x200 per block; returns early when already past the end. Exact match under the reviewed profile."
+      ],
+      "function": {
+        "address": 34604732,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 192,
+        "id": "arm9:021006bc:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 1066684,
+        "size": 212,
+        "target_sha256": "3475786326df3dcbf1eafe4ffef0c890fa316d05366766c7d3f36a8d01e4f954"
+      },
+      "function_id": "arm9:021006bc:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Card read: builds the 0xb7 command from a 0x200-aligned address, polls ROMCTRL (0x040001a4) for busy, then copies CARD_DATA (0x04100010) into out until len, advancing 0x200 per block; returns early when already past the end. Exact match under the reviewed profile.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "3039b33e054c0d6b5c90ba860891f30c4b9709366db2010e2f1c7374c350de04"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 212,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": 47,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 185,
+        "target_size": 212,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "59b3cfb0eb8c5f8d703eb1c634bd6d4107c71a2b7dcac331c0d63de46983299c",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/021006bc.c",
+      "source_sha256": "3039b33e054c0d6b5c90ba860891f30c4b9709366db2010e2f1c7374c350de04",
       "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
     }
   ],
@@ -125933,6 +126693,766 @@
       "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
       "source": "semantic/src/leaves/021001a0.c",
       "source_sha256": "f0f953f90b87ead12ca35cd0e5754533e1e89fbcaa431a620a3b964d928ce0fd",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "99d2c901c2dc57a35171661a20f8c5e94b26186ca34f077a8dfe4ceca0a89bde",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Date-like record helper: reads {year-offset, month, day} from the record, borrows one year and adds 12 months when the month is before March, then returns the resulting day count modulo 7. blocked: the reviewed MWCC 2.0 build never inlines division by a constant, so the natural source needs an unresolved _s32_div_f BL; the original inlines /100, /10 and %7 as reciprocal multiplies."
+      ],
+      "function": {
+        "address": 33612648,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 176,
+        "id": "arm9:0200e368:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 74600,
+        "size": 188,
+        "target_sha256": "d831a0b07dea10b922ad48bf483d83f918e7ce7eed2182b956acbafe79e8c585"
+      },
+      "function_id": "arm9:0200e368:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Date-like record helper: reads {year-offset, month, day} from the record, borrows one year and adds 12 months when the month is before March, then returns the resulting day count modulo 7. blocked: the reviewed MWCC 2.0 build never inlines division by a constant, so the natural source needs an unresolved _s32_div_f BL; the original inlines /100, /10 and %7 as reciprocal multiplies.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "6401936ab2f08fd559e707da7c51196f3e4910df239e4f9201cef99411de7dca"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 196,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 163,
+        "target_size": 188,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "62fc2ec1300a1d0867b4af3d03a35c3727f942e71ddb97b23ec6849020bb5a6f",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0200e368.c",
+      "source_sha256": "6401936ab2f08fd559e707da7c51196f3e4910df239e4f9201cef99411de7dca",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "5d7287fded66a97581cb68ab130f91ef772d5e2cfae0fdae3a46e15dfb6bd2ac",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. String copy: copies the NUL-terminated string at src to dst and returns dst, using word copies while dst and src share 4-byte alignment and costed byte copies otherwise. X: size 124 vs the 200-byte original; the original aligns with a counted byte loop and a peeled NUL loop using pre-increment stores, which the reviewed MWCC expresses as post-increment loops."
+      ],
+      "function": {
+        "address": 33674660,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 192,
+        "id": "arm9:0201d5a4:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 136612,
+        "size": 200,
+        "target_sha256": "c4adcb7b1d9aadbcf7530e4236f7ab5cd1619809aa91433e984aebabf41ab4b6"
+      },
+      "function_id": "arm9:0201d5a4:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "String copy: copies the NUL-terminated string at src to dst and returns dst, using word copies while dst and src share 4-byte alignment and costed byte copies otherwise. X: size 124 vs the 200-byte original; the original aligns with a counted byte loop and a peeled NUL loop using pre-increment stores, which the reviewed MWCC expresses as post-increment loops.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "7f652b427568bff0c81e9bbf854226c487c0bf775cea312d2147ad171d93e69c"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 264,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 238,
+        "target_size": 200,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "da5fff49356201484b1b983b2babde39e322ff731bde394fc92ede1248b7f461",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0201d5a4.c",
+      "source_sha256": "7f652b427568bff0c81e9bbf854226c487c0bf775cea312d2147ad171d93e69c",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "25408a1765fca145d7b26ae985734a3b457ff9109751e7b01fbf8c09a46ad0f7",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Free-list split: when at least 0x48 bytes remain past size, splits the block at p, links the tail before p, sets p->size and coalesces the tail with the next block when it is free. X: exact 164-byte size and identical control flow, but 9 instructions differ only in scratch register choice (remainder in ip vs lr, the zero constant in lr vs ip)."
+      ],
+      "function": {
+        "address": 33767664,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 164,
+        "id": "arm9:020340f0:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 229616,
+        "size": 164,
+        "target_sha256": "e033feaf17eab8280457dd83ea0ce9ad241792c6a2ff254f315e7a7ee15ca2c3"
+      },
+      "function_id": "arm9:020340f0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Free-list split: when at least 0x48 bytes remain past size, splits the block at p, links the tail before p, sets p->size and coalesces the tail with the next block when it is free. X: exact 164-byte size and identical control flow, but 9 instructions differ only in scratch register choice (remainder in ip vs lr, the zero constant in lr vs ip).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "91874d3a70112e5e032ed29bc043e7777f9c4a7e0a4cf494c0a3b8f377b951a3"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 164,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": 37,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 116,
+        "target_size": 164,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "97f41fc4a1a88f21a1e76293ddb1d1eee281c1dc28a0fb46924e69c993578f81",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020340f0.c",
+      "source_sha256": "91874d3a70112e5e032ed29bc043e7777f9c4a7e0a4cf494c0a3b8f377b951a3",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "37bf0788cd6247d95e98382171477decc80334a862c2ae3ee72cb9af0c492b56",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Output-table setup: for each of two slots whose byte at 0x021de3d0 is non-zero, copies the first two halfwords of the 0x30-byte record at 0x021de340 into the 16-byte record array at 0x021de298 with the last two words zeroed, then sets bit 1 of the state word at 0x021de250. X: the reviewed MWCC rematerialises the absolute table addresses as immediate add chains instead of hoisting them into registe"
+      ],
+      "function": {
+        "address": 34371212,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 148,
+        "id": "arm9:020c768c:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 833164,
+        "size": 164,
+        "target_sha256": "57efd14d3ad6799b3f1d889a9f63281bb3b61d92ce669c086d77588761bb38a7"
+      },
+      "function_id": "arm9:020c768c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Output-table setup: for each of two slots whose byte at 0x021de3d0 is non-zero, copies the first two halfwords of the 0x30-byte record at 0x021de340 into the 16-byte record array at 0x021de298 with the last two words zeroed, then sets bit 1 of the state word at 0x021de250. X: the reviewed MWCC rematerialises the absolute table addresses as immediate add chains instead of hoisting them into registe",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "ab9e806ace81ea31a17cdc0e29bcd61e2cbde8c91bab7da9d7301478898d115d"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 136,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 146,
+        "target_size": 164,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "9ec69d78830adb5221a0355cc1cc391ef9b2f72f33db9445090c23192c14e71b",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c768c.c",
+      "source_sha256": "ab9e806ace81ea31a17cdc0e29bcd61e2cbde8c91bab7da9d7301478898d115d",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "9bd03db93cd4dcc656359e2eca671734dc2dacc8784b55ebe456a49906cfed7e",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Output-table setup: for each of two slots whose byte at 0x021de3d0 is non-zero, packs the four bytes at offset 0x0c of the 0x30-byte record at 0x021de340 into the 32-bit slot array at 0x021de254, then sets bit 6 of the state word at 0x021de250. X: same absolute-address rematerialisation plus a differing local byte-pack."
+      ],
+      "function": {
+        "address": 34372180,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 156,
+        "id": "arm9:020c7a54:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 834132,
+        "size": 172,
+        "target_sha256": "0477258e6f6d6a0b3a4e7fd349a027fdf4026a0e28c5051cf63fbfe3c1dd29bb"
+      },
+      "function_id": "arm9:020c7a54:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Output-table setup: for each of two slots whose byte at 0x021de3d0 is non-zero, packs the four bytes at offset 0x0c of the 0x30-byte record at 0x021de340 into the 32-bit slot array at 0x021de254, then sets bit 6 of the state word at 0x021de250. X: same absolute-address rematerialisation plus a differing local byte-pack.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "97f4a72665a57a28012eab0c28d35b56ce496dd37a4e4613daee929174d5e265"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 116,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 158,
+        "target_size": 172,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "f8bfe710fd37692099255c50fe0cc95f34da072396b7879551939a2870545379",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c7a54.c",
+      "source_sha256": "97f4a72665a57a28012eab0c28d35b56ce496dd37a4e4613daee929174d5e265",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "e90f8a5a7ffeea3677d4bd1264e99a76627f4f2a424aa250837f68c3e2ff973c",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "4 isolated hypotheses; best tier X. Level lookup + interpolation pack: returns 0 when value >= *(u16*)(base+0x12); walks base down from index 2 (do/while over a signed char counter) taking the first entry with value < base[i+6], else 0; then fills out[0..2] from the scaling factor at *(u32*)(*(u32*)0x02100c00+0x1318) and stores the level byte at out+0xc. Non-S: the whole instruction stream, size (180) and literal pool now match, but"
+      ],
+      "function": {
+        "address": 33642896,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 176,
+        "id": "arm9:02015990:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 104848,
+        "size": 180,
+        "target_sha256": "96ce639660120a42b157445a2262ec5462f477ddb474c017dac09394d5ba220b"
+      },
+      "function_id": "arm9:02015990:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Level lookup + interpolation pack: returns 0 when value >= *(u16*)(base+0x12); walks base down from index 2 (do/while over a signed char counter) taking the first entry with value < base[i+6], else 0; then fills out[0..2] from the scaling factor at *(u32*)(*(u32*)0x02100c00+0x1318) and stores the level byte at out+0xc. Non-S: the whole instruction stream, size (180) and literal pool now match, but",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "3cc37f02f001748c216047ed07e4cebfd6a7089510f46b6affbb60b1f2fa49b7"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 184,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 161,
+        "target_size": 180,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "495ac51b009fdda456d7032889962c51756fa65bcfaf0c72825e678a2cfa5413",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02015990.c",
+      "source_sha256": "3cc37f02f001748c216047ed07e4cebfd6a7089510f46b6affbb60b1f2fa49b7",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "714087526f7086df781a6cbe46e44585be903caefdd01eeef0dd07979077a27f",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Appends one 4-halfword record: derives free space from a[5..7], returns 0xfffe when there is none, else stores b[0..3]>>4 into the 0x30-stride table at 0x02101824 + idx*0x540 and returns the previous a[7]. Non-S: MWCC if-converts the inner test (ldrhls/cmpls) and picks a different register set; 42 instruction diffs at matching size."
+      ],
+      "function": {
+        "address": 33720992,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 180,
+        "id": "arm9:02028aa0:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 182944,
+        "size": 188,
+        "target_sha256": "5e570b46eebed51e3e7ac321e51582aeabf1423b331469046e82acc6f376db33"
+      },
+      "function_id": "arm9:02028aa0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Appends one 4-halfword record: derives free space from a[5..7], returns 0xfffe when there is none, else stores b[0..3]>>4 into the 0x30-stride table at 0x02101824 + idx*0x540 and returns the previous a[7]. Non-S: MWCC if-converts the inner test (ldrhls/cmpls) and picks a different register set; 42 instruction diffs at matching size.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "ddc0429ac0288497ad5dc9504816a34a14f215d3ed27bc4af9f0de1a4467c5b7"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 156,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 163,
+        "target_size": 188,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "7044f130d7b67c52883b2f084ee889412f7dae81cf96da4759a188ef0e7fe788",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02028aa0.c",
+      "source_sha256": "ddc0429ac0288497ad5dc9504816a34a14f215d3ed27bc4af9f0de1a4467c5b7",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "f53b8bad29ed57054333b3ef52156f0bfd83f1acf2420e13f3206c1bdd7bf608",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Copies one of three word pairs (grouped by which%3) from the table at 0x020e99ec into two bytes of *src and stores the global word at 0x02108d70+4 into out[3]. Non-S: for `which==0||which==3` this profile emits an ARMv6 conditional-compare chain (cmpne) and re-materialises the pool constants in every branch, while the original uses two compares plus a branch with both base addresses hoisted once a"
+      ],
+      "function": {
+        "address": 34291832,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 180,
+        "id": "arm9:020b4078:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 753784,
+        "size": 188,
+        "target_sha256": "61b1d14b22793da8e11b2ce57efedb60eb3ac3e8758a6643a6550c6bc7529701"
+      },
+      "function_id": "arm9:020b4078:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Copies one of three word pairs (grouped by which%3) from the table at 0x020e99ec into two bytes of *src and stores the global word at 0x02108d70+4 into out[3]. Non-S: for `which==0||which==3` this profile emits an ARMv6 conditional-compare chain (cmpne) and re-materialises the pool constants in every branch, while the original uses two compares plus a branch with both base addresses hoisted once a",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "8af038d006344d2504bdd4a3fe7cc68cbd13a369b7c07a5a35412b6ea0244bec"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 148,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 168,
+        "target_size": 188,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "87a1712d94ec98d5bf3d2e8aface35ecbcbe459f7eeb9becb1c117db412de725",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b4078.c",
+      "source_sha256": "8af038d006344d2504bdd4a3fe7cc68cbd13a369b7c07a5a35412b6ea0244bec",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "e4de2c2ac9002e1ae57dc91bbdb75ec922c15f17a8166e680c40e95ba30f3c3d",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Display refresh: when flag bit0 is set and bit4 clear and bit2 set, shifts the two 12-byte records' halfword pairs and refills them from the 0x30-stride table bytes at 0x021de340, then sets flag bit4. Non-S: MWCC folds the three table base addresses into flag_base+imm (2 pool words instead of the original 4) and uses and/asr instead of the target's lsl/lsr byte splits."
+      ],
+      "function": {
+        "address": 34371592,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 176,
+        "id": "arm9:020c7808:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 833544,
+        "size": 192,
+        "target_sha256": "2ab8fcada3d09f1a77ca608af4f9eb15107ea728ab01704dd182921cce6f9eb1"
+      },
+      "function_id": "arm9:020c7808:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Display refresh: when flag bit0 is set and bit4 clear and bit2 set, shifts the two 12-byte records' halfword pairs and refills them from the 0x30-stride table bytes at 0x021de340, then sets flag bit4. Non-S: MWCC folds the three table base addresses into flag_base+imm (2 pool words instead of the original 4) and uses and/asr instead of the target's lsl/lsr byte splits.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "eff8b68ba14abf6490a55857e5464320cb2d8217d499b2b04d0b8c7d13f4578c"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 152,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": null,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 177,
+        "target_size": 192,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "83fe6f27786f7d74b8aa7b7b0c04cf57414f41551543369601927cbf15b30510",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c7808.c",
+      "source_sha256": "eff8b68ba14abf6490a55857e5464320cb2d8217d499b2b04d0b8c7d13f4578c",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "cache_key": "7cb317e30ce00b39989a1511d85841841926aa5dbf4a57eb41b1eb4010f4c354",
+      "compiler_profile": {
+        "driver": "clang-standalone-c-v1",
+        "evidence": "controlled modern compiler probe only; not identified as original DS compiler",
+        "executable": "/usr/bin/clang",
+        "executable_sha256": "939a882527432ec23b094c289e7f170bf2d6ec282e74dde75e31b08602fa3eae",
+        "flags": [
+          "--target=arm-none-eabi",
+          "-mcpu=arm946e-s",
+          "-marm",
+          "-O2",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables"
+        ],
+        "name": "clang23-arm946-o2-exploratory",
+        "schema": 1,
+        "symbol_values": {},
+        "version": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+      },
+      "diagnostics": "",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Card read: builds the 0xb7 command from a 0x200-aligned address, polls ROMCTRL (0x040001a4) for busy, then copies CARD_DATA (0x04100010) into out until len, advancing 0x200 per block; returns early when already past the end. Exact match under the reviewed profile."
+      ],
+      "function": {
+        "address": 34604732,
+        "aliases": [],
+        "boundary_evidence": "arm9: reachability-closed ARM leaf (no call/unconditional tail branch); literal pool inside the reviewed extent when present",
+        "code_size": 192,
+        "id": "arm9:021006bc:arm",
+        "mode": "arm",
+        "module": "arm9",
+        "rom_offset": 1066684,
+        "size": 212,
+        "target_sha256": "3475786326df3dcbf1eafe4ffef0c890fa316d05366766c7d3f36a8d01e4f954"
+      },
+      "function_id": "arm9:021006bc:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Card read: builds the 0xb7 command from a 0x200-aligned address, polls ROMCTRL (0x040001a4) for busy, then copies CARD_DATA (0x04100010) into out until len, advancing 0x200 per block; returns early when already past the end. Exact match under the reviewed profile.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "3039b33e054c0d6b5c90ba860891f30c4b9709366db2010e2f1c7374c350de04"
+        }
+      ],
+      "metrics": {
+        "candidate_size": 212,
+        "comparator": "unmasked-capstone5-instruction-boundaries-v1",
+        "instruction_differences": 47,
+        "masked_fields": [],
+        "near_threshold": {
+          "instructions": 4,
+          "resolved_bytes": 16
+        },
+        "registers_normalized": false,
+        "resolved_byte_differences": 185,
+        "target_size": 212,
+        "tier": "X"
+      },
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "output_sha256": "59b3cfb0eb8c5f8d703eb1c634bd6d4107c71a2b7dcac331c0d63de46983299c",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/021006bc.c",
+      "source_sha256": "3039b33e054c0d6b5c90ba860891f30c4b9709366db2010e2f1c7374c350de04",
       "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
     }
   ],

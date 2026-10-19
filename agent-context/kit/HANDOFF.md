@@ -11,15 +11,15 @@ SHA256: `43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad`.
 
 | Evidence | Baseline | Current |
 | --- | --- | --- |
-| Verified functions / total | 0 / unknown | 210 / unknown |
-| Verified code bytes / total | 0 / unknown | 4092 / unknown |
-| Verified plus locally identical draft functions / total | 0 / unknown | 210 / unknown |
-| Verified plus locally identical draft code bytes / total | 0 / unknown | 4092 / unknown |
+| Verified functions / total | 0 / unknown | 249 / unknown |
+| Verified code bytes / total | 0 / unknown | 6696 / unknown |
+| Verified plus locally identical draft functions / total | 0 / unknown | 249 / unknown |
+| Verified plus locally identical draft code bytes / total | 0 / unknown | 6696 / unknown |
 
-Changes: +210 verified functions/+4092 bytes. Percentage-point changes are unknown.
-The bounded inventory is functions-v4.json (563 reviewed ARM9 entries); it is still not
-a full-game denominator. Research tiers: S 125, N 74, X 353 (552 drafts; the research
-snapshot still lists the original 8 accepted functions). Technical strict tier: B 210,
+Changes: +249 verified functions/+6696 bytes. Percentage-point changes are unknown.
+The bounded inventory is functions-v5.json (658 reviewed ARM9 entries); it is still not
+a full-game denominator. Research tiers: S 126, N 79, X 439 (644 drafts; the research
+snapshot still lists the original 8 accepted functions). Technical strict tier: B 249,
 built by mixing per-function Clang and reviewed local MWCC profiles. Behavior is
 separate: 6 drafts pass 1948 sampled calls.
 
@@ -66,11 +66,17 @@ unchanged results; explicit rechecks are for validation.
 
 ## Source and tool status
 
-The supported strict build uses hash-pinned native Clang/LLD and formatting tools.
-The original compiler remains unknown. Optional local MWCC support is available;
-QEMU requires explicit selection. Local compilers and runners remain ignored.
-The narrow linker supports complete standalone ARM9 ARM leaf functions. Other modes,
-extra sections/data and unsupported text relocations stop integration.
+The supported strict build links complete standalone ARM9 ARM leaf functions compiled
+by **two** hash-pinned toolchains: native Clang 23.1.1 (with LLD 23.1.1) and an
+optional local Metrowerks (MWCC) ARM compiler. Each `build.json` entry names its own
+profile, so the two sets coexist in one module; the whole-ROM gate still decides
+acceptance. The key MWCC finding is that `-interworking` is required so returns use
+`bx lr` as the DS does. The original compiler remains unidentified (no version string
+survives; Clang, GCC 15 and MWCC each fail a different subset). QEMU requires explicit
+selection. Local compilers and runners remain ignored and are never committed; the
+reviewed MWCC profile is repo-relative, so it holds no machine-specific path. The
+narrow linker supports complete standalone ARM9 ARM leaf functions; other modes, extra
+sections/data and unsupported text relocations stop integration.
 
 The desktop reference revision is 325b2229a7225d73870bb69322eefcda3a45bf8d.
 See docs/donors.md for license notices, independently checked MT19937 evidence and
@@ -85,17 +91,16 @@ bytes and is not used for strict rebuilding. Preserve diagnostics outside Git.
 The RNG seed/next ownership question is answered: all seed and wrapper callers pass
 explicit per-object embedded states seeded from the arm9 0x02005d48 system-time getter;
 the global default path appears unreachable. The mt_next draft and its 655-call
-transitions are banked (X similarity; no exact compiler match yet).
+transitions are banked.
 
-The largest remaining matching gap is structural, not missing work: many ARM9 leaves
-load a 32-bit constant from a literal pool that the original keeps in the inter-function
-gap, outside the reviewed extent, while Clang emits its pool inside `.text`. Extending
-those reviewed extents to include the pool word (or treating it as an opaque retained
-tail) would convert many honest N/X drafts into exact matches. This needs a reviewed
-inventory/size revision, not instruction masking.
-
-Next concrete steps: (1) review pool-inclusive extents for the recorded N/X leaves in
-functions-v3; (2) continue connected-system work (the +0x5c predicate owner); (3) keep
+Matching progress comes from per-function compiler choice. MWCC (`-interworking`)
+converts many previously X leaves into exact matches that Clang cannot; remaining
+misses are mostly register allocation, if-conversion depth, constant materialization
+(address immediates vs literal pool), constant-division strength reduction (the
+reviewed MWCC calls `_s32_div_f` where the ROM inlines a magic multiply) and pool
+placement. Next: (1) try reviewed MWCC variants/flags for the constant-division and
+if-conversion gaps; (2) keep extending reviewed pool/if-conversion extents; (3)
+continue connected-system work (the +0x5c predicate owner) and behavior tests. Keep
 matching attempts bounded and require new binary/ABI/compiler evidence before another
 shape sweep.
 

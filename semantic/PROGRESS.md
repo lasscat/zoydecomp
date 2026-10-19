@@ -12,7 +12,7 @@ Strict credit is an authoritative Track-A snapshot; drafts never earn B here. No
 | B union S code bytes / total | 0 / unknown | 2116 / unknown |
 
 Delta: 134 functions, 2116 bytes; code percentage points unavailable.
-Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code size.
+Tiers: B 8, S 126, N 79, X 439. Inventory incomplete; never use ROM size as code size.
 
 | Function | Tier | Target / candidate bytes | Resolved differing bytes | Differing instructions |
 | --- | --- | --- | --- | --- |
@@ -124,6 +124,7 @@ Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code
 | arm9:0200e04c:arm | X | 148 / 156 | 135 | incomparable size |
 | arm9:0200e0e0:arm | X | 24 / 28 | 24 | incomparable size |
 | arm9:0200e254:arm | X | 128 / 108 | 113 | incomparable size |
+| arm9:0200e368:arm | X | 188 / 196 | 163 | incomparable size |
 | arm9:0200e58c:arm | X | 12 / 16 | 4 | incomparable size |
 | arm9:0200e5b4:arm | X | 12 / 16 | 4 | incomparable size |
 | arm9:0200e5c4:arm | X | 8 / 12 | 4 | incomparable size |
@@ -143,6 +144,7 @@ Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code
 | arm9:02013718:arm | X | 124 / 132 | 109 | incomparable size |
 | arm9:02013958:arm | X | 68 / 60 | 53 | incomparable size |
 | arm9:02014e08:arm | X | 20 / 24 | 18 | incomparable size |
+| arm9:02015990:arm | X | 180 / 184 | 161 | incomparable size |
 | arm9:02015bf4:arm | X | 76 / 76 | 63 | 18 |
 | arm9:02015e48:arm | X | 40 / 48 | 37 | incomparable size |
 | arm9:02015e70:arm | X | 68 / 72 | 63 | incomparable size |
@@ -177,6 +179,7 @@ Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code
 | arm9:0201d378:arm | X | 40 / 48 | 35 | incomparable size |
 | arm9:0201d3ac:arm | X | 12 / 16 | 4 | incomparable size |
 | arm9:0201d588:arm | X | 28 / 28 | 10 | 5 |
+| arm9:0201d5a4:arm | X | 200 / 264 | 238 | incomparable size |
 | arm9:0201d66c:arm | X | 80 / 80 | 69 | 20 |
 | arm9:0201d8ac:arm | X | 108 / 128 | 103 | incomparable size |
 | arm9:0201edb8:arm | X | 28 / 28 | 21 | 6 |
@@ -210,6 +213,7 @@ Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code
 | arm9:02028674:arm | X | 28 / 32 | 20 | incomparable size |
 | arm9:020286d0:arm | S | 24 / 24 | 0 | 0 |
 | arm9:02028750:arm | N | 36 / 36 | 12 | 4 |
+| arm9:02028aa0:arm | X | 188 / 156 | 163 | incomparable size |
 | arm9:02028eb0:arm | N | 12 / 12 | 5 | 2 |
 | arm9:02028ebc:arm | X | 28 / 20 | 23 | incomparable size |
 | arm9:02028ed8:arm | S | 8 / 8 | 0 | 0 |
@@ -266,6 +270,7 @@ Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code
 | arm9:020330b4:arm | S | 24 / 24 | 0 | 0 |
 | arm9:02033128:arm | N | 24 / 24 | 5 | 4 |
 | arm9:02033140:arm | N | 24 / 24 | 8 | 4 |
+| arm9:020340f0:arm | X | 164 / 164 | 116 | 37 |
 | arm9:02034194:arm | N | 24 / 24 | 6 | 4 |
 | arm9:0203429c:arm | X | 12 / 16 | 5 | incomparable size |
 | arm9:02034378:arm | X | 40 / 44 | 34 | incomparable size |
@@ -558,6 +563,7 @@ Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code
 | arm9:020b3540:arm | X | 68 / 64 | 49 | incomparable size |
 | arm9:020b35d8:arm | X | 20 / 24 | 12 | incomparable size |
 | arm9:020b384c:arm | X | 52 / 56 | 45 | incomparable size |
+| arm9:020b4078:arm | X | 188 / 148 | 168 | incomparable size |
 | arm9:020b51ac:arm | X | 32 / 28 | 21 | incomparable size |
 | arm9:020b64b8:arm | N | 20 / 20 | 9 | 3 |
 | arm9:020b675c:arm | S | 28 / 28 | 0 | 0 |
@@ -620,7 +626,10 @@ Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code
 | arm9:020c64d8:arm | X | 12 / 16 | 4 | incomparable size |
 | arm9:020c6820:arm | S | 20 / 20 | 0 | 0 |
 | arm9:020c713c:arm | X | 20 / 24 | 18 | incomparable size |
+| arm9:020c768c:arm | X | 164 / 136 | 146 | incomparable size |
+| arm9:020c7808:arm | X | 192 / 152 | 177 | incomparable size |
 | arm9:020c79c8:arm | X | 140 / 88 | 126 | incomparable size |
+| arm9:020c7a54:arm | X | 172 / 116 | 158 | incomparable size |
 | arm9:020c7ee4:arm | X | 52 / 52 | 6 | 5 |
 | arm9:020c7f3c:arm | X | 32 / 36 | 9 | incomparable size |
 | arm9:020c7f60:arm | X | 12 / 16 | 5 | incomparable size |
@@ -650,3 +659,4 @@ Tiers: B 8, S 126, N 79, X 429. Inventory incomplete; never use ROM size as code
 | arm9:02100164:arm | X | 60 / 52 | 55 | incomparable size |
 | arm9:021001a0:arm | X | 128 / 148 | 121 | incomparable size |
 | arm9:021005e8:arm | X | 20 / 24 | 16 | incomparable size |
+| arm9:021006bc:arm | X | 212 / 212 | 185 | 47 |
