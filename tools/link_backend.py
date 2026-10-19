@@ -28,7 +28,7 @@ def declaration(root=ROOT):
     if not path.exists():
         return {'functions': [], 'inventory': 'functions-v1.json'}
     plan = read_json(path)
-    if plan.get('schema') != 1 or plan['inventory'] not in ('functions-v1.json', 'functions-v2.json', 'functions-v3.json'):
+    if plan.get('schema') != 1 or plan['inventory'] not in ('functions-v1.json', 'functions-v2.json', 'functions-v3.json', 'functions-v4.json'):
         raise GateError('unsupported strict build schema/inventory')
     return plan
 

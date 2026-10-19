@@ -9,8 +9,8 @@
   },
   "behavior_evidence": "Six functions, 1948 sampled calls: 41 seed calls, 655 connected seed-to-next/reseed calls (two twist reloads) and 313 per predicate for four connected +0x5c predicates; separate scoped evidence, no equivalence proof",
   "denominator_complete": false,
-  "functions_sha256": "65a9900945a8854e80598c41625aa8fd7022104fabaed5aa5a0ee8420436be07",
-  "inventory": "functions-v3.json",
+  "functions_sha256": "e66310ce5cd953043d899feb4ad16a1ff32f2aa69cb1add36f71180718274d0a",
+  "inventory": "functions-v4.json",
   "original_sha1": "fcc5ec4cfd4fabcbb26dee847d9ed6803e9ad93b",
   "original_sha256": "43dfad7bcaea611a770034919d3fbf77c0ffe41b81483a0eec7774d7c5c418ad",
   "schema": 1,
@@ -21,10 +21,10 @@
     "semantic/tools/semantic_progress.py": "77d94bf8fcafb7e19cd1f2f974f9f3b733d5744334667fb509fa6bff74f2a15d",
     "tools/compiler.py": "abfdc5a5cdd0155e2803ac9f78e7f40387c2ccaf22ff468ca267e0772ca103e5",
     "tools/disasm.py": "6f06252f5fbb45bafbdd58498f3a4e6747b569b9d43053f7b16ded58191b3195",
-    "tools/link_backend.py": "2c44cc2a8ceeb21aac5b35c62dc50eab1eb2492bd56b84d5b3c41db909898097",
+    "tools/link_backend.py": "75fd0e6c6fd57d3510c8adebfbd86896db9f9b9f284ce43a08eddb628f5bbb55",
     "tools/mwcc_support.py": "8defceb7328c5c6295bfdce043853f3d200f400419e9aa93ccf071818d293f9c",
     "tools/probe_compiler.py": "e9d25aad87b5a8d0d352d619d7d226f6e809c8a6d6e481e5efc241c3d449dadb",
-    "tools/progress_support.py": "32613a6c0dd1d97cdf6bba991b88a7f8939d273c984884fcd01a650166894679",
+    "tools/progress_support.py": "186a4ce0ae95e1744c1fce66d2bf0fdff0dfa8b72caab9becadbc48254ddffbf",
     "tools/project.py": "d402de4704a68991e3b38e7273e46f7f45c9f7259e6b6d075f7cc094993e7654",
     "tools/wip_support.py": "bf10e360e1abf8d46480bdb957782c4097c8486716d157a47eb0354abdd6c162"
   }
