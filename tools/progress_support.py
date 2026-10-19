@@ -41,7 +41,7 @@ def saved_progress(manifest_path, universe, manifest_data=None):
     tree = manifest_path.parent.parent
     manifest = read_json(manifest_path) if manifest_data is None else manifest_data
     inventory = manifest.get('inventory', 'functions-v1.json')
-    if inventory not in ('functions-v1.json', 'functions-v2.json'):
+    if inventory not in ('functions-v1.json', 'functions-v2.json', 'functions-v3.json'):
         raise GateError('unsupported inventory version')
     functions_hash = sha256((ROOT / 'config' / REVISION / inventory).read_bytes())
     if manifest['original_sha256'] != ORIGINAL_SHA256 or manifest['functions_sha256'] != functions_hash:
