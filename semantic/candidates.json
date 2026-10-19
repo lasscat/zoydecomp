@@ -4922,6 +4922,2247 @@
       "source": "semantic/src/leaves/020cacf4.c",
       "source_sha256": "de6687196da3cbc2b44c2a0c6c790cd67bdc39660ca346c07721166606e54290",
       "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Pack 4 bytes (a|0x40, b, c, d) into one word at *out. X: clang23 flattens the OR tree into a single accumulator instead of the original's two half-words."
+      ],
+      "function_id": "arm9:0200148c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Pack 4 bytes (a|0x40, b, c, d) into one word at *out. X: clang23 flattens the OR tree into a single accumulator instead of the original's two half-words.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "3cde78952881a20e0dc729bf2d63012eca27eb4e5993409028db2b1a4e13c673"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0200148c.c",
+      "source_sha256": "3cde78952881a20e0dc729bf2d63012eca27eb4e5993409028db2b1a4e13c673",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Read halfword field at fixed global 0x020fd340 + 0x10. X: fixed address is materialised from a literal pool whose 4 bytes are appended to .text (the original's pool word lies outside the declared function size); clang also folds +0x10 into the pool constant."
+      ],
+      "function_id": "arm9:02003ab8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Read halfword field at fixed global 0x020fd340 + 0x10. X: fixed address is materialised from a literal pool whose 4 bytes are appended to .text (the original's pool word lies outside the declared function size); clang also folds +0x10 into the pool constant.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "6a1fb3281b12d018036404486d2290d87dcad7089c646aef984f9a0b708b2ce4"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02003ab8.c",
+      "source_sha256": "6a1fb3281b12d018036404486d2290d87dcad7089c646aef984f9a0b708b2ce4",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Clear the two words of the fixed global pair at 0x027e0060 (word 1 then word 0). X: code bytes and pool word match the original exactly, but the literal-pool word is appended to .text so the size is 24 instead of 20."
+      ],
+      "function_id": "arm9:02003d78:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clear the two words of the fixed global pair at 0x027e0060 (word 1 then word 0). X: code bytes and pool word match the original exactly, but the literal-pool word is appended to .text so the size is 24 instead of 20.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "24a873ea30f42d76e90c66f1390e738fa6bf97ec613d6e52d214cdc6341842ed"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02003d78.c",
+      "source_sha256": "24a873ea30f42d76e90c66f1390e738fa6bf97ec613d6e52d214cdc6341842ed",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier S. Detach a doubly linked node: forward link at +0x10 tested first, back link at +0x14; owner ends at +0x8c/+0x88. Exact."
+      ],
+      "function_id": "arm9:02005384:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Detach a doubly linked node: forward link at +0x10 tested first, back link at +0x14; owner ends at +0x8c/+0x88. Exact.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "932c751cf03885a516db982ef9a8b408294e4d335e5f6421c29f5a5d8369f13b"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02005384.c",
+      "source_sha256": "932c751cf03885a516db982ef9a8b408294e4d335e5f6421c29f5a5d8369f13b",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier S. Clear the first three words of the object, stored 2,1,0. volatile keeps the original's descending store order (clang reorders to ascending otherwise). Exact."
+      ],
+      "function_id": "arm9:02006a40:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clear the first three words of the object, stored 2,1,0. volatile keeps the original's descending store order (clang reorders to ascending otherwise). Exact.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "0d91e36a0755e3f2e0f0799ea839f0657ef8d731772c5e3efed148f753f3c26f"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02006a40.c",
+      "source_sha256": "0d91e36a0755e3f2e0f0799ea839f0657ef8d731772c5e3efed148f753f3c26f",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. *out = stream->end(0xc) - stream->pos(4) with stream taken from obj+4; returns 0 (first parameter unused). X: clang23 loads the stream pointer into r0 and reorders the two field loads, 5 of 7 instructions differ (just over the 4-instruction near threshold)."
+      ],
+      "function_id": "arm9:0200b548:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "*out = stream->end(0xc) - stream->pos(4) with stream taken from obj+4; returns 0 (first parameter unused). X: clang23 loads the stream pointer into r0 and reorders the two field loads, 5 of 7 instructions differ (just over the 4-instruction near threshold).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "7fc32d55d5c0e8a8a2576275b3ec344c5d79f5e256259d6aa0f1b325611c64e1"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0200b548.c",
+      "source_sha256": "7fc32d55d5c0e8a8a2576275b3ec344c5d79f5e256259d6aa0f1b325611c64e1",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Store the argument into the fixed global word at 0x020ff660. X: code bytes and pool word match exactly; only the appended literal-pool word makes .text 16 instead of 12."
+      ],
+      "function_id": "arm9:0200e5b4:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Store the argument into the fixed global word at 0x020ff660. X: code bytes and pool word match exactly; only the appended literal-pool word makes .text 16 instead of 12.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "1c5e533a781afb16d862ae6f05c9d19bebf9fe3cb224a188f107a9673b93348d"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0200e5b4.c",
+      "source_sha256": "1c5e533a781afb16d862ae6f05c9d19bebf9fe3cb224a188f107a9673b93348d",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Read the word at fixed global 0x020fffec + 4. X: literal-pool word appended to .text (16 vs 12) and clang folds +4 into the pool constant."
+      ],
+      "function_id": "arm9:020100ac:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Read the word at fixed global 0x020fffec + 4. X: literal-pool word appended to .text (16 vs 12) and clang folds +4 into the pool constant.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "76e39334c9fdde9e896fc6668ce1bc6513954789d2a87fcb5c211349878f2874"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020100ac.c",
+      "source_sha256": "76e39334c9fdde9e896fc6668ce1bc6513954789d2a87fcb5c211349878f2874",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Return bit 0 of the word at p+4 as 0/1. X: clang23 narrows this to 'and r0,r0,#1' (8 bytes); the original kept the 1-bit field extract (lsl/lsr + movne/moveq)."
+      ],
+      "function_id": "arm9:0201857c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Return bit 0 of the word at p+4 as 0/1. X: clang23 narrows this to 'and r0,r0,#1' (8 bytes); the original kept the 1-bit field extract (lsl/lsr + movne/moveq).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "540a3230101f17fbace030aa9ae47c173f1404fd99537296f4026accf0379e57"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0201857c.c",
+      "source_sha256": "540a3230101f17fbace030aa9ae47c173f1404fd99537296f4026accf0379e57",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Entry pointer = table base at p+4 plus count(p+0) scaled by 16 when bit 0 of the halfword at p+2 is set, else by 8. X: clang23 uses a shift-by-register select (mov 4 / movne 3 / lsl r2) instead of the original's conditional adds."
+      ],
+      "function_id": "arm9:02027ed8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Entry pointer = table base at p+4 plus count(p+0) scaled by 16 when bit 0 of the halfword at p+2 is set, else by 8. X: clang23 uses a shift-by-register select (mov 4 / movne 3 / lsl r2) instead of the original's conditional adds.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "c0541bba8c15c7e0aa395e14da62a706f5c4ea7d98617003af1cec5b99873e15"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02027ed8.c",
+      "source_sha256": "c0541bba8c15c7e0aa395e14da62a706f5c4ea7d98617003af1cec5b99873e15",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Word element of an array (p[index]). Exact."
+      ],
+      "function_id": "arm9:02028ee0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Word element of an array (p[index]). Exact.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "fca8acae954e87c69c1ffd016748da924249215d2024006708f606f8065e02fb"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02028ee0.c",
+      "source_sha256": "fca8acae954e87c69c1ffd016748da924249215d2024006708f606f8065e02fb",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Store two words into the object at +0x1c and +0x20. Exact."
+      ],
+      "function_id": "arm9:0202ca34:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Store two words into the object at +0x1c and +0x20. Exact.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "3f294fcea918cd54243b2a2413425b47e2ee09128e8851ddddab180b3ad31e1a"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0202ca34.c",
+      "source_sha256": "3f294fcea918cd54243b2a2413425b47e2ee09128e8851ddddab180b3ad31e1a",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Clear the bits given by mask in the fixed global word at 0x021037f0. X: literal pool appended to .text and clang23 uses 'bic' instead of the original mvn/and."
+      ],
+      "function_id": "arm9:0202ed54:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clear the bits given by mask in the fixed global word at 0x021037f0. X: literal pool appended to .text and clang23 uses 'bic' instead of the original mvn/and.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "2c3b2b2ba5c61ce032425643b2ee9ed9ab0bf49cd9497aa361bc5dcba690cd0e"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0202ed54.c",
+      "source_sha256": "2c3b2b2ba5c61ce032425643b2ee9ed9ab0bf49cd9497aa361bc5dcba690cd0e",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Zero the two fixed global words at 0x021041a4 and 0x021041ec. X: clang23 reuses one pool constant and addresses the second as base+0x48; the original used two separate pool loads."
+      ],
+      "function_id": "arm9:0202fdd4:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Zero the two fixed global words at 0x021041a4 and 0x021041ec. X: clang23 reuses one pool constant and addresses the second as base+0x48; the original used two separate pool loads.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "7aef31ce97108077015bcc722963075655563d6f195dce088152929943d02918"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0202fdd4.c",
+      "source_sha256": "7aef31ce97108077015bcc722963075655563d6f195dce088152929943d02918",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Field 0x8c of the object referenced by the global pointer at 0x02104240. X: code bytes and pool word match exactly; only the appended pool word changes the size (20 vs 16)."
+      ],
+      "function_id": "arm9:0203074c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Field 0x8c of the object referenced by the global pointer at 0x02104240. X: code bytes and pool word match exactly; only the appended pool word changes the size (20 vs 16).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "cc27b7012b7c4992d776f2b62f786f95440ee2d6c030410dd8898a2461a7ec2f"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0203074c.c",
+      "source_sha256": "cc27b7012b7c4992d776f2b62f786f95440ee2d6c030410dd8898a2461a7ec2f",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Address of the 0x8c-byte record for index in the table at 0x02105d70. X: literal pool appended to .text and clang23 emits an extra mov around the mla."
+      ],
+      "function_id": "arm9:02034f2c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Address of the 0x8c-byte record for index in the table at 0x02105d70. X: literal pool appended to .text and clang23 emits an extra mov around the mla.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "c9a2542201d1f1ebd7bdd78a2cfa17160a058ef50f90de1a0c454fb38436cfbd"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02034f2c.c",
+      "source_sha256": "c9a2542201d1f1ebd7bdd78a2cfa17160a058ef50f90de1a0c454fb38436cfbd",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Copy four signed 16-bit fields. X: clang23 removes the sign extension of the loads (ldrh instead of ldrsh) and stores them in descending address order."
+      ],
+      "function_id": "arm9:020395b8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Copy four signed 16-bit fields. X: clang23 removes the sign extension of the loads (ldrh instead of ldrsh) and stores them in descending address order.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "36f2bad758edcd9ef0cf367735b472a865a7b50512db2d35a8b901ff37ca3894"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020395b8.c",
+      "source_sha256": "36f2bad758edcd9ef0cf367735b472a865a7b50512db2d35a8b901ff37ca3894",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Repack three signed words (+0,+4,+8) into (a>>3)<<5 | x>>3 | (b>>3)<<10 truncated to 16 bits. X: clang23 masks each field (mvn/and/orr with 0x1f8, 0xff00) instead of the original shift-or-then-truncate form, and merges two loads into ldm."
+      ],
+      "function_id": "arm9:02039eac:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Repack three signed words (+0,+4,+8) into (a>>3)<<5 | x>>3 | (b>>3)<<10 truncated to 16 bits. X: clang23 masks each field (mvn/and/orr with 0x1f8, 0xff00) instead of the original shift-or-then-truncate form, and merges two loads into ldm.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "29f4e5650b93db2073354eb2648e7f5a08c174acb2b6fd1b335ca97ba4e02c58"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02039eac.c",
+      "source_sha256": "29f4e5650b93db2073354eb2648e7f5a08c174acb2b6fd1b335ca97ba4e02c58",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier S. Return the 64-bit word at o+8 (low in r0, high in r1), written as lo | hi<<32. Exact."
+      ],
+      "function_id": "arm9:0203f984:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Return the 64-bit word at o+8 (low in r0, high in r1), written as lo | hi<<32. Exact.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "0238a42f252aaf6d9793bcf22caf10a2b0a52daf15958e09191d824212885cad"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0203f984.c",
+      "source_sha256": "0238a42f252aaf6d9793bcf22caf10a2b0a52daf15958e09191d824212885cad",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Clear the word at p+0x14. Exact."
+      ],
+      "function_id": "arm9:020411e0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clear the word at p+0x14. Exact.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "f00635f1273e96d0bea5e0c5d8ecd3f38c44d10558212704d0c7d473d1a37b86"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020411e0.c",
+      "source_sha256": "f00635f1273e96d0bea5e0c5d8ecd3f38c44d10558212704d0c7d473d1a37b86",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier N. Initialise a node: two zero words plus a pointer at +0xc to the word at +4. N: clang23 sinks the address calculation after the two zero stores and swaps the zero/address registers; 4 of 6 instructions differ (same size, same effect). volatile keeps the stores separate (clang would otherwise merge them into STM)."
+      ],
+      "function_id": "arm9:02042dd8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialise a node: two zero words plus a pointer at +0xc to the word at +4. N: clang23 sinks the address calculation after the two zero stores and swaps the zero/address registers; 4 of 6 instructions differ (same size, same effect). volatile keeps the stores separate (clang would otherwise merge them into STM).",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "75af67fe64b6c49c0f0713376ed0407c9bf37c68d26270e4b3e7b4e12e9a409d"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02042dd8.c",
+      "source_sha256": "75af67fe64b6c49c0f0713376ed0407c9bf37c68d26270e4b3e7b4e12e9a409d",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier S. If the byte flag at +0x44d is clear, set +0x450 and then +0x44d to 1. volatile keeps the original's store order (+0x450 first). Exact."
+      ],
+      "function_id": "arm9:02044c88:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "If the byte flag at +0x44d is clear, set +0x450 and then +0x44d to 1. volatile keeps the original's store order (+0x450 first). Exact.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "75d95f72d1ab692675965c33465ea14d754c26fc86aeca8e3cc444e6a9d5afc6"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02044c88.c",
+      "source_sha256": "75d95f72d1ab692675965c33465ea14d754c26fc86aeca8e3cc444e6a9d5afc6",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier N. Store p[1] and p[2] into the two words of the object pointed to by p[0]; p[0] is re-read for the second store because the first may alias it. N: clang23 issues the p[0] load before the p[2] load (3 of 6 instructions differ)."
+      ],
+      "function_id": "arm9:02048b08:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Store p[1] and p[2] into the two words of the object pointed to by p[0]; p[0] is re-read for the second store because the first may alias it. N: clang23 issues the p[0] load before the p[2] load (3 of 6 instructions differ).",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "92469537cbebb325610faf844c530089b452be9ed436b3237b72c508dd8faf72"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02048b08.c",
+      "source_sha256": "92469537cbebb325610faf844c530089b452be9ed436b3237b72c508dd8faf72",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier N. Copy four words with four independent loads then four independent stores. volatile reproduces the separate accesses (clang23 would merge into LDM/STM). N: only the register names of the first and third word differ (r2/ip swapped)."
+      ],
+      "function_id": "arm9:0204d1b8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Copy four words with four independent loads then four independent stores. volatile reproduces the separate accesses (clang23 would merge into LDM/STM). N: only the register names of the first and third word differ (r2/ip swapped).",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "beced1fa923dc002f4a8ad93e3dace91cc1e611870c469c33d2ba322f09b0ffe"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0204d1b8.c",
+      "source_sha256": "beced1fa923dc002f4a8ad93e3dace91cc1e611870c469c33d2ba322f09b0ffe",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. If bit 0 of the word at p is set return the pointer at p+8, else p+1. X: clang23 narrows the load to ldrb and tests with tst (20 bytes); the original used the 1-bit field extract (lsl/lsr) plus conditional add/load."
+      ],
+      "function_id": "arm9:02051940:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "If bit 0 of the word at p is set return the pointer at p+8, else p+1. X: clang23 narrows the load to ldrb and tests with tst (20 bytes); the original used the 1-bit field extract (lsl/lsr) plus conditional add/load.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "846bf97180fdd0e68d9599922509acc4ae978aadd41d30ac70fa03c2306b4d38"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02051940.c",
+      "source_sha256": "846bf97180fdd0e68d9599922509acc4ae978aadd41d30ac70fa03c2306b4d38",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Initialise a 7-word record: words 0..4 zero, word 5 one, word 6 zero. X: only the register names of the zero and one constants differ (r1/r2 swapped in all 9 instructions)."
+      ],
+      "function_id": "arm9:020531b8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialise a 7-word record: words 0..4 zero, word 5 one, word 6 zero. X: only the register names of the zero and one constants differ (r1/r2 swapped in all 9 instructions).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "aeb91deeef150cbe52cfc3c90fc20dda2dab56ed5890d9053601a4e2c21b9ff6"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020531b8.c",
+      "source_sha256": "aeb91deeef150cbe52cfc3c90fc20dda2dab56ed5890d9053601a4e2c21b9ff6",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. True when the state word at p+0x5ae4 is 4 or 5 (unsigned v-4 <= 1). X: clang23 materialises the offset as mov/orr instead of the original add #0x5000 + ldr #0xae4 and lowers the boolean as bic/clz/lsr instead of cmp/movls/movhi."
+      ],
+      "function_id": "arm9:02065a2c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "True when the state word at p+0x5ae4 is 4 or 5 (unsigned v-4 <= 1). X: clang23 materialises the offset as mov/orr instead of the original add #0x5000 + ldr #0xae4 and lowers the boolean as bic/clz/lsr instead of cmp/movls/movhi.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "c18f3a0275a1edcdd8517e6a477641e74f5f461c04ab3459302e19a505c734f5"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02065a2c.c",
+      "source_sha256": "c18f3a0275a1edcdd8517e6a477641e74f5f461c04ab3459302e19a505c734f5",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Initialise a 7-word record (words 0..4 zero, word 5 one, word 6 zero); identical target hash to arm9:020531b8, so the same source. X: register names of the 0/1 constants differ."
+      ],
+      "function_id": "arm9:020680cc:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialise a 7-word record (words 0..4 zero, word 5 one, word 6 zero); identical target hash to arm9:020531b8, so the same source. X: register names of the 0/1 constants differ.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "2d59ffb569c9188984711c476c2ce8b8cdcbd55b354d7337e29395b8f811b023"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020680cc.c",
+      "source_sha256": "2d59ffb569c9188984711c476c2ce8b8cdcbd55b354d7337e29395b8f811b023",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier N. True when the argument equals 0x4b. N: clang23 uses sub/clz/lsr instead of the original mov/cmp/movne."
+      ],
+      "function_id": "arm9:0206f234:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "True when the argument equals 0x4b. N: clang23 uses sub/clz/lsr instead of the original mov/cmp/movne.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "9bef2af615a9bb1ad3de2eae8072a9dc1a75090b11c24f4ce8d75776d136744f"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0206f234.c",
+      "source_sha256": "9bef2af615a9bb1ad3de2eae8072a9dc1a75090b11c24f4ce8d75776d136744f",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Word at +0x28 of the 0x2c-byte record for index in the table at 0x020e680c. X: literal pool appended to .text and clang23 emits mul + indexed ldr instead of mla + ldr with displacement."
+      ],
+      "function_id": "arm9:0207ad6c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Word at +0x28 of the 0x2c-byte record for index in the table at 0x020e680c. X: literal pool appended to .text and clang23 emits mul + indexed ldr instead of mla + ldr with displacement.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "5c9ea28a39f0830b26a1768227a821ba5a470bff4e09c997baf385a990c08ace"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0207ad6c.c",
+      "source_sha256": "5c9ea28a39f0830b26a1768227a821ba5a470bff4e09c997baf385a990c08ace",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier N. Initialise a node: two zero words plus a pointer at +8 to the word at +4. N: clang23 sinks the address calculation after the two zero stores and swaps the zero/address registers (4 of 6 instructions differ). volatile keeps the stores separate (clang would otherwise merge them into STM)."
+      ],
+      "function_id": "arm9:02091a94:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialise a node: two zero words plus a pointer at +8 to the word at +4. N: clang23 sinks the address calculation after the two zero stores and swaps the zero/address registers (4 of 6 instructions differ). volatile keeps the stores separate (clang would otherwise merge them into STM).",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "6489f1a5d5bf93518b4086d491d12e9fea66f6c2252f85179366129ecacb60ab"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02091a94.c",
+      "source_sha256": "6489f1a5d5bf93518b4086d491d12e9fea66f6c2252f85179366129ecacb60ab",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Set bit (index&7) of byte (index>>3) in the bitmap 0x5d8 bytes into p. X: clang23 folds the bitmap base into the indexed load/store and picks a shift-by-register form (28 bytes vs 40)."
+      ],
+      "function_id": "arm9:02097b60:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Set bit (index&7) of byte (index>>3) in the bitmap 0x5d8 bytes into p. X: clang23 folds the bitmap base into the indexed load/store and picks a shift-by-register form (28 bytes vs 40).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "223dfb40a1bf91ae55e55b7a64ba8eade5a9d3de618bb4f2071407d41cc16554"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02097b60.c",
+      "source_sha256": "223dfb40a1bf91ae55e55b7a64ba8eade5a9d3de618bb4f2071407d41cc16554",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier N. Initialise a node: two zero words plus a pointer at +0xc to the word at +4; same body as arm9:02042dd8. N: scheduling/register order of the address calculation differs. volatile keeps the stores separate."
+      ],
+      "function_id": "arm9:02097d84:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialise a node: two zero words plus a pointer at +0xc to the word at +4; same body as arm9:02042dd8. N: scheduling/register order of the address calculation differs. volatile keeps the stores separate.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "25e004178cbaf6d03656d5f1fd1d57e8dcdf047dec9c3fd7328f17080c6b5217"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02097d84.c",
+      "source_sha256": "25e004178cbaf6d03656d5f1fd1d57e8dcdf047dec9c3fd7328f17080c6b5217",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. True when the 64-bit deadline at p+0x2c is less than 0xe10 past the now stamp at q+0xc. X: clang23 uses immediate-zero sbcs and movlo instead of the original register-zero sbcs and movlt (signed compare)."
+      ],
+      "function_id": "arm9:020adeb8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "True when the 64-bit deadline at p+0x2c is less than 0xe10 past the now stamp at q+0xc. X: clang23 uses immediate-zero sbcs and movlo instead of the original register-zero sbcs and movlt (signed compare).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "abd245807ff2358d85a16083ecce7911fe9c5cf20125bd508166b9df18bc4b45"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020adeb8.c",
+      "source_sha256": "abd245807ff2358d85a16083ecce7911fe9c5cf20125bd508166b9df18bc4b45",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier X. Push value into the per-index buffer: counts[] at +0xe8, blocks at +0x104 with a 0x200 stride, entries at the start of each block. X: clang23 keeps the loaded count in a register (struct-member TBAA) instead of re-reading it for the increment and folds the count base as t+i*4+0xe8."
+      ],
+      "function_id": "arm9:020b2c00:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Push value into the per-index buffer: counts[] at +0xe8, blocks at +0x104 with a 0x200 stride, entries at the start of each block. X: clang23 keeps the loaded count in a register (struct-member TBAA) instead of re-reading it for the increment and folds the count base as t+i*4+0xe8.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "f2849530812edd72c8bcbdd89212ef72ec3e8a1536b2c0ddf3ca45e7126efcd9"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b2c00.c",
+      "source_sha256": "f2849530812edd72c8bcbdd89212ef72ec3e8a1536b2c0ddf3ca45e7126efcd9",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "3 isolated hypotheses; best tier N. Swap the two words pointed to by a and b. N: only the two temporary registers are swapped (r2/r3)."
+      ],
+      "function_id": "arm9:020b7888:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Swap the two words pointed to by a and b. N: only the two temporary registers are swapped (r2/r3).",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "04c056e7152f79360a2ff1a688a5921cfe7ee55a1a7e88b1f9b1659e7a0aa3a4"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b7888.c",
+      "source_sha256": "04c056e7152f79360a2ff1a688a5921cfe7ee55a1a7e88b1f9b1659e7a0aa3a4",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. If dst is non-null copy the 12-byte default record at 0x02108db4 into it; return bit 0 of that record's first word. X: clang23 branches instead of the original conditional ldm/stm and folds the three record words into separate pool constants."
+      ],
+      "function_id": "arm9:020b8e80:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "If dst is non-null copy the 12-byte default record at 0x02108db4 into it; return bit 0 of that record's first word. X: clang23 branches instead of the original conditional ldm/stm and folds the three record words into separate pool constants.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "e46f42c06ad77638957b1ff3efa98bc9a7bbbde61c4dce853141add178032e28"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b8e80.c",
+      "source_sha256": "e46f42c06ad77638957b1ff3efa98bc9a7bbbde61c4dce853141add178032e28",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Return the fixed pointer 0x021d4904. X: code bytes and pool word match exactly; only the appended pool word makes .text 12 instead of 8."
+      ],
+      "function_id": "arm9:020bf338:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Return the fixed pointer 0x021d4904. X: code bytes and pool word match exactly; only the appended pool word makes .text 12 instead of 8.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "87b183849da0179aae8607afa2ccbd3f319c08b3fa2b01b63661836ef1ddb9af"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020bf338.c",
+      "source_sha256": "87b183849da0179aae8607afa2ccbd3f319c08b3fa2b01b63661836ef1ddb9af",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Field 0x478 of the object held at 0x021da420 + 0x28, or 0 when null. X: literal pool appended to .text and clang folds +0x28 into the pool constant."
+      ],
+      "function_id": "arm9:020c48c8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Field 0x478 of the object held at 0x021da420 + 0x28, or 0 when null. X: literal pool appended to .text and clang folds +0x28 into the pool constant.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "55ece5dc20507b67b62414164be610ce58192e3c24a754517eccc67de30028e9"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c48c8.c",
+      "source_sha256": "55ece5dc20507b67b62414164be610ce58192e3c24a754517eccc67de30028e9",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Return the fixed global word at 0x021dde20. X: code bytes and pool word match exactly; only the appended pool word makes .text 16 instead of 12."
+      ],
+      "function_id": "arm9:020c64d8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Return the fixed global word at 0x021dde20. X: code bytes and pool word match exactly; only the appended pool word makes .text 16 instead of 12.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "7525d8a04407c39d92696a9c145ab4ef3b004ed9f6b87c8c944f4b4b3960da0d"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c64d8.c",
+      "source_sha256": "7525d8a04407c39d92696a9c145ab4ef3b004ed9f6b87c8c944f4b4b3960da0d",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. *out = src[0] + src[1]*4. Exact."
+      ],
+      "function_id": "arm9:020c97c8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "*out = src[0] + src[1]*4. Exact.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "00ba6e11ecb6530c61c0250d2683c2230f2ac69f7dd92abe25ecf14509a5adec"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c97c8.c",
+      "source_sha256": "00ba6e11ecb6530c61c0250d2683c2230f2ac69f7dd92abe25ecf14509a5adec",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Clear byte 3 then byte 1 of the fixed global record at 0x021de53c. X: literal pool appended to .text and clang23 shifts the base by one byte and clears bytes 0/2 of base+1 (same bytes, different encoding)."
+      ],
+      "function_id": "arm9:020cae3c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clear byte 3 then byte 1 of the fixed global record at 0x021de53c. X: literal pool appended to .text and clang23 shifts the base by one byte and clears bytes 0/2 of base+1 (same bytes, different encoding).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "4c348b63132fbce106815e556e4dc19b7372b9c37dcf1b5794293507883e0eb0"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020cae3c.c",
+      "source_sha256": "4c348b63132fbce106815e556e4dc19b7372b9c37dcf1b5794293507883e0eb0",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Packs a | b<<16 | d<<24, forces bit 15 when the fifth argument is set, then writes that control word plus a 16-bit value to a fixed register pair (0x04000350/0x04000354). X: clang builds 0x04000350 with mov+orr where the original loads a pool word placed after the function; 40 vs 36 bytes."
+      ],
+      "function_id": "arm9:020015b4:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Packs a | b<<16 | d<<24, forces bit 15 when the fifth argument is set, then writes that control word plus a 16-bit value to a fixed register pair (0x04000350/0x04000354). X: clang builds 0x04000350 with mov+orr where the original loads a pool word placed after the function; 40 vs 36 bytes.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "24a35cde622e9a57a9271bf913ba2e1eafd85f4c31da8985931c62749cdcc48e"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020015b4.c",
+      "source_sha256": "24a35cde622e9a57a9271bf913ba2e1eafd85f4c31da8985931c62749cdcc48e",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Reads the unsigned 16-bit field at +0x0a of the global record at 0x020fd340 (unknown record). X: the original's pool word (0x020fd340) sits outside the recorded extent and it offsets the load with #0xa; clang folds the offset into its own in-text pool word; 16 vs 12 bytes."
+      ],
+      "function_id": "arm9:02003ad8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Reads the unsigned 16-bit field at +0x0a of the global record at 0x020fd340 (unknown record). X: the original's pool word (0x020fd340) sits outside the recorded extent and it offsets the load with #0xa; clang folds the offset into its own in-text pool word; 16 vs 12 bytes.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "d89c684884f96eb6b28f5d994d4edcfabae30374a2227d9830aa8579ba4df7e1"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02003ad8.c",
+      "source_sha256": "d89c684884f96eb6b28f5d994d4edcfabae30374a2227d9830aa8579ba4df7e1",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Swaps the 32-bit word at 0x04000214 while clearing and restoring the 16-bit enable at 0x04000208, returning the previous word (a third, unused read of the enable register is preserved). X: clang builds 0x04000208 with mov+orr instead of a pool load; 44 vs 40 bytes."
+      ],
+      "function_id": "arm9:02003fbc:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Swaps the 32-bit word at 0x04000214 while clearing and restoring the 16-bit enable at 0x04000208, returning the previous word (a third, unused read of the enable register is preserved). X: clang builds 0x04000208 with mov+orr instead of a pool load; 44 vs 40 bytes.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "233c2618e233dd9262bcef283ffb4bd435fadcf70fa5aafe8e296f3f02fb7da7"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02003fbc.c",
+      "source_sha256": "233c2618e233dd9262bcef283ffb4bd435fadcf70fa5aafe8e296f3f02fb7da7",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Indexed 32-bit read at 0x02fff000 + 0xda0 + index * 4. X: clang pools the base and uses an indexed load where the original emits lsl + two add immediates + ldr [r0,#0xda0]; same size, all five instructions differ."
+      ],
+      "function_id": "arm9:02005684:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Indexed 32-bit read at 0x02fff000 + 0xda0 + index * 4. X: clang pools the base and uses an indexed load where the original emits lsl + two add immediates + ldr [r0,#0xda0]; same size, all five instructions differ.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "4697e847884033dea9d5c35a6e5673b2c8fb54278aaa70902b0f0b21e75f1317"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02005684.c",
+      "source_sha256": "4697e847884033dea9d5c35a6e5673b2c8fb54278aaa70902b0f0b21e75f1317",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Constant getter that always returns 0."
+      ],
+      "function_id": "arm9:0200b918:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Constant getter that always returns 0.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "2a414b749a4d2330116b5afeb86eb65597ad702a5b8692ceb44819985379fd5b"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0200b918.c",
+      "source_sha256": "2a414b749a4d2330116b5afeb86eb65597ad702a5b8692ceb44819985379fd5b",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Returns the fixed address 0x02fffe00. X: the emitted code is byte-identical to the original, clang only appends the literal-pool word inside .text (12 vs 8 bytes)."
+      ],
+      "function_id": "arm9:0200e5d0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Returns the fixed address 0x02fffe00. X: the emitted code is byte-identical to the original, clang only appends the literal-pool word inside .text (12 vs 8 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "afad139fb4a7db46a4a4f7ca3720565410bd37e5c74742ddd58111bdab5a675c"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0200e5d0.c",
+      "source_sha256": "afad139fb4a7db46a4a4f7ca3720565410bd37e5c74742ddd58111bdab5a675c",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. If bit 0 of the 16-bit register at 0x02ffff96 is set, clears it in place (old & 0xfffe). X: clang builds the register address with mvn/sub and uses bic #1 where the original ANDs with a pooled 0xfffe mask; same size, six instructions differ."
+      ],
+      "function_id": "arm9:02010594:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "If bit 0 of the 16-bit register at 0x02ffff96 is set, clears it in place (old & 0xfffe). X: clang builds the register address with mvn/sub and uses bic #1 where the original ANDs with a pooled 0xfffe mask; same size, six instructions differ.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "a6dd2ed789485caa47ba87782153b53a359975ed9726bc8291a0982bee08966f"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02010594.c",
+      "source_sha256": "a6dd2ed789485caa47ba87782153b53a359975ed9726bc8291a0982bee08966f",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Copies field +0x1c to +0x24, stores +0x20 - (+0x18 & +0x2c) at +0x28 and caches +0x18 at +0x34. X: clang hoists the +0x34 store and picks a different register assignment; 8 of 10 instructions differ."
+      ],
+      "function_id": "arm9:0201a9b0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Copies field +0x1c to +0x24, stores +0x20 - (+0x18 & +0x2c) at +0x28 and caches +0x18 at +0x34. X: clang hoists the +0x34 store and picks a different register assignment; 8 of 10 instructions differ.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "568117e5d5ba05fc892b49fa14b48a6fe7028b351b51deee6d7da0cd00d923e0"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0201a9b0.c",
+      "source_sha256": "568117e5d5ba05fc892b49fa14b48a6fe7028b351b51deee6d7da0cd00d923e0",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Self-relative fix-up: adds the record's own address to the 32-bit field at +0x14."
+      ],
+      "function_id": "arm9:02028168:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Self-relative fix-up: adds the record's own address to the 32-bit field at +0x14.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "d9f708d78448ab5bd0e6f4c99618ab8ea5689542c8090b4a9125281d6a02c1a0"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02028168.c",
+      "source_sha256": "d9f708d78448ab5bd0e6f4c99618ab8ea5689542c8090b4a9125281d6a02c1a0",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Stores a 32-bit value at base + index * 4 + 8 (no bounds check)."
+      ],
+      "function_id": "arm9:02028f1c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Stores a 32-bit value at base + index * 4 + 8 (no bounds check).",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "c7e216c4e48e7bd2879b52483f9e1a4eb3b1ccac074c0be595b25565c8c748b5"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02028f1c.c",
+      "source_sha256": "c7e216c4e48e7bd2879b52483f9e1a4eb3b1ccac074c0be595b25565c8c748b5",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Plain 32-bit store of the second argument through the first."
+      ],
+      "function_id": "arm9:0202ca58:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Plain 32-bit store of the second argument through the first.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "c06e6e751e72620a84afbd262258dfa428f90a8906000a463cdce9935c0c45cd"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0202ca58.c",
+      "source_sha256": "c06e6e751e72620a84afbd262258dfa428f90a8906000a463cdce9935c0c45cd",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Clears the three leading words of the global record at 0x021037f0 in the emitted order +0x08, +0x00, +0x04. X: the code is byte-identical, clang only appends its own literal-pool word (28 vs 24 bytes)."
+      ],
+      "function_id": "arm9:0202edd4:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clears the three leading words of the global record at 0x021037f0 in the emitted order +0x08, +0x00, +0x04. X: the code is byte-identical, clang only appends its own literal-pool word (28 vs 24 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "615309ae70d213e4632cf55515dae1ba6eb15528e89b2fc487e30883059d8642"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0202edd4.c",
+      "source_sha256": "615309ae70d213e4632cf55515dae1ba6eb15528e89b2fc487e30883059d8642",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Returns the word held in the global slot at 0x02104240. X: code byte-identical, only the appended in-text pool word differs (16 vs 12 bytes)."
+      ],
+      "function_id": "arm9:02030278:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Returns the word held in the global slot at 0x02104240. X: code byte-identical, only the appended in-text pool word differs (16 vs 12 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "bb9542caff1365ade356a925e4d9a14ba91c55e8235ae1b951a7fc0a80609ad1"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02030278.c",
+      "source_sha256": "bb9542caff1365ade356a925e4d9a14ba91c55e8235ae1b951a7fc0a80609ad1",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Clears the 32-bit word pointed to by the argument."
+      ],
+      "function_id": "arm9:02031b64:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clears the 32-bit word pointed to by the argument.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "702fdddca2dbd40d21db1017063161c17a29b326ec88fe00f02df02d26206b65"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02031b64.c",
+      "source_sha256": "702fdddca2dbd40d21db1017063161c17a29b326ec88fe00f02df02d26206b65",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Initialises a record: three words to 0 and the word at +0x0c to 0xff, ascending order."
+      ],
+      "function_id": "arm9:02038f48:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialises a record: three words to 0 and the word at +0x0c to 0xff, ascending order.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "f0714869339e47c4c7997d47f9ab6c3aa95a97533e8f0622e4f678241c91d710"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02038f48.c",
+      "source_sha256": "f0714869339e47c4c7997d47f9ab6c3aa95a97533e8f0622e4f678241c91d710",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier N. Initialises an intrusive list header: zeroes the count and points both link fields at the embedded slot +0x04 (self sentinel), storing +0x08 then +0x04. N: same size and store order, but clang materialises the sentinel late and reuses r1 for the zero and the sentinel (original: sentinel in r1 and zero in r2, both computed before the stores)."
+      ],
+      "function_id": "arm9:0203964c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialises an intrusive list header: zeroes the count and points both link fields at the embedded slot +0x04 (self sentinel), storing +0x08 then +0x04. N: same size and store order, but clang materialises the sentinel late and reuses r1 for the zero and the sentinel (original: sentinel in r1 and zero in r2, both computed before the stores).",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "dd72351738475c49800053449dd32406d8be8444dc8020b7362608a1b787bb4e"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0203964c.c",
+      "source_sha256": "dd72351738475c49800053449dd32406d8be8444dc8020b7362608a1b787bb4e",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier N. Copies a 16-byte four-word block from the second argument to the first, all loads before all stores. N: only the register choice for the first and third word differs (original ip, clang r2), four bytes in total."
+      ],
+      "function_id": "arm9:0203ba04:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Copies a 16-byte four-word block from the second argument to the first, all loads before all stores. N: only the register choice for the first and third word differs (original ip, clang r2), four bytes in total.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "e9f1a04cf144ad88c6f89ce61a6d33b6884a91b7ee20611e9a1506f995a1cab1"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0203ba04.c",
+      "source_sha256": "e9f1a04cf144ad88c6f89ce61a6d33b6884a91b7ee20611e9a1506f995a1cab1",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Element accessor for a buffer that keeps short payloads inline: bit 0 of the first word selects the inline data at self+2 or the pointer at +8, then index*2. X: clang narrows the load to ldrb and folds the single-bit test into tst (24 vs 28 bytes)."
+      ],
+      "function_id": "arm9:0203fd34:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Element accessor for a buffer that keeps short payloads inline: bit 0 of the first word selects the inline data at self+2 or the pointer at +8, then index*2. X: clang narrows the load to ldrb and folds the single-bit test into tst (24 vs 28 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "91bdef50ead18fab247d6bb21ffa4252497f6e95a6465f1dbfc120a22c2ca04c"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0203fd34.c",
+      "source_sha256": "91bdef50ead18fab247d6bb21ffa4252497f6e95a6465f1dbfc120a22c2ca04c",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Clears the three leading 32-bit fields of the record, ascending order."
+      ],
+      "function_id": "arm9:02041660:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clears the three leading 32-bit fields of the record, ascending order.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "e3901336e384810b0a5fab0bbadfd14e75f13f70623b5d1299cc37060322242c"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02041660.c",
+      "source_sha256": "e3901336e384810b0a5fab0bbadfd14e75f13f70623b5d1299cc37060322242c",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier N. Zeroes the first two words and stores the record's own +0x04 address at +0x08 (self sentinel). N: same size and store order, but clang computes the self address just before its use and keeps the zero in r1 (original: zero in r2, self address in r1 before the stores)."
+      ],
+      "function_id": "arm9:02042e08:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Zeroes the first two words and stores the record's own +0x04 address at +0x08 (self sentinel). N: same size and store order, but clang computes the self address just before its use and keeps the zero in r1 (original: zero in r2, self address in r1 before the stores).",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "564a90837a6834ccdde4ecdb102fc4ec5d125f395ad785eddce2ee662bb584e8"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02042e08.c",
+      "source_sha256": "564a90837a6834ccdde4ecdb102fc4ec5d125f395ad785eddce2ee662bb584e8",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Initialises a record with the fixed tag 0x020e1640 plus three caller values at +0x04..+0x0c. X: clang merges the +0x04..+0x0c stores into one stmib and hoists it above the tag store; all five instruction slots differ."
+      ],
+      "function_id": "arm9:02046658:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialises a record with the fixed tag 0x020e1640 plus three caller values at +0x04..+0x0c. X: clang merges the +0x04..+0x0c stores into one stmib and hoists it above the tag store; all five instruction slots differ.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "d75c4ad3d58ee8dffff6c156ca7405dde0a38447af3be832235c4c01f91497ca"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02046658.c",
+      "source_sha256": "d75c4ad3d58ee8dffff6c156ca7405dde0a38447af3be832235c4c01f91497ca",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Clears the three leading 32-bit fields of the record (byte-identical twin of arm9:02041660)."
+      ],
+      "function_id": "arm9:02049090:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Clears the three leading 32-bit fields of the record (byte-identical twin of arm9:02041660).",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "9b6b1e007fa5d1a8eb195eeafce1ca544311d6046ef63cd8bded7811af0b14a6"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02049090.c",
+      "source_sha256": "9b6b1e007fa5d1a8eb195eeafce1ca544311d6046ef63cd8bded7811af0b14a6",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier S. Initialises a record: four words cleared and the caller value at +0x0c, ascending store order."
+      ],
+      "function_id": "arm9:0204e968:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialises a record: four words cleared and the caller value at +0x0c, ascending store order.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "d1b70dc76e181136ca2319cfd2b525b9fd4b78042b8981460442724b0bd18caf"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0204e968.c",
+      "source_sha256": "d1b70dc76e181136ca2319cfd2b525b9fd4b78042b8981460442724b0bd18caf",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier S. Stores the address of a node's +0x04 slot into the word pointed at by the first argument."
+      ],
+      "function_id": "arm9:02051aa8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Stores the address of a node's +0x04 slot into the word pointed at by the first argument.",
+          "metric_tier": "S",
+          "number": 1,
+          "source_sha256": "e4f5d2c858ce76b5214608018d03429012cf5b530d43d1bfada2e657a73547a2"
+        }
+      ],
+      "next_hypothesis": "Select for the strict full-ROM gate and add differential behavior/ownership checks.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02051aa8.c",
+      "source_sha256": "e4f5d2c858ce76b5214608018d03429012cf5b530d43d1bfada2e657a73547a2",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. One-shot cleanup: when the pending byte at 0x02107dd9 is set, zeroes word b of the 0x18-byte table element a at 0x02107ddc and clears that byte. X: clang computes the element address with three adds and branches out (bxeq, 48 bytes) instead of the original's predicated movne/mlane/strne form (40 bytes)."
+      ],
+      "function_id": "arm9:02058e3c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "One-shot cleanup: when the pending byte at 0x02107dd9 is set, zeroes word b of the 0x18-byte table element a at 0x02107ddc and clears that byte. X: clang computes the element address with three adds and branches out (bxeq, 48 bytes) instead of the original's predicated movne/mlane/strne form (40 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "5fb9187afee702e827e24de99ccc70ca8a5c1d5561083cbced44b9c8f4a3ea0f"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02058e3c.c",
+      "source_sha256": "5fb9187afee702e827e24de99ccc70ca8a5c1d5561083cbced44b9c8f4a3ea0f",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Returns the base pointer from +0xbc plus the 16-bit index scaled by 0x280. X: clang strength-reduces *640 into two adds and drops the 16-bit zero-extension, giving 16 vs 24 bytes."
+      ],
+      "function_id": "arm9:020662f0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Returns the base pointer from +0xbc plus the 16-bit index scaled by 0x280. X: clang strength-reduces *640 into two adds and drops the 16-bit zero-extension, giving 16 vs 24 bytes.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "afa108259a717359194d90ca1e822046b429396d253f3f52418221bf88870026"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020662f0.c",
+      "source_sha256": "afa108259a717359194d90ca1e822046b429396d253f3f52418221bf88870026",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Initialises seven words of a record, all zero except +0x14 which becomes 1. X: the instruction sequence is identical but clang assigns the long-lived zero to r1 and the one to r2, while the original uses r2 for the zero and r1 for the one (nine bytes differ)."
+      ],
+      "function_id": "arm9:02068244:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Initialises seven words of a record, all zero except +0x14 which becomes 1. X: the instruction sequence is identical but clang assigns the long-lived zero to r1 and the one to r2, while the original uses r2 for the zero and r1 for the one (nine bytes differ).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "72ea6756e14d364d63918ba96d98d77a8f5b69a3ade871ba5ac3915bc1ab16f6"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02068244.c",
+      "source_sha256": "72ea6756e14d364d63918ba96d98d77a8f5b69a3ade871ba5ac3915bc1ab16f6",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier N. Copies a 16-byte four-word block (byte-identical twin of arm9:0203ba04). N: only the register choice for the first and third word differs (original ip, clang r2), four bytes in total."
+      ],
+      "function_id": "arm9:02071234:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Copies a 16-byte four-word block (byte-identical twin of arm9:0203ba04). N: only the register choice for the first and third word differs (original ip, clang r2), four bytes in total.",
+          "metric_tier": "N",
+          "number": 1,
+          "source_sha256": "3a4cca6a0427c4c4c64bcd84e9c6206a88305785558dcb8c28174cd0ec0dcf8c"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02071234.c",
+      "source_sha256": "3a4cca6a0427c4c4c64bcd84e9c6206a88305785558dcb8c28174cd0ec0dcf8c",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Membership test against the constants 0x10, 0x13, 0x18 and 0x2b, returning 0 or 1. X: clang turns the || chain into a bitmap probe with branches (60 vs 28 bytes); it never emits the original's cmpne chain."
+      ],
+      "function_id": "arm9:0207afc4:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Membership test against the constants 0x10, 0x13, 0x18 and 0x2b, returning 0 or 1. X: clang turns the || chain into a bitmap probe with branches (60 vs 28 bytes); it never emits the original's cmpne chain.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "b3159bd82d009937608e18cc3df18a52c45de75425ad1a75aecd4bc52771e22b"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0207afc4.c",
+      "source_sha256": "b3159bd82d009937608e18cc3df18a52c45de75425ad1a75aecd4bc52771e22b",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Stores the fixed tag 0x020e82b0 at +0x00 and zeroes +0x08..+0x10, leaving +0x04 untouched. X: same code shape and order, but clang appends its own literal-pool word (32 vs 28 bytes)."
+      ],
+      "function_id": "arm9:0209211c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Stores the fixed tag 0x020e82b0 at +0x00 and zeroes +0x08..+0x10, leaving +0x04 untouched. X: same code shape and order, but clang appends its own literal-pool word (32 vs 28 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "1d6f7759fe66e23793c4f9f835ab1a24d6bcd975b827f411808cadee360331fa"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/0209211c.c",
+      "source_sha256": "1d6f7759fe66e23793c4f9f835ab1a24d6bcd975b827f411808cadee360331fa",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Signed test whether the counter at +0x5e8 has reached 2500. X: clang rewrites >= 2500 into > 2499 and builds the threshold with mov+orr plus a pre-zeroed result register (28 vs 24 bytes)."
+      ],
+      "function_id": "arm9:02097bb0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Signed test whether the counter at +0x5e8 has reached 2500. X: clang rewrites >= 2500 into > 2499 and builds the threshold with mov+orr plus a pre-zeroed result register (28 vs 24 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "cbaf8f409a18ba75c0c755194e6f8c79a560d4d19ac4d67d62256b8b276e5335"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02097bb0.c",
+      "source_sha256": "cbaf8f409a18ba75c0c755194e6f8c79a560d4d19ac4d67d62256b8b276e5335",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Tests bits 3, 5 and 6 of the 16-bit field at +0x60 and normalises the result to 0/1. X: clang folds the test into ands + movne (16 vs 20 bytes) where the original uses tst + movne/moveq."
+      ],
+      "function_id": "arm9:02098c7c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Tests bits 3, 5 and 6 of the 16-bit field at +0x60 and normalises the result to 0/1. X: clang folds the test into ands + movne (16 vs 20 bytes) where the original uses tst + movne/moveq.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "0b5e9c0be0c5c854ea95a6fd5e76a5ab5a38ca6fa5c3666110ebfb6cba8e5469"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/02098c7c.c",
+      "source_sha256": "0b5e9c0be0c5c854ea95a6fd5e76a5ab5a38ca6fa5c3666110ebfb6cba8e5469",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Non-zero test on the signed 16-bit field 0x100 bytes into the object found at +0x688 of *handle. X: clang narrows the load to ldrh, materialises 0x100 in a register and drops the moveq branch target (28 vs 32 bytes)."
+      ],
+      "function_id": "arm9:020b0fd8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Non-zero test on the signed 16-bit field 0x100 bytes into the object found at +0x688 of *handle. X: clang narrows the load to ldrh, materialises 0x100 in a register and drops the moveq branch target (28 vs 32 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "d08dce0754d06c50431bf043145852da454667dc42f0a4af5b317572f3135901"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b0fd8.c",
+      "source_sha256": "d08dce0754d06c50431bf043145852da454667dc42f0a4af5b317572f3135901",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Tags a record with the fixed descriptor address 0x020e9a1c and sets the word at +0x9c to 1. X: the code matches the original's shape and order, clang only appends its own literal-pool word (24 vs 20 bytes)."
+      ],
+      "function_id": "arm9:020b35d8:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Tags a record with the fixed descriptor address 0x020e9a1c and sets the word at +0x9c to 1. X: the code matches the original's shape and order, clang only appends its own literal-pool word (24 vs 20 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "657f1a52ac5a8021d14fecd653314328226ae666e14fbcdd13caf774b52cb76c"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b35d8.c",
+      "source_sha256": "657f1a52ac5a8021d14fecd653314328226ae666e14fbcdd13caf774b52cb76c",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Stores a value at +0x08, sets the byte at +0x04 and returns the previous content of +0x0c. X: clang materialises the constant 1 late (between the two stores, in r1) and parks the old value in r2, where the original uses r2 for the 1 and r3 for the old value; five of six instructions differ."
+      ],
+      "function_id": "arm9:020b82e0:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Stores a value at +0x08, sets the byte at +0x04 and returns the previous content of +0x0c. X: clang materialises the constant 1 late (between the two stores, in r1) and parks the old value in r2, where the original uses r2 for the 1 and r3 for the old value; five of six instructions differ.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "605cbf1c8b8aa73ea2dd9538a02ef4cd798fc1a7f3635a0196d75630ef3ccbc9"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b82e0.c",
+      "source_sha256": "605cbf1c8b8aa73ea2dd9538a02ef4cd798fc1a7f3635a0196d75630ef3ccbc9",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Sets bit 0 of the sub-object's control word +0x88 and forwards (flags & 3) from +0xc4 into the sub-object's +0x8c halfword, reloading the sub pointer from the state. X: clang emits and #3 where the original emits lsl/lsr #30, so the candidate is 36 bytes against the original 40."
+      ],
+      "function_id": "arm9:020b9388:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Sets bit 0 of the sub-object's control word +0x88 and forwards (flags & 3) from +0xc4 into the sub-object's +0x8c halfword, reloading the sub pointer from the state. X: clang emits and #3 where the original emits lsl/lsr #30, so the candidate is 36 bytes against the original 40.",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "6c6e492f10c54089dd63b0ce5e3bf8554261a0ab88f82b28190e678a63b6cbdc"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020b9388.c",
+      "source_sha256": "6c6e492f10c54089dd63b0ce5e3bf8554261a0ab88f82b28190e678a63b6cbdc",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "2 isolated hypotheses; best tier X. Returns entry `index` of the 32-bit table at 0x020dce5c. X: clang scales the index with a separate lsl and appends its own pool word (20 vs 12 bytes)."
+      ],
+      "function_id": "arm9:020c1090:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Returns entry `index` of the 32-bit table at 0x020dce5c. X: clang scales the index with a separate lsl and appends its own pool word (20 vs 12 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "19802f5732b4d77b5bf27b7dd61739f626e652eb5e215f8084a1f71068934d51"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c1090.c",
+      "source_sha256": "19802f5732b4d77b5bf27b7dd61739f626e652eb5e215f8084a1f71068934d51",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Stores the argument into the 32-bit slot at 0x021db0e8. X: the instruction shape matches, but clang folds the +8 offset into its own pool word (16 vs 12 bytes)."
+      ],
+      "function_id": "arm9:020c5a38:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Stores the argument into the 32-bit slot at 0x021db0e8. X: the instruction shape matches, but clang folds the +8 offset into its own pool word (16 vs 12 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "c1dd58b562a91b7be82d805e4ae9ca5bcbb658872d66e62e4eaa8011441b2f3b"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c5a38.c",
+      "source_sha256": "c1dd58b562a91b7be82d805e4ae9ca5bcbb658872d66e62e4eaa8011441b2f3b",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Reads the 16-bit register at 0x04000208, writes 1 and returns the previous value. X: clang builds the register address with mov+orr instead of a pool load (24 vs 20 bytes)."
+      ],
+      "function_id": "arm9:020c713c:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Reads the 16-bit register at 0x04000208, writes 1 and returns the previous value. X: clang builds the register address with mov+orr instead of a pool load (24 vs 20 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "cf9b4cf35daf901a6e084f8b421dfbf3bb66fc418b20d4f01b6dc52a4a623800"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020c713c.c",
+      "source_sha256": "cf9b4cf35daf901a6e084f8b421dfbf3bb66fc418b20d4f01b6dc52a4a623800",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Sets the byte at 0x021de53e to 1. X: the instruction shape matches, but clang folds the +2 offset into its own pool word (20 vs 16 bytes)."
+      ],
+      "function_id": "arm9:020ca948:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Sets the byte at 0x021de53e to 1. X: the instruction shape matches, but clang folds the +2 offset into its own pool word (20 vs 16 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "304bd69b709915a214aca1fc8588ef0c8831e1d275942d8725bebb56552bf0c1"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020ca948.c",
+      "source_sha256": "304bd69b709915a214aca1fc8588ef0c8831e1d275942d8725bebb56552bf0c1",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
+    },
+    {
+      "behavior_validation": {
+        "status": "not tested; isolated unmasked comparison only, no behavior evidence"
+      },
+      "blocker": "Local comparison only; owner, field meanings and behavior not validated; strict integration gate pending",
+      "donor_attribution": {
+        "adaptation": "Independent DS binary reconstruction; no donor adaptation or gameplay name asserted."
+      },
+      "failed_hypotheses": [
+        "1 isolated hypotheses; best tier X. Read-modify-write of the 16-bit register at 0x0400100c: keeps bits 0, 1 and 6 and inserts four argument fields at bit positions 14, 7, 8 and 2. X: clang allocates a frame (push {fp,lr}), builds the address with mov+orr and merges the orrs differently (48 vs 40 bytes)."
+      ],
+      "function_id": "arm9:020cc634:arm",
+      "matching_attempts": [
+        {
+          "hypothesis": "Read-modify-write of the 16-bit register at 0x0400100c: keeps bits 0, 1 and 6 and inserts four argument fields at bit positions 14, 7, 8 and 2. X: clang allocates a frame (push {fp,lr}), builds the address with mov+orr and merges the orrs differently (48 vs 40 bytes).",
+          "metric_tier": "X",
+          "number": 1,
+          "source_sha256": "e0487df796e3137a2e57874b51000aed3562ba0b27ee6633ddf0e4d56e8e76c1"
+        }
+      ],
+      "next_hypothesis": "Map DS callers/ownership, then add behavior checks or a new binary-backed shape hypothesis.",
+      "profile_path": "semantic/profiles/clang23-arm946-o2.json",
+      "profile_sha256": "2fe818c453f15e7996dacf75d77d2f4dcd580d761f875f1507f301db7b5095fc",
+      "source": "semantic/src/leaves/020cc634.c",
+      "source_sha256": "e0487df796e3137a2e57874b51000aed3562ba0b27ee6633ddf0e4d56e8e76c1",
+      "uncertainties": "Caller context is a bounded BL-rooted CFG; full ARM9 code/data ownership is not established."
     }
   ],
   "schema": 1
