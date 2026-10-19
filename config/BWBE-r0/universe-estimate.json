@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "purpose": "Provisional discovery-based estimate of the whole-game code universe so a global percentage can be shown. Not a frozen denominator and not a proof of completeness.",
+  "method": "ARM BL call targets plus push {..., lr} / stmdb sp!,{...,lr} prologues, deduplicated per module, at 4-byte alignment. Function count is the number of distinct entry candidates; code bytes is the sum of entry-to-next-entry extents, so data pools and inter-function gaps are included in the byte total. The inventory itself is still incomplete, so this is a lower bound with a wide margin at best.",
+  "modules": {
+    "arm9": {"entries": 4527, "extent_bytes": 1052412},
+    "ov000": {"entries": 350, "extent_bytes": 133216},
+    "ov001": {"entries": 416, "extent_bytes": 253920},
+    "ov002": {"entries": 363, "extent_bytes": 159776},
+    "arm7": {"entries": 886, "extent_bytes": 156460}
+  },
+  "estimated_functions": 6542,
+  "estimated_code_bytes": 1755784,
+  "caveats": [
+    "Discovered entries can include interior targets and miss unreferenced functions; the true totals differ in both directions.",
+    "Overlays and ARM7 dominate the estimate; the current verified backend only reconstructs bounded ARM9 leaves.",
+    "Whole-game coverage remains unknown; the global percentage derived from this estimate is provisional and must be labelled as such."
+  ],
+  "frozen_whole_game_denominator": null
+}

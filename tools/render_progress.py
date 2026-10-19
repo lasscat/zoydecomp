@@ -40,40 +40,72 @@ def behavior_summary(semantic_report):
     return result['behavior'], result['tiers']
 
 
-def render_svg(c, b):
+def estimate():
+    import json
+    p = ROOT / 'config' / 'BWBE-r0' / 'universe-estimate.json'
+    if not p.exists():
+        return None
+    return json.loads(p.read_text())
+
+
+def render_svg(c, b, est):
     frac = min(1.0, c['function_percent'] / 100.0)
     width = round(712 * frac)
+    gfrac = 0.0
+    if est and est.get('estimated_functions'):
+        gfrac = min(1.0, c['verified_functions'] / est['estimated_functions'])
+    gwidth = round(712 * gfrac)
     lines = [
         '<text x="24" y="31" fill="#d6eee1" font-size="16" font-weight="bold">PROJECT PROGRESS</text>',
-        '<text x="24" y="55" fill="#a6bdb1" font-size="13">Scoped to the reviewed bounded ARM9 inventory &#183; whole-game coverage unknown</text>',
+        '<text x="24" y="55" fill="#a6bdb1" font-size="13">Exact scoped share of the reviewed bounded ARM9 inventory</text>',
         '<rect x="24" y="68" width="712" height="14" rx="7" fill="#33483e"/>',
         f'<rect x="24" y="68" width="{width}" height="14" rx="7" fill="#8de5ac"/>',
         f'<text x="24" y="108" fill="#8de5ac" font-size="22" font-weight="bold">{c["verified_functions"]} reconstructed &#183; {c["function_percent"]:.1f}%</text>',
         f'<text x="24" y="130" fill="#a6bdb1" font-size="13">{c["verified_functions"]} / {c["bounded_functions"]} bounded functions &#183; {c["verified_code_bytes"]} / {c["bounded_code_bytes"]} code bytes ({c["code_percent"]:.1f}%)</text>',
-        '<text x="24" y="152" fill="#a6bdb1" font-size="12">Whole-game coverage unknown: the function inventory is incomplete.</text>',
     ]
+    if est:
+        g_func = 100.0 * c['verified_functions'] / est['estimated_functions']
+        g_code = 100.0 * c['verified_code_bytes'] / est['estimated_code_bytes']
+        lines += [
+            '<rect x="24" y="142" width="712" height="12" rx="6" fill="#2a3a44"/>',
+            f'<rect x="24" y="142" width="{gwidth}" height="12" rx="6" fill="#a9d9ff"/>',
+            f'<text x="24" y="176" fill="#a9d9ff" font-size="13" font-weight="bold">Global estimate (provisional): {c["verified_functions"]} / ~{est["estimated_functions"]} functions ({g_func:.1f}%) &#183; {g_code:.2f}% of code bytes</text>',
+            '<text x="24" y="194" fill="#a6bdb1" font-size="12">Estimate from a discovery census; whole-game coverage remains unknown.</text>',
+        ]
+    offset = 212 if est else 152
+    lines.append(f'<text x="24" y="{offset}" fill="#a6bdb1" font-size="12">Whole-game inventory incomplete.</text>')
     if b:
         behavior, tiers = b
-        lines.append(f'<text x="24" y="170" fill="#a9d9ff" font-size="12">{behavior["tested_functions"]} behavior tested / {behavior["passed_cases"]} sampled calls; draft tiers {tiers["S"]} exact, {tiers["N"]} near, {tiers["X"]} different.</text>')
-    height = 184 if b else 166
+        lines.append(f'<text x="24" y="{offset + 18}" fill="#a9d9ff" font-size="12">{behavior["tested_functions"]} behavior tested / {behavior["passed_cases"]} sampled calls; draft tiers {tiers["S"]} exact, {tiers["N"]} near, {tiers["X"]} different.</text>')
+    height = offset + (34 if b else 16) + 6
     body = '\n'.join(lines)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="760" height="{height}" '
-            f'viewBox="0 0 760 {height}" role="img" aria-label="Scoped reconstruction progress; whole-game coverage unknown">\n'
+            f'viewBox="0 0 760 {height}" role="img" aria-label="Scoped and provisional global reconstruction progress">\n'
             f'<rect width="760" height="{height}" rx="14" fill="#101c19"/>\n'
             f'<g font-family="Arial, sans-serif">\n{body}\n</g></svg>\n')
 
 
-def render_block(c, b):
-    rows = ['| Metric | Baseline | Current | Scoped share |', '| --- | --- | --- | --- |',
-            f"| Verified functions / bounded inventory | 0 / unknown | {c['verified_functions']} / {c['bounded_functions']} | {c['function_percent']:.1f}% |",
-            f"| Verified code bytes / bounded inventory | 0 / unknown | {c['verified_code_bytes']} / {c['bounded_code_bytes']} | {c['code_percent']:.1f}% |",
-            f"| Whole-game coverage | unknown | unknown | not available |", '',
-            f"The share column is scoped to the {c['bounded_functions']} reviewed *bounded* ARM9 entries; "
-            f"it is a lower bound, not whole-game coverage, because the inventory is incomplete.",
-            f"Since the baseline: {c['verified_functions']} additional verified functions "
-            f"({c['verified_code_bytes']} code bytes). Whole-game percent is unavailable.",
-            ''
+def render_block(c, b, est):
+    rows = ['| Metric | Baseline | Current | Share |', '| --- | --- | --- | --- |',
+            f"| Verified functions / bounded inventory | 0 / unknown | {c['verified_functions']} / {c['bounded_functions']} | {c['function_percent']:.1f}% (exact, scoped) |",
+            f"| Verified code bytes / bounded inventory | 0 / unknown | {c['verified_code_bytes']} / {c['bounded_code_bytes']} | {c['code_percent']:.1f}% (exact, scoped) |",
             ]
+    if est:
+        g_func = 100.0 * c['verified_functions'] / est['estimated_functions']
+        g_code = 100.0 * c['verified_code_bytes'] / est['estimated_code_bytes']
+        rows += [
+            f"| Estimated whole-game functions | 0 | {c['verified_functions']} / ~{est['estimated_functions']} | ~{g_func:.1f}% (provisional) |",
+            f"| Estimated whole-game code bytes | 0 | {c['verified_code_bytes']} / ~{est['estimated_code_bytes']} | ~{g_code:.2f}% (provisional) |",
+        ]
+    rows += [f"| Frozen whole-game coverage | unknown | unknown | not available |", '',
+             f"The **scoped share** is exact for the {c['bounded_functions']} reviewed *bounded* ARM9 entries. "
+             f"The **global estimate** is a discovery census (method and caveats in config/BWBE-r0/universe-estimate.json); "
+             f"it is provisional, not a frozen whole-game denominator, and the inventory is still incomplete.",
+             '',
+             f"Since the baseline: {c['verified_functions']} additional verified functions "
+             f"({c['verified_code_bytes']} code bytes).",
+             ''
+             ]
     if b:
         behavior, tiers = b
         rows.append(f"Separately, **{behavior['tested_functions']} functions pass {behavior['passed_cases']} sampled "
@@ -104,8 +136,9 @@ def main():
     args = parser.parse_args()
     c = counters()
     b = behavior_summary(args.semantic_report)
-    block = render_block(c, b)
-    svg = render_svg(c, b)
+    est = estimate()
+    block = render_block(c, b, est)
+    svg = render_svg(c, b, est)
     if args.check:
         readme_ok = apply_to_readme(block, check=True)
         svg_ok = (ROOT / 'docs/progress.svg').read_text() == svg
@@ -116,9 +149,13 @@ def main():
         return 0
     apply_to_readme(block, check=False)
     (ROOT / 'docs/progress.svg').write_text(svg)
+    extra = ''
+    if est:
+        g = 100.0 * c['verified_functions'] / est['estimated_functions']
+        extra = f" Provisional global estimate: {c['verified_functions']}/~{est['estimated_functions']} functions ({g:.1f}%)."
     print(f"Rendered scoped progress: {c['verified_functions']}/{c['bounded_functions']} "
           f"functions ({c['function_percent']:.1f}%), {c['verified_code_bytes']}/{c['bounded_code_bytes']} "
-          f"code bytes ({c['code_percent']:.1f}%). Whole-game coverage remains unknown.")
+          f"code bytes ({c['code_percent']:.1f}%).{extra} Whole-game coverage remains unknown.")
     return 0
 
 

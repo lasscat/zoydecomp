@@ -12,21 +12,25 @@ unknown.
 
 <!-- progress:start -->
 
-| Metric | Baseline | Current | Scoped share |
+| Metric | Baseline | Current | Share |
 | --- | --- | --- | --- |
-| Verified functions / bounded inventory | 0 / unknown | 133 / 483 | 27.5% |
-| Verified code bytes / bounded inventory | 0 / unknown | 2072 / 10840 | 19.1% |
-| Whole-game coverage | unknown | unknown | not available |
+| Verified functions / bounded inventory | 0 / unknown | 133 / 483 | 27.5% (exact, scoped) |
+| Verified code bytes / bounded inventory | 0 / unknown | 2072 / 10840 | 19.1% (exact, scoped) |
+| Estimated whole-game functions | 0 | 133 / ~6542 | ~2.0% (provisional) |
+| Estimated whole-game code bytes | 0 | 2072 / ~1755784 | ~0.12% (provisional) |
+| Frozen whole-game coverage | unknown | unknown | not available |
 
-The share column is scoped to the 483 reviewed *bounded* ARM9 entries; it is a lower bound, not whole-game coverage, because the inventory is incomplete.
-Since the baseline: 133 additional verified functions (2072 code bytes). Whole-game percent is unavailable.
+The **scoped share** is exact for the 483 reviewed *bounded* ARM9 entries. The **global estimate** is a discovery census (method and caveats in config/BWBE-r0/universe-estimate.json); it is provisional, not a frozen whole-game denominator, and the inventory is still incomplete.
+
+Since the baseline: 133 additional verified functions (2072 code bytes).
 
 
 <!-- progress:end -->
 
-The scoped share is the honest lower bound of coverage against the reviewed inventory.
-Whole-game percentages stay unavailable until the function inventory is complete, and
-passing sample behavior tests does not prove correctness for every input or game state.
+The scoped share is exact for the reviewed bounded inventory. The global estimate is
+provisional (discovery census) and is not a frozen whole-game denominator; an exact
+whole-game percentage stays unavailable until the function inventory is complete.
+Passing sample behavior tests does not prove correctness for every input or game state.
 
 ## Get started
 
